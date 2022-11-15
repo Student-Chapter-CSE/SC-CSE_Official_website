@@ -1,0 +1,27 @@
+{
+    "name": "client",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "test": "start-server-and-test dev http://localhost:3000 cypress:open",
+        "format": "prettier --check --ignore-path .gitignore .",
+        "format:fix": "prettier --write --ignore-path .gitignore ."
+    },
+    "dependencies": {
+        "eslint": "8.27.0",
+        "eslint-config-next": "13.0.3",
+        "next": "13.0.3",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "cypress": "11.1.0",
+        "eslint-config-prettier": "^8.5.0",
+        "prettier": "2.7.1",
+        "start-server-and-test": "^1.14.0"
+    }
+}
