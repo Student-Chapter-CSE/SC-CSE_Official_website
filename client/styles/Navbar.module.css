@@ -1,0 +1,52 @@
+.NavbarContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    flex-direction: row;
+    position: fixed;
+    backdrop-filter: blur(1px);
+    background-color: var(--backGroundLight);
+}
+
+.NavLogo {
+    font-size: 1.4em;
+
+    font-weight: 600;
+}
+
+.Navlogopara {
+    color: var(--themeMainBlue);
+}
+
+.NavMid {
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+    flex-direction: row;
+    font-weight: 900
+}
+
+.NavElement {
+    cursor: pointer;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    font-weight: 300
+}
+
+.Navbtn {
+    cursor: pointer;
+    padding: 0.5rem 1.8rem;
+    font-size: .9rem;
+    border-radius: 25px;
+    border: solid 1px var(--themeYellowDark);
+    background-color: var(--backGround);
+}
+
+.Navbtn:hover {
+    background-color: var(--themeYellowDark);
+    transition: 1.5s ease;
+}
+
+@media screen {}

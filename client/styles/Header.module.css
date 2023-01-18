@@ -1,0 +1,30 @@
+.HeroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.HeroCardContainer {}
+
+.HeroTextConatiner {
+    margin: 3rem;
+    font-size: 1.4rem;
+
+
+}
+
+.herotextBigfont {
+    font-weight: 300;
+    -webkit-text-stroke-width: 2px;
+    font-size: 3rem;
+    color: var(--themeYellowDark);
+
+}
+
+.herotextHighlight {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
