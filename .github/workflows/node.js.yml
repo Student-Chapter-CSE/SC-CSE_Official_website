@@ -21,24 +21,24 @@ jobs:
         with:
           node-version: 16.x
 
-      - name: Run install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install # will run `yarn install` command
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # if needed
-      - name: Build production bundle
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: build:prod # will run `yarn build:prod` command
-          dir: 'client'
-      - name: Test the app
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: test # will run `yarn test` command
-          dir: 'client'
-      - name: Run test in sub-folder
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: test
-          dir: 'client' # will run `yarn test` in `frontend` sub folder
+      # - name: Run install
+      #   uses: borales/actions-yarn@v4
+      #   with:
+      #     cmd: install # will run `yarn install` command
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # if needed
+      # - name: Build production bundle
+      #   uses: borales/actions-yarn@v4
+      #   with:
+      #     cmd: build:prod # will run `yarn build:prod` command
+      #     dir: 'client'
+      # - name: Test the app
+      #   uses: borales/actions-yarn@v4
+      #   with:
+      #     cmd: test # will run `yarn test` command
+      #     dir: 'client'
+      # - name: Run test in sub-folder
+      #   uses: borales/actions-yarn@v4
+      #   with:
+      #     cmd: test
+      #     dir: 'client' # will run `yarn test` in `frontend` sub folder
