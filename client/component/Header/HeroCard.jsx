@@ -7,14 +7,14 @@ const HeroCard = () => {
         <>
             <div className={styles.Card}>
                 <div className={styles.CardImageContainer}>
-                    <Image
+                    <img
                         src={CardImg}
                         alt="Image container pic"
                         width={500}
                         height={350}
                     />
                 </div>
-                <div>hi</div>
+            
             </div>
         </>
     );

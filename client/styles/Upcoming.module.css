@@ -1,0 +1,60 @@
+#upcomingItems {
+    padding: 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#upcomingItemsHead {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--themeYellowDark);
+}
+
+#upcomingEventsMainText {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#upcomingCards {
+    padding-top: 5vh;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.upCard {
+    background-color: var(--themeYellowDark);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.cardTop {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.cardBottom {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+
+}
+
+.cardBottom span {
+    background-color: white;
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+
+}
+
+@media screen and (max-width:700px) {
+
+    #upcomingCards {
+        flex-direction: column;
+    }
+}

@@ -13,7 +13,7 @@ const Navbar = () => {
                     <div className={styles.NavElement}>TEAM</div>
                     <div className={styles.NavElement}>GALLERY</div>
                     <div className={styles.NavElement}>EVENTS</div>
-                    <div className={styles.NavElement}>0</div>
+
                 </div>
                 <div className={styles.Navleft}>
                     <button className={styles.Navbtn}>Become a member</button>
