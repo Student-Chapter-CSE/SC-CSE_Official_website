@@ -1,6 +1,6 @@
 import styles from '../../styles/Header.module.css';
 import CardImg from '../../assets/cardimg.webp';
-import Image from 'next/image'
+import Image from 'next/image';
 
 const Header = () => {
     return (
@@ -15,7 +15,6 @@ const Header = () => {
                             height={350}
                         />
                     </div>
-
                 </div>
             </div>
             <div className={styles.HeroTextConatiner}>
@@ -23,7 +22,7 @@ const Header = () => {
                     <p>Hey, there !</p>
                     <p>We are,</p>
                     <p className={styles.herotextBigfont}>
-                        Students' <p>Chapter CSE</p>{' '}
+                        Students' <span>Chapter CSE</span>{' '}
                     </p>
                     <p>and this is our,</p>
                     <p className={styles.herotextHighlight}>Official Website</p>

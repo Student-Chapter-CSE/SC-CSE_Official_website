@@ -6,13 +6,12 @@
     height: 100vh;
 }
 
-.HeroCardContainer {}
+.HeroCardContainer {
+}
 
 .HeroTextConatiner {
     margin: 3rem;
     font-size: 1.4rem;
-
-
 }
 
 .herotextBigfont {
@@ -20,11 +19,9 @@
     -webkit-text-stroke-width: 2px;
     font-size: 3rem;
     color: var(--themeYellowDark);
-
 }
 
 .herotextHighlight {
     font-size: 2rem;
     font-weight: bold;
-
 }

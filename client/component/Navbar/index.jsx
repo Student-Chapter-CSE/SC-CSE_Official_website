@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../../styles/Navbar.module.css';
 
 const Navbar = () => {
@@ -13,7 +14,6 @@ const Navbar = () => {
                     <div className={styles.NavElement}>TEAM</div>
                     <div className={styles.NavElement}>GALLERY</div>
                     <div className={styles.NavElement}>EVENTS</div>
-
                 </div>
                 <div className={styles.Navleft}>
                     <button className={styles.Navbtn}>Become a member</button>

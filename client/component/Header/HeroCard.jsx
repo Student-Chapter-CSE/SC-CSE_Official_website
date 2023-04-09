@@ -14,7 +14,6 @@ const HeroCard = () => {
                         height={350}
                     />
                 </div>
-            
             </div>
         </>
     );

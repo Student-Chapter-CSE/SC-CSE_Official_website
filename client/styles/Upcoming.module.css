@@ -41,7 +41,6 @@
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
-
 }
 
 .cardBottom span {
@@ -49,11 +48,9 @@
     width: 100%;
     padding: 0.2rem;
     border-radius: 0.2rem;
-
 }
 
-@media screen and (max-width:700px) {
-
+@media screen and (max-width: 700px) {
     #upcomingCards {
         flex-direction: column;
     }
