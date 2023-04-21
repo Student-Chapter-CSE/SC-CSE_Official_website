@@ -1,6 +1,7 @@
 .NavbarContainer {
     display: flex;
     justify-content: space-around;
+    z-index: 10;
     align-items: center;
     width: 100vw;
     height: 10vh;
@@ -49,5 +50,4 @@
     transition: 1.5s ease;
 }
 
-@media screen {
-}
+@media screen {}

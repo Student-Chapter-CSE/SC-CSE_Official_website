@@ -1,4 +1,5 @@
 import Header from '../component/Header';
+import Hod from '../component/Hod/hod';
 import Navbar from '../component/Navbar';
 import UpcomingEvents from '../component/upcoming';
 import styles from '../styles/Home.module.css';
@@ -26,6 +27,7 @@ export default function Home() {
             <div className={styles.container}>
                 <Navbar />
                 <Header />
+                <Hod />
                 <UpcomingEvents />
             </div>
         </>
