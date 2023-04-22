@@ -1,0 +1,28 @@
+.testimonial_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 12px;
+    padding: 7.5% 20%;
+    background: #ff8800c6;
+}
+
+.testimonial_img_container{
+    object-fit: contain;
+}
+
+.testimonial_img {
+    border-radius: 50%;
+}
+
+.testimonial_heading {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.testimonial_content {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+}

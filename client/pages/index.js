@@ -1,9 +1,22 @@
+/* ------------- Components Import ------------------ */
 import Header from '../component/Header';
-import Hod from '../component/Hod/hod';
+import Hod from '../component/Hod';
 import Navbar from '../component/Navbar';
 import UpcomingEvents from '../component/upcoming';
-import styles from '../styles/Home.module.css';
+import Testimonial from '../component/Testimonials';
+/* ------------------------------------------------- */
+import testimonialCards from '../assets/data';
+
+
 import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from 'swiper'
+
+
+
 
 export default function Home() {
     return (
@@ -28,7 +41,21 @@ export default function Home() {
                 <Navbar />
                 <Header />
                 <Hod />
-                <UpcomingEvents />
+                {/* <UpcomingEvents /> */}
+                <div className={styles.testimonials_container}>
+                    <div className={styles.testimonials_heading}>Testimonials</div>
+                    <Swiper navigation={true} modules={[Navigation]} className={styles.swiper}>
+                        {testimonialCards.map((testimonialCard) => (
+                            <SwiperSlide key={testimonialCard.id}>
+                                <Testimonial
+                                    img={testimonialCard.img}
+                                    heading={testimonialCard.heading}
+                                    content={testimonialCard.content}
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
             </div>
         </>
     );
