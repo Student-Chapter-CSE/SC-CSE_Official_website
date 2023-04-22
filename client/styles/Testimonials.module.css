@@ -3,13 +3,17 @@
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    border-radius: 12px;
-    padding: 7.5% 20%;
+    padding: 7.6% 20%;
+    background-color: #ff8800;
     background: #ff8800c6;
+    /* border-radius: 12px; */
 }
 
 .testimonial_img_container{
     object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .testimonial_img {
@@ -19,10 +23,11 @@
 .testimonial_heading {
     font-size: 2.4rem;
     font-weight: 600;
+    text-align: center;
 }
 
 .testimonial_content {
-    padding-top: 15px;
+    padding-top: 1rem;
     text-align: center;
     font-size: 1.2rem;
 }

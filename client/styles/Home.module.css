@@ -1,9 +1,8 @@
 .testimonials_container {
-    padding: 3vw 19vw;
+    padding: 3.5vw 19vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0.4rem;
 }
 
 .testimonials_heading {

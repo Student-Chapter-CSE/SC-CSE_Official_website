@@ -41,7 +41,7 @@ export default function Home() {
                 <Navbar />
                 <Header />
                 <Hod />
-                {/* <UpcomingEvents /> */}
+
                 <div className={styles.testimonials_container}>
                     <div className={styles.testimonials_heading}>Testimonials</div>
                     <Swiper navigation={true} modules={[Navigation]} className={styles.swiper}>
@@ -57,6 +57,28 @@ export default function Home() {
                     </Swiper>
                 </div>
             </div>
+
+            <UpcomingEvents />
+
+
+
+            <style>
+                {`
+                    .swiper-button-next {
+                        margin: 0 30px;
+                        color: black;
+                        font-weight: 600;
+                    }
+                    .swiper-button-prev {
+                        margin: 0 30px;
+                        color: black;
+                        font-weight: 600;
+                    }
+                    .swiper-button-disabled{
+                        display: none;
+                    }
+                `}
+            </style>
         </>
     );
 }
