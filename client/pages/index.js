@@ -40,19 +40,6 @@ export default function Home() {
                 <Hod />
                 <About />
 
-                {/* <div className={styles.about_section}>
-                    <div className={styles.about_heading}>ABOUT US</div>
-                    <div className={styles.aboout_holder}>
-                        <About />
-                        <About />
-                        <About />
-                        <About />
-                        <About />
-                        <About />
-                        <About />
-                        <About />
-                    </div>
-                </div> */}
 
                 <div className={styles.testimonials_container}>
                     <div className={styles.testimonials_heading}>

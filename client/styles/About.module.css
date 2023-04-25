@@ -10,6 +10,7 @@
 .outer_container {
     display: flex;
     flex-direction: column;
+    padding-bottom: 3rem;
 }
 
 .about_heading {
@@ -22,7 +23,7 @@
     border-radius: 12px;
     background-color: red;
     position: relative;
-    transition: 1500ms;
+    transition: 1300ms;
     transform-style: preserve-3d;
 }
 
@@ -41,6 +42,11 @@
 .about_heading {
     display: flex;
     justify-content: center;
+    color: var(--themeYellowDark);
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 4rem;
 }
 
 .card_front {
