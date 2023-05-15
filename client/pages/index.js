@@ -14,6 +14,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from 'swiper'
+import Counter from '../component/Counter';
 
 
 
@@ -40,6 +41,7 @@ export default function Home() {
             <div className={styles.container}>
                 <Navbar />
                 <Header />
+                <Counter/>
                 <Hod />
 
                 <div className={styles.testimonials_container}>
