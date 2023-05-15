@@ -11,9 +11,19 @@ import testimonialCards from '../assets/data';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
+<<<<<<< HEAD
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from 'swiper'
+import Counter from '../component/Counter';
+
+
+
+=======
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper';
+>>>>>>> a6674fe8fc331b0653f75317b653008d0d3b3b0c
 
 export default function Home() {
     return (
@@ -37,6 +47,7 @@ export default function Home() {
             <div className={styles.container}>
                 <Navbar />
                 <Header />
+                <Counter/>
                 <Hod />
                 <About />
 
