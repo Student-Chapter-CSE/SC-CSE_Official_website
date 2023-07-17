@@ -7,10 +7,10 @@ const HeroCard = () => {
         <>
             <div className={styles.Card}>
                 <div className={styles.CardImageContainer}>
-                    <img
+                    <Image
                         src={CardImg}
                         alt="Image container pic"
-                        width={500}
+                        width={300}
                         height={350}
                     />
                 </div>

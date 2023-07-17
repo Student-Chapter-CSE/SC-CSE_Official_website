@@ -7,14 +7,13 @@ const Header = () => {
         <div className={styles.HeroContainer}>
             <div className={styles.HeroCardContainer}>
                 <div className={styles.Card}>
-                    <div className={styles.CardImageContainer}>
-                        <Image
-                            src={CardImg}
-                            alt="Image container pic"
-                            width={500}
-                            height={350}
-                        />
-                    </div>
+                    <Image
+                        className={styles.CardImageContainer}
+                        src={CardImg}
+                        alt="Image container pic"
+                        width={500}
+                        height={350}
+                    />
                 </div>
             </div>
             <div className={styles.HeroTextConatiner}>

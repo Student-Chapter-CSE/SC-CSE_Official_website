@@ -2,7 +2,7 @@
 import Header from '../component/Header';
 import Hod from '../component/Hod';
 import Navbar from '../component/Navbar';
-import UpcomingEvents from '../component/upcoming';
+import UpcomingEvents from '../component/Upcoming';
 import Testimonial from '../component/Testimonials';
 import About from '../component/About';
 /* ------------------------------------------------- */
@@ -11,13 +11,10 @@ import testimonialCards from '../assets/data';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation } from 'swiper'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper';
 import Counter from '../component/Counter';
-
-
-
 
 export default function Home() {
     return (
@@ -41,12 +38,11 @@ export default function Home() {
             <div className={styles.container}>
                 <Navbar />
                 <Header />
-                <Counter/>
+                <Counter />
                 <Hod />
                 <About />
 
-
-                <div className={styles.testimonials_container}>
+                {/* <div className={styles.testimonials_container}>
                     <div className={styles.testimonials_heading}>
                         Testimonials
                     </div>
@@ -65,7 +61,7 @@ export default function Home() {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                </div>
+                </div> */}
             </div>
 
             <UpcomingEvents />
