@@ -10,7 +10,7 @@ const DeskTopNavbar = () => {
                 <div className={styles.NavMid}>
                     <div className={styles.NavElement}>HOME</div>
                     <div className={styles.NavElement}>TEAM</div>
-                    <div className={styles.NavElement}>GALLERY</div>
+                    {/* <div className={styles.NavElement}>GALLERY</div> */}
                     <div className={styles.NavElement}>EVENTS</div>
                 </div>
                 <div className={styles.Navleft}>

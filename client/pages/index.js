@@ -41,8 +41,10 @@ export default function Home() {
                 <Counter />
                 <Hod />
                 <About />
-
-                {/* <div className={styles.testimonials_container}>
+                <UpcomingEvents />
+            </div>
+            {/* <div className={styles.testimonials_container}>
+                <div className={styles.testimonials_container}>
                     <div className={styles.testimonials_heading}>
                         Testimonials
                     </div>
@@ -61,10 +63,10 @@ export default function Home() {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                </div> */}
-            </div>
+                </div>
+            </div> */}
 
-            <UpcomingEvents />
+
 
             <style>
                 {`
