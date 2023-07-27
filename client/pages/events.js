@@ -1,14 +1,22 @@
-import styles from '../styles/Event.module.css';
-import Upcoming from '../component/Event/index';
-
+import styles from '../styles/EventPage.module.css';
+import EventDrawer from '../component/EventDrawer';
 const events = () => {
     return (
         <>
-            {/* <div className={styles.bg}/> */}
-            <div>
-                <h1>Events</h1>
-                <p>Find the latest events</p>
-                <Upcoming />
+            <div className={styles.pageHolder}>
+                {/* <div className={styles.bg}/> */}
+                <div className={styles.pageBody}>
+                    <h1 className={styles.pageHead}>Events</h1>
+                    <p className={styles.pageSubHead}>Find the latest events</p>
+                    <EventDrawer>
+                        <div className={styles.test}> 
+                           Section 1
+                        </div>
+                        <div className={styles.test}>
+                            Section 2
+                        </div>
+                    </EventDrawer>
+                </div>
             </div>
         </>
     );
