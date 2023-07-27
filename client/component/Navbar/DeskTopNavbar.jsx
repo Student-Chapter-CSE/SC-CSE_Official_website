@@ -1,4 +1,5 @@
 import styles from '../../styles/Navbar.module.css';
+import Link from 'next/link'
 const DeskTopNavbar = () => {
     return (
         <>
@@ -8,10 +9,25 @@ const DeskTopNavbar = () => {
                     <p className={styles.Navlogopara}>CSE</p>
                 </div>
                 <div className={styles.NavMid}>
-                    <div className={styles.NavElement}>HOME</div>
-                    <div className={styles.NavElement}>TEAM</div>
+                    <div className={styles.NavElement}>
+                        <Link href='/'>
+
+                            HOME
+                        </Link>
+                    </div>
+                    <div className={styles.NavElement}>
+                        <Link href='/team'>
+
+                            TEAM
+                        </Link>
+                    </div>
                     {/* <div className={styles.NavElement}>GALLERY</div> */}
-                    <div className={styles.NavElement}>EVENTS</div>
+                    <div className={styles.NavElement}>
+                        <Link href='/events'>
+
+                            EVENTS
+                        </Link>
+                    </div>
                 </div>
                 <div className={styles.Navleft}>
                     <button className={styles.Navbtn}>Become a member</button>

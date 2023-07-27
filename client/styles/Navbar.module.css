@@ -1,120 +1,133 @@
 .NavbarContainer {
-    display: flex;
-    justify-content: space-around;
-    z-index: 10;
-    align-items: center;
-    width: 100vw;
-    height: 10vh;
-    flex-direction: row;
-    position: fixed;
-    backdrop-filter: blur(1px);
-    background-color: var(--backGroundLight);
+  display: flex;
+  justify-content: space-around;
+  z-index: 10;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  flex-direction: row;
+  position: fixed;
+  backdrop-filter: blur(1px);
+  background-color: var(--backGroundLight);
 }
 
 .NavLogo {
-    font-size: 1.4em;
+  font-size: 1.4em;
 
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .Navlogopara {
-    color: var(--themeMainBlue);
+  color: var(--themeMainBlue);
 }
 
 .NavMid {
-    display: flex;
-    width: 30vw;
-    justify-content: space-between;
-    flex-direction: row;
-    font-weight: 900;
+  display: flex;
+  width: 30vw;
+  justify-content: space-between;
+  flex-direction: row;
+  font-weight: 900;
+  transition: 1s ease-in;
+  font-weight: bold;
 }
 
+
+
 .NavElement {
-    cursor: pointer;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-    font-weight: 300;
+  font-weight: bold;
+  cursor: pointer;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  font-weight: 300;
+  transition: 0.5s ease;
+  font-weight: bold;
+}
+
+.NavElement:hover {
+  color: var(--themeYellowDark);
 }
 
 .Navbtn {
-    cursor: pointer;
-    padding: 0.5rem 1.8rem;
-    font-size: 0.9rem;
-    border-radius: 25px;
-    border: solid 1px var(--themeYellowDark);
-    background-color: var(--backGround);
+  cursor: pointer;
+  padding: 0.5rem 1.8rem;
+  font-size: 0.9rem;
+  border-radius: 25px;
+  border: solid 1px var(--themeYellowDark);
+  background-color: var(--backGround);
 }
 
 .Navbtn:hover {
-    background-color: var(--themeYellowDark);
-    transition: 1.5s ease;
+  background-color: var(--themeYellowDark);
+  transition: 1.5s ease;
 }
 
 @media screen {}
 
 
 .Hamburger_menu {
-    z-index: 2000;
-    position: fixed;
-    top: 0;
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+}
+
+.Hamburger_icon {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 1000;
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  color: #333;
+  background-color: var(--backGround);
+  cursor: pointer;
+}
+
+.Menu_items {
+
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--backGround);
+  border-radius: 10px;
+
+  width: 60vw;
+  height: 40vh;
+  font-weight: bold;
+  font-size: large;
+  list-style: none;
+}
+
+.Menu_items li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.Menu_items li:hover {
+  color: var(--themeYellowDark);
+}
+
+.BlurBackground {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+@media (min-width: 768px) {
+  .Hamburger_menu {
+    display: none;
   }
-  
-  .Hamburger_icon {
-    background: none;
-    border: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 10px;
-    z-index: 1000;
-    margin: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    color: #333;
-    background-color: var(--backGround);
-    cursor: pointer;
-  }
-  
-  .Menu_items {
-   
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    display: flex;
-    justify-content:space-around; 
-    align-items: center;
-    flex-direction: column;  
-    background-color: var(--backGround);
-   border-radius: 10px;
-    
-    width: 60vw;
-    height: 40vh;
-    font-weight: bold;
-    font-size: large;
-    list-style: none;
-  }
-  
-  .Menu_items li {
-    padding: 5px;
-    cursor: pointer;
-  }
-  .Menu_items li:hover{
-    color: var(--themeYellowDark);
-  }
-  .BlurBackground{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-    top:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(10px);
-  }
-  
-  @media (min-width: 768px) {
-    .Hamburger_menu {
-      display: none;
-    }
-  }
+}

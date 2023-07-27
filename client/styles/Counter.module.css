@@ -15,10 +15,10 @@
     background-color: var(--backGroundLight);
     border-radius: 12px;
     border: 2px solid var(--themeYellowDark);
-    
+
     /* box-shadow: 0 0 20px 4px var(--themeYellow) , 0 0 100px 1px var(--themeYellow) inset; */
-   
-    
+
+
 
 }
 
@@ -37,7 +37,7 @@
     color: black;
     font-size: 3rem;
     font-weight: bold;
-    
+
 }
 
 .counter_Element {
@@ -50,6 +50,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .counter_title {
     color: black;
     font-size: 2rem;
@@ -57,6 +58,12 @@
     padding-top: 0.2rem;
 }
 
+@media screen and (max-width: 770px) {
+    .counter_container_wrap {
+        flex-direction: column;
+    }
 
-
-
+    .counter_item {
+        padding: 1rem;
+    }
+}
