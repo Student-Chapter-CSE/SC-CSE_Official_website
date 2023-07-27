@@ -1,5 +1,5 @@
 import styles from '../styles/Event.module.css';
-import Upcoming from '../component/Event/upcoming';
+import Upcoming from '../component/Event/index';
 
 const events = () => {
     return (
