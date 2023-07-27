@@ -1,9 +1,9 @@
 .team_container {
     padding: 5vw;
     display: flex;
+    gap: 3rem;
     flex-direction: column;
     height: 100vh;
-
 }
 
 .team_header {
@@ -17,9 +17,7 @@
 
 .each_team_wrap {
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
 }
 
 .each_header {
@@ -32,16 +30,15 @@
 }
 
 .team_cards {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     width: 100%;
 }
 
 @media screen and (max-width: 770px) {
     .team_cards {
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
 

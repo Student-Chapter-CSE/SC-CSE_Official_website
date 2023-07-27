@@ -1,6 +1,6 @@
 import avatar from '../assets/avatar.png'
 
-const testimonialCards = [
+export const testimonialCards = [
     {
         id: 1,
         img: avatar,
@@ -35,4 +35,75 @@ const testimonialCards = [
 
 
 
-export default testimonialCards
+export const teams = [
+    {
+        title: "Tech Team",
+        members: [
+            {
+                img: avatar,
+                name: 'Arnab Chatterjee',
+                desg: "Tech Lead",
+                socials: [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                ]
+            },
+            {
+                img: avatar,
+                name: 'Bishakh Neogi',
+                desg: "Tech Lead",
+                socials: [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                ]
+            },
+            {
+                img: avatar,
+                name: 'Irshit Mukherjee',
+                desg: "Tech Lead",
+                socials: [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                ]
+            },
+            {
+                img: avatar,
+                name: 'Irshit Mukherjee',
+                desg: "Tech Lead",
+                socials: [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" 
+                ]
+            },
+        ]
+    },
+    {
+        title: "Management Team",
+        members: [
+            {
+                img: avatar,
+                name: 'Debdeep Mitra',
+                desg: "Management Lead",
+                socials: [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                ]
+            },
+            {
+                img: avatar,
+                name: 'Mayukh Ghosh',
+                desg: "Tech Lead",
+                socials: [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                ]
+            }
+        ]
+    }
+]

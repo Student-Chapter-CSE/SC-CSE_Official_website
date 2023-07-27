@@ -29,7 +29,7 @@ export default function Home() {
                     name="description"
                     content="The ofiicial website of students' chapter cse"
                 />
-                <meta http-equiv="X-UA-Compatible" content="IE=7" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=7" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
