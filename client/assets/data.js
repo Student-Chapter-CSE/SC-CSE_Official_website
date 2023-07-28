@@ -33,6 +33,24 @@ export const testimonialCards = [
     }
 ]
 
+export const eventsData =
+    [
+        {
+            id: 1,
+            img: avatar,
+            heading: 'Hack For Bengal',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+            date: '9th June'
+        },
+        {
+            id: 2,
+            img: avatar,
+            heading: 'InterHacktive 1.0',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+            date: '20th Aug'
+        }
+    ]
+
 
 
 export const teams = [
@@ -76,7 +94,7 @@ export const teams = [
                 socials: [
                     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
                     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" 
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
                 ]
             },
         ]

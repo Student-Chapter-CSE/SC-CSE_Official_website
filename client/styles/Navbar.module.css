@@ -1,7 +1,6 @@
 .NavbarContainer {
   display: flex;
   justify-content: space-around;
-  z-index: 10;
   align-items: center;
   width: 100vw;
   height: 10vh;
@@ -9,6 +8,7 @@
   position: fixed;
   backdrop-filter: blur(1px);
   background-color: var(--backGroundLight);
+  z-index: 1000;
 }
 
 .NavLogo {
