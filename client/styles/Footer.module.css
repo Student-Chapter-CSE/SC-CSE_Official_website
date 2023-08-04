@@ -1,3 +1,36 @@
-.Bg_color {
-    background-color: aqua;
+.Bg_details {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center; 
+    background-color: #fb8500;
+    padding: 25px;
+    /*text-align: center;*/
+    font-size: 15px;
+    flex-direction: column;
+}
+
+.Footer_Anchor{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.icon{
+    height: 20px;
+    width: 20px;
+}
+.FooterText{
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+    background: #fb8500;
+    font-weight: bolder;
+}
+
+.FooterWrap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
 }
