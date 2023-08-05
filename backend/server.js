@@ -3,6 +3,15 @@ import connectDB from "./config/db.js";
 import cors from "cors";
 import dotenv from "dotenv";
 import { memberRoute } from "./routes/route.js";
+import { v2 as cloudinary } from "cloudinary";
+
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
+  secure: true,
+});
+
 dotenv.config();
 connectDB();
 
@@ -17,7 +26,7 @@ const port = 5000 || process.env.PORT;
 
 app.use(
   cors({
-    origin: "localhost:3000",
+    origin: "http://localhost:3000",
   })
 );
 

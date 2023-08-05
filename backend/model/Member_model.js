@@ -11,7 +11,7 @@ const memberModel = mongoose.Schema(
       trim: true,
     },
     picture: { type: String, trim: true },
-    courseCompletionYear: { type: Number, trim: true },
+    courseCompletionYear: { type: String, trim: true },
     section: { type: String, trim: true },
     phonenumber: { type: String, required: true, trim: true },
     paymentDone: { type: Boolean, trim: true },
