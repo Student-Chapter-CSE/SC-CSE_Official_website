@@ -1,57 +1,102 @@
-#upcomingItems {
+.upcomingItems {
     padding: 5vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+
+    min-height: 100vh;
 }
 
-#upcomingItemsHead {
-    font-size: 2rem;
+.upcomingItemsHead {
+    font-size: 1.5rem;
     text-align: center;
-    color: var(--themeYellowDark);
+    color: var(--textColor);
+    line-height: 1.9em;
+
+    text-transform: uppercase;;
+
+    margin-bottom: 2rem;
+    letter-spacing: 0.25em;
 }
 
-#upcomingEventsMainText {
+.upcomingEventsMainText {
     text-align: center;
     font-size: 1.5rem;
+
+    color: var(--fontColor);
+    letter-spacing: 0.5em;
 }
 
-#upcomingCards {
+.upcomingBody {
+    margin-top: 3rem;
+}
+
+.upcomingCards {
     padding-top: 5vh;
     display: flex;
-    gap: 1rem;
-    flex-direction: row;
+    gap: 3rem;
 }
 
-.upCard {
-    background-color: var(--themeYellowDark);
-    border-radius: 0.5rem;
+.card {
+    --card-width: 100%;
+
+    border: 1px solid #444;
+    border-radius: 1em;
     padding: 2rem;
+
+    width: var(--card-width);
+    min-height: calc(var(--card-width) * 1.2);
+
+    color: var(--textColor);
+    background: var(--cardBackgroundColor);
 }
 
-.cardTop {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-bottom: 1rem;
+.cardTitle {
+    color: var(--fontColor);
+    font-size: 2em;
+    margin-bottom: 1rem;
 }
 
-.cardBottom {
-    width: 100%;
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
+.cardTitle:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.3em;
+    text-decoration-color: rgb(167, 118, 27);
+    cursor: pointer;
 }
 
-.cardBottom span {
-    background-color: white;
-    width: 100%;
-    padding: 0.2rem;
-    border-radius: 0.2rem;
+.cardDate {
+    margin-bottom: 1rem;
+    color: #aaa;
+}
+
+.cardDesc {
+    letter-spacing: 0.05em;
+    line-height: 1.6em;
+}
+
+.willBeBackSoon {
+    text-align: center;
+
+    padding: 5em 0;
+
+    color: #444;
+    font-size: 2em;
+    letter-spacing: 0.1em;
 }
 
 @media screen and (max-width: 700px) {
-    #upcomingCards {
+    .upcomingCards {
         flex-direction: column;
+    }
+}
+
+
+/* For medium and larger screens */
+@media screen and (min-width: 768px) {
+    .card {
+        --card-width: 20rem;;
     }
 }
