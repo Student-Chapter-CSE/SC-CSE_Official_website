@@ -15,6 +15,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper';
 import Counter from '../component/Counter';
+import Footer from '../component/Footer';
 
 export default function Home() {
     return (
@@ -42,6 +43,7 @@ export default function Home() {
                 <Hod />
                 <About />
                 <UpcomingEvents />
+                <Footer />
             </div>
             {/* <div className={styles.testimonials_container}>
                 <div className={styles.testimonials_container}>
@@ -65,8 +67,6 @@ export default function Home() {
                     </Swiper>
                 </div>
             </div> */}
-
-
 
             <style>
                 {`

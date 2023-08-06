@@ -4,12 +4,11 @@
     align-items: center;
     gap: 25px;
     padding: 7.6% 20%;
-    background-color: #ff8800;
-    background: #ff8800c6;
+
     /* border-radius: 12px; */
 }
 
-.testimonial_img_container{
+.testimonial_img_container {
     object-fit: contain;
     display: flex;
     align-items: center;
