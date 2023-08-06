@@ -1,7 +1,7 @@
 import avatar from '../assets/avatar.png'
-import Bishakh from '../assets/neogi.jpg'
-import Irshit from '../assets/irshit.jpg'
-import Mayukh from '../assets/mayukh.jpg'
+import Bishakh from '../assets/neogi.webp'
+import Irshit from '../assets/irshit.webp'
+import Mayukh from '../assets/mayukh.webp'
 
 export const testimonialCards = [
     {
@@ -36,25 +36,22 @@ export const testimonialCards = [
     }
 ]
 
-export const eventsData =
-    [
-        {
-            id: 1,
-            img: avatar,
-            heading: 'Hack For Bengal',
-            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
-            date: '9th June'
-        },
-        {
-            id: 2,
-            img: avatar,
-            heading: 'InterHacktive 1.0',
-            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
-            date: '20th Aug'
-        }
-    ]
-
-
+export const eventsData = [
+    {
+        id: 1,
+        img: avatar,
+        heading: 'Hack For Bengal',
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+        date: '9th June'
+    },
+    {
+        id: 2,
+        img: avatar,
+        heading: 'InterHacktive 1.0',
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+        date: '20th Aug'
+    }
+]
 
 export const teams = [
     {
@@ -126,5 +123,23 @@ export const teams = [
                 ]
             }
         ]
+    }
+]
+
+export const upcomingEvents = [
+    {
+        title: 'Lorem ipsum dolor, sit amet consectetur.',
+        date: new Date(),
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium deleniti cupiditate ullam, animi reprehenderit officiaaliquid ipsam veniam rem?"
+    },
+    {
+        title: 'Lorem ipsum dolor, sit amet consectetur.',
+        date: new Date(),
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium deleniti cupiditate ullam, animi reprehenderit officiaaliquid ipsam veniam rem?"
+    },
+    {
+        title: 'Lorem ipsum dolor, sit amet consectetur.',
+        date: new Date(),
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium deleniti cupiditate ullam, animi reprehenderit officiaaliquid ipsam veniam rem?"
     }
 ]
