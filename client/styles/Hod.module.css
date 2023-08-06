@@ -2,17 +2,23 @@
     padding: 5vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
+    min-height: 100vh;
 }
 
 .hod_container_wrap {
-    border-radius: 20px;
-    flex-direction: row;
+    border-radius: 1em;
+
     display: flex;
     height: auto;
     backdrop-filter: blur(1px);
-    background-color: var(--backGroundLight);
-    border-radius: 12px;
-    border: 2px solid var(--themeYellowDark);
+
+    border: 1px solid var(--themeYellowDark);
+
+    background-color: var(--cardBackgroundColor);
+    flex-direction: row;
+    text-align: center;
 }
 
 .hod_image {
@@ -28,13 +34,8 @@
 
 .hod_image_style {
     border-radius: 50%;
-}
-
-.hod_name {
-    color: var(--fontColor);
-    font-size: x-large;
-    font-weight: 600;
-    padding-top: 4rem;
+    border: 2px dashed var(--borderColor);
+    padding: 0.4rem;
 }
 
 .hod_right {
@@ -51,12 +52,31 @@
     color: var(--fontColor);
     font-size: xx-large;
     font-weight: 600;
+
+    margin-bottom: 4rem;
+}
+
+.hod_body {
+    display: flex;
+}
+
+.hod_name {
+    color: var(--textColor);
+    padding-top: 2rem;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.hod_name::before {
+    content: "\2014 \2009";
 }
 
 .hod_desciption {
-    color: black;
-    font-size: x-large;
+    color: #b5b5b5;
+    font-size: 1.3rem;
     font-weight: 400;
+
+    line-height: 1.5em;
 
     /* overflow: hidden; */
 
@@ -74,7 +94,7 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
     .hod_container_wrap {
         flex-direction: column;
     }
@@ -90,6 +110,29 @@
     }
 
     .hod_title {
-        padding-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    .hod_desciption {
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .hod_body::before {
+        content: "\201C";
+        color: var(--textColor);
+        font-size: 5em;
+        position: relative;
+        padding-right: 1rem;
+        top: -0.12em;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    #hod_container {
+        padding-left: 15vw;
+        padding-right: 15vw;
     }
 }
