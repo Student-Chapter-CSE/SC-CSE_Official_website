@@ -1,6 +1,6 @@
 import styles from '../../styles/EventDrawer.module.css'
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 
 export default function EventDrawer({children}) {
