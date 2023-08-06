@@ -2,7 +2,7 @@
 import Header from '../component/Header';
 import Hod from '../component/Hod';
 import Navbar from '../component/Navbar';
-import UpcomingEvents from '../component/Upcoming';
+import UpcomingEvents, { generateDummyEvents } from '../component/Upcoming';
 import Testimonial from '../component/Testimonials';
 import About from '../component/About';
 /* ------------------------------------------------- */
@@ -18,6 +18,8 @@ import Counter from '../component/Counter';
 import Footer from '../component/Footer';
 
 export default function Home() {
+    const dummyEvents = generateDummyEvents(3)
+
     return (
         <>
             <Head>
@@ -37,36 +39,14 @@ export default function Home() {
                 />
             </Head>
             <div className={styles.container}>
-                <Navbar />
-                <Header />
-                <Counter />
-                <Hod />
-                <About />
-                <UpcomingEvents />
-                <Footer />
+                <div><Navbar /></div>
+                <div><Header /></div>
+                <div className={styles.sectionHolder}><Counter /></div>
+                <div className={styles.sectionHolder}><Hod /></div>
+                <div className={styles.sectionHolder}><About /></div>
+                <div className={styles.sectionHolder}><UpcomingEvents events={dummyEvents} /></div>
+                <div><Footer /></div>
             </div>
-            {/* <div className={styles.testimonials_container}>
-                <div className={styles.testimonials_container}>
-                    <div className={styles.testimonials_heading}>
-                        Testimonials
-                    </div>
-                    <Swiper
-                        navigation={true}
-                        modules={[Navigation]}
-                        className={styles.swiper}
-                    >
-                        {testimonialCards.map((testimonialCard) => (
-                            <SwiperSlide key={testimonialCard.id}>
-                                <Testimonial
-                                    img={testimonialCard.img}
-                                    heading={testimonialCard.heading}
-                                    content={testimonialCard.content}
-                                />
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                </div>
-            </div> */}
 
             <style>
                 {`

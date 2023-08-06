@@ -18,3 +18,13 @@
     height: 100%;
     border-radius: 12px;
 }
+
+.sectionHolder {
+    margin-bottom: 10rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .sectionHolder {
+        margin: 0;
+    }
+}
