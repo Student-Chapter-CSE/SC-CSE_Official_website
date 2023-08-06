@@ -6,10 +6,36 @@
     height: 10vh;
     flex-direction: row;
     position: fixed;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(5px);
     background-color: var(--backGroundLight);
     z-index: 1000;
     color: var(--fontColor);
+}
+
+.NavbarContainer[data-morphed=true] {
+    background: var(--backGround);
+}
+
+.NavbarContainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+    z-index: -1;
+
+    border-bottom: 1px solid transparent;
+
+    transition: border 700ms ease; 
+}
+
+.NavbarContainer[data-morphed=true]::after {
+    border-bottom: 1px solid #222;
+
+    transition: all 700ms ease;
+
+    box-shadow: 0px 2px 5px 1px #161616;
 }
 
 .NavLogo {
@@ -19,7 +45,8 @@
 }
 
 .Navlogopara {
-    color: var(--themeMainBlue);
+    /*color: var(--themeMainBlue);*/
+    color: var(--textColor);
 }
 
 .NavMid {
@@ -33,36 +60,58 @@
 }
 
 .NavElement {
-    font-weight: bold;
     cursor: pointer;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
-    font-weight: 300;
-    transition: 0.5s ease;
+
     font-weight: bold;
-    color: var(--textColor);
+    color: #e5e5e5;
+
+    position: relative;
 }
 
 .NavElement:hover {
     color: var(--fontColor);
+    font-weight: bold;
+
+    filter: brightness(95%);
+}
+
+.NavElement::before {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    right: 50%;
+
+    border-bottom: 1px dashed var(--fontColor);
+
+    transition: all 400ms;
+}
+
+.NavElement:hover::before {
+    left: 0;
+    right: 0;
 }
 
 .Navbtn {
     cursor: pointer;
     padding: 0.5rem 1.8rem;
     font-size: 0.9rem;
-    border-radius: 25px;
+    border-radius: 0.5em;
 
     color: var(--textColor);
     background: var(--fontColor);
     border: transparent;
+
+    border: solid 1px var(--fontColor);
+
+    transition: 500ms ease-in-out;
 }
 
 .Navbtn:hover {
     color: var(--fontColor);
-    border: solid 1px var(--fontColor);
     background: transparent;
-    transition: 1.5s ease;
 }
 
 @media screen {
@@ -89,23 +138,35 @@
     color: #333;
     background-color: var(--backGround);
     cursor: pointer;
+
+    transition: all 1500ms;
+    border: 1px solid transparent;
+}
+
+.Hamburger_icon[data-morphed=true] {
+    border: 1px solid #444;
+    background: #161616;
+    color: white;
 }
 
 .Menu_items {
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    /*box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;*/
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-direction: column;
-    background-color: var(--backGround);
+    /*background-color: var(--backGround);*/
     border-radius: 10px;
 
     width: 60vw;
     height: 40vh;
     font-weight: bold;
-    font-size: large;
+    font-size: 5rem;
     list-style: none;
+
+    color: var(--textColor);
+
+    overflow-x: visible;
 }
 
 .Menu_items li {
@@ -127,6 +188,42 @@
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
+}
+
+.BlurBackground[data-is-open=false] {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms;
+}
+
+.BlurBackground[data-is-open=true] {
+    opacity: 1;
+    visibility: visible;
+    transition: all 300ms;
+}
+
+.BecomeAMemberMobile {
+    outline: none;
+    padding: 1rem;
+    font-size: x-large;
+    text-align: left;
+
+    width: max-content;
+
+    border-radius: 0.25em;
+    border: none;
+
+    background: var(--fontColor);
+    color: white;
+
+    outline: 1mm solid #fca02f44;
+    outline-offset: 3px;
+
+    transition: all 300ms;
+}
+
+.BecomeAMemberMobile:focus {
+    outline-color: #fca02f88;
 }
 
 @media (min-width: 768px) {
