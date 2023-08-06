@@ -1,3 +1,4 @@
+
 import styles from '../styles/Event.module.css';
 import Upcoming from '../component/Event/index';
 import Navbar from '../component/Navbar';
@@ -29,6 +30,7 @@ const events = () => {
                         </div>
 
                     </div>
+
                 </div>
             </div>
         </>
