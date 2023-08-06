@@ -1,30 +1,46 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { X, List } from '@phosphor-icons/react';
 import styles from '../../styles/Navbar.module.css';
 import Link from 'next/link'
 const MobileNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+    const [shouldMorph, setMorph] = useState(false);
+
     const handleToggle = () => {
         setIsOpen(!isOpen);
     };
 
+    useEffect(() => {
+
+        const trigger = document.createElement('div')
+        trigger.style.position = 'absolute';
+        trigger.style.top = '0';
+        trigger.style.height = '100vh';
+        document.body.appendChild(trigger)
+
+        const o = new IntersectionObserver(([e]) => {
+            setMorph(!e.isIntersecting)
+        })
+
+        o.observe(trigger)
+        return () => o.unobserve(trigger)
+    }, [])
+
     return (
         <div className={styles.Hamburger_menu}>
-            <button className={styles.Hamburger_icon} onClick={handleToggle}>
+            <button className={styles.Hamburger_icon} data-morphed={shouldMorph} onClick={handleToggle}>
                 {isOpen ? (
-                    <X size={32} weight="bold" color="var(--themeYellowDark)" />
+                    <X size={32} weight="bold" />
                 ) : (
                     <List
                         size={32}
                         weight="fill"
-                        color="var(--themeYellowDark)"
                     />
                 )}
             </button>
 
-            {isOpen && (
-                <div className={styles.BlurBackground}>
+            { <div className={styles.BlurBackground} data-is-open={isOpen}>
                     <ul className={styles.Menu_items}>
                         <li>
                             <Link href='/'>
@@ -46,9 +62,13 @@ const MobileNavbar = () => {
 
                             Events
                         </Link></li>
+
+                        <li>
+                            <button className={styles.BecomeAMemberMobile}>Become a member</button>
+                        </li>
                     </ul>
                 </div>
-            )}
+            }
         </div>
     );
 };
