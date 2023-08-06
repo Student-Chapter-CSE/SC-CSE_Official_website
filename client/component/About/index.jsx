@@ -29,7 +29,7 @@ export default function About() {
 
                     <P>
                         In the past, we have successfully conducted two flagship events,&nbsp;
-                        <Imp styleIndex={2}>Stride</Imp> and
+                        <Imp styleIndex={2}>Stride</Imp> and&nbsp;
                         <Imp styleIndex={2}>Technocruise</Imp>, in collaboration with IIT Kanpur, both of which garnered an overwhelming participation of over 1000 students combined from various institutions. These events were made possible with the dedication and the love for SC CSE of our <b>40+</b> volunteers, who played a pivotal role in ensuring their success. Additionally, in May 2023, we organized <Imp styleIndex={1}>"SUMMER OF BOOTCAMP"</Imp>, a special offline hands-on class facilitated by our own talented peers who have excelled in the field of web development. This bootcamp provided participants with valuable practical knowledge and insights into web development. Looking ahead, we are excited about the future and our plans to organize more engaging events, technical workshops, and activities that will empower students to excel in the ever-evolving world of technology. Our upcoming flagship event, <Imp styleIndex={2}>INTERHACKTIVE 1.0</Imp> , a hackathon, promises to challenge and inspire participants to unleash their creativity and problem-solving skills. We invite all tech enthusiasts to join us in our journey as we continue to explore the frontiers of technology, usher innovation, and make a lasting impact in the tech community. We never stop. We only keep growing!
                     </P>
                 </div>
