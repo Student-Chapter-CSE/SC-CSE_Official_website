@@ -12,7 +12,7 @@ const upcoming = ({ img, heading, content, date }) => {
                     </div>
                     <div className={styles.contentBx}>
 
-                        <h2>{heading}</h2>
+                        <h2 className={styles.contentHeader}>{heading}</h2>
 
                         <div className={styles.color}>
 
