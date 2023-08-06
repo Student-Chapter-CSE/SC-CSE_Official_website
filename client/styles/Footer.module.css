@@ -99,9 +99,9 @@
 }
 
 .MadeBy_Upper {
-    color: transparent;
-    font-size: 2em;
-    -webkit-text-stroke: 2px  var(--textColor);
+    color: var(--textColor);
+    font-size: 1em;
+  /* -webkit-text-stroke: 1px  var(--textColor); */
 }
 
 .MadeBy_Lower {
@@ -109,6 +109,7 @@
     flex-direction: column;
     align-items: center;
     color: var(--textColor);
+    font-size: 0.8em;
 }
 
 .MadeBy_HeartIcon {
