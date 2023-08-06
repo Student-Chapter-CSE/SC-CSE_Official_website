@@ -8,9 +8,8 @@ const Header = () => {
     const [text] = useTypewriter({
         words: ["Students' Chapter CSE"],
         loop: true,
-        typeSpeed: 70,
+        typeSpeed: 60,
         delaySpeed: 2000,
-
     })
 
     return (
@@ -31,7 +30,6 @@ const Header = () => {
                     <p>Hey, there !</p>
                     <p>We are,</p>
                     <p className={styles.herotextBigfont}>
-                        {/* Students' <span>Chapter CSE</span>{' '} */}
                         {text}
                         <Cursor cursorColor='var(--themeYellowDark)' cursorStyle='.' />
                     </p>

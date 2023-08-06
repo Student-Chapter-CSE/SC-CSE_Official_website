@@ -1,21 +1,34 @@
-import styles from '../styles/EventPage.module.css';
-import EventDrawer from '../component/EventDrawer';
+import styles from '../styles/Event.module.css';
+import Upcoming from '../component/Event/index';
+import Navbar from '../component/Navbar';
+
+import { eventsData } from '../assets/data';
 const events = () => {
     return (
         <>
-            <div className={styles.pageHolder}>
-                {/* <div className={styles.bg}/> */}
-                <div className={styles.pageBody}>
-                    <h1 className={styles.pageHead}>Events</h1>
-                    <p className={styles.pageSubHead}>Find the latest events</p>
-                    <EventDrawer>
-                        <div className={styles.test}> 
-                           Section 1
+            {/* <div className={styles.bg}/> */}
+            <Navbar />
+            <div>
+                <div className={styles.events_container}>
+
+                    <div className={styles.events_header}>
+                        Events
+                    </div>
+
+
+                    <div className={styles.each_events_wrap}>
+                        <div className={styles.events_cards}>
+                            {eventsData.map((eventsData, idx) => (
+                                <Upcoming key={idx}
+                                    img={eventsData.img}
+                                    heading={eventsData.heading}
+                                    content={eventsData.content}
+                                    date={eventsData.date}
+                                />
+                            ))}
                         </div>
-                        <div className={styles.test}>
-                            Section 2
-                        </div>
-                    </EventDrawer>
+
+                    </div>
                 </div>
             </div>
         </>
@@ -23,3 +36,5 @@ const events = () => {
 };
 
 export default events;
+
+

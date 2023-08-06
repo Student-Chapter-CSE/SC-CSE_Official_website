@@ -1,9 +1,7 @@
 #hod_container {
-
     padding: 5vw;
     display: flex;
     flex-direction: column;
-
 }
 
 .hod_container_wrap {
@@ -15,7 +13,6 @@
     background-color: var(--backGroundLight);
     border-radius: 12px;
     border: 2px solid var(--themeYellowDark);
-
 }
 
 .hod_image {
@@ -34,7 +31,7 @@
 }
 
 .hod_name {
-    color: var(--themeYellowDark);
+    color: var(--fontColor);
     font-size: x-large;
     font-weight: 600;
     padding-top: 4rem;
@@ -45,12 +42,13 @@
     display: flex;
     flex-direction: column;
     padding: 4rem;
+    color: var(--fontColor);
     justify-content: space-around;
     /* height: 100px; */
 }
 
 .hod_title {
-    color: var(--themeYellowDark);
+    color: var(--fontColor);
     font-size: xx-large;
     font-weight: 600;
 }
@@ -76,10 +74,7 @@
     justify-content: center;
 }
 
-
-
 @media screen and (max-width: 770px) {
-
     .hod_container_wrap {
         flex-direction: column;
     }

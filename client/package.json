@@ -13,12 +13,14 @@
     },
     "dependencies": {
         "@phosphor-icons/react": "^2.0.10",
+        "axios": "^1.4.0",
         "eslint": "8.45.0",
         "eslint-config-next": "13.4.10",
         "next": "13.4.10",
         "next-images": "^1.8.5",
         "react": "18.2.0",
         "react-dom": "18.2.0",
+        "react-hook-form": "^7.45.4",
         "react-icons": "^4.10.1",
         "react-simple-typewriter": "^5.0.1",
         "swiper": "^10.0.4"

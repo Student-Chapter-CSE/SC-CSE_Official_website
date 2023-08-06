@@ -11,6 +11,7 @@
     font-size: 2rem;
     display: flex;
     align-self: center;
+    font-weight: bolder;
     color: var(--themeYellowDark);
 }
 
