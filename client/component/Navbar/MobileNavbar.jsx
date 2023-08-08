@@ -63,7 +63,7 @@ const MobileNavbar = () => {
                             Events
                         </Link></li>
 
-                        <li>
+                        <li style={{marginTop: '2rem'}}>
                             <Link href='/register' className={styles.BecomeAMemberMobile}>Become a member</Link>
                         </li>
                     </ul>
