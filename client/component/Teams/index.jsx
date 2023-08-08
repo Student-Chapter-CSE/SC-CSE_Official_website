@@ -6,7 +6,6 @@ import { forwardRef } from 'react';
 const Footer = lazy(() => import('../Footer/index'))
 
 export default function Teams() {
-    console.log(teams)
     return (
         <>
             <div className={styles.teams_holder}>
