@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { useRouter } from 'next/router'
 import axios from 'axios';
 
 import styles from '../../styles/RegistrationForm.module.css'
+
+import { ArrowLeft } from '@phosphor-icons/react';
 
 const index = () => {
     const { register, handleSubmit } = useForm();
@@ -55,6 +58,10 @@ const index = () => {
     return (
         <div className={styles.formHolder}>
             <div className={styles.formContent}>
+                <div className={styles.leftBorder}>
+                    <BackButton />
+                    <div></div>
+                </div>
                 <h1 className={styles.formHeading}>
                     <div>Register</div>
                     <div>Student's Chapter</div>
@@ -195,6 +202,15 @@ function Sectionless({ children }) {
     return (
         <div className={styles.sectionless}>
             {children}
+        </div>
+    )
+}
+
+function BackButton() {
+    const router = useRouter()
+    return (
+        <div className={styles.backButton} onClick={() => router.back()}>
+            <ArrowLeft display='block' />
         </div>
     )
 }
