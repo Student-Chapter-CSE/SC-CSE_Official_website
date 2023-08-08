@@ -92,9 +92,9 @@ export const teams = [
                 name: 'Mayukh Ghosh',
                 desg: "PR Lead",
                 socials: [
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                    "https://github.com/Mayukh-Ghosh",
+                    "https://www.linkedin.com/in/mayukh-ghosh-7ab511200/ ",
+                    "https://www.instagram.com/mr._.mayukh1011/"
                 ]
             },
             {
