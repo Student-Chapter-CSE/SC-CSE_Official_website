@@ -12,6 +12,13 @@ import ArnabKr from '../assets/ArnabKr.webp'
 import Nabajit from '../assets/nabajit.webp'
 import Aratrik from '../assets/Aratrik.webp'
 import Arnab from '../assets/Arnab.webp'
+import pritanshu from '../assets/prit.webp'
+import joydeep from '../assets/joydeep.webp'
+import dhriti from '../assets/dhriti.webp'
+import rohitp from '../assets/rohitP.webp'
+import diptanshu from '../assets/diptanshu.webp'
+import debdeep from '../assets/debdeep.webp'
+
 
 export const testimonialCards = [
     {
@@ -73,12 +80,12 @@ export const teams = [
                 desg: "Convener",
                 socials: [
                     "https://github.com/obito038",
-                    " https://www.linkedin.com/in/prasun-kr-mondal-b25320214/",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                    "https://www.linkedin.com/in/prasun-kr-mondal-b25320214/",
+                    "https://www.instagram.com/subodh_chele/"
                 ]
             },
             {
-                img: avatar,
+                img: dhriti,
                 name: 'Dhriti Sundar Saha',
                 desg: "Asst. Convener",
                 socials: [
@@ -92,19 +99,19 @@ export const teams = [
                 name: 'Mayukh Ghosh',
                 desg: "PR Lead",
                 socials: [
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                    "https://github.com/Mayukh-Ghosh",
+                    "https://www.linkedin.com/in/mayukh-ghosh-7ab511200/ ",
+                    "https://www.instagram.com/mr._.mayukh1011/"
                 ]
             },
             {
-                img: avatar,
+                img: debdeep,
                 name: 'Debdeep Maitra',
                 desg: "PR Co-Lead",
                 socials: [
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                    "",
+                    "https://www.linkedin.com/in/debdeep-maitra-b66552220/",
+                    "https://www.instagram.com/its_wrishi/"
                 ]
             }
 
@@ -128,9 +135,9 @@ export const teams = [
                 name: 'Bishakh Neogi',
                 desg: "Tech Co-Lead",
                 socials: [
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                    "https://github.com/bishakhne0gi",
+                    "https://www.linkedin.com/in/bishakh-neogi-387815205/",
+                    "https://www.instagram.com/bishakh.neogi/"
                 ]
             },
             {
@@ -138,9 +145,9 @@ export const teams = [
                 name: 'Irshit Mukherjee',
                 desg: "Tech Co-Lead",
                 socials: [
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                    "https://github.com/IRSHIT033",
+                    "https://www.linkedin.com/in/irshit-mukherjee-693a99219/",
+                    "https://www.instagram.com/irshit_mukerjee_10/"
                 ]
             },
             {
@@ -148,9 +155,9 @@ export const teams = [
                 name: 'Abhirup Saha',
                 desg: "Upcoming Tech Lead",
                 socials: [
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                    "https://github.com/Abhirup-02",
+                    "https://www.linkedin.com/in/abhirup-saha-9605b0228",
+                    "https://www.instagram.com/lead_u_to_reason/"
                 ]
             },
             {
@@ -158,19 +165,19 @@ export const teams = [
                 name: 'Soumit Srimany',
                 desg: "Upcoming Tech Co-Lead",
                 socials: [
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                    "https://www.github.com/soumit-s",
+                    "https://www.linkedin.com/in/soumit-srimany-4bb443241",
+                    "https://www.instagram.com/_._soumit_._/"
                 ]
             },
             {
-                img: avatar,
+                img: diptanshu,
                 name: 'Diptanshu Mahish',
                 desg: "Upcoming Tech Co-Lead",
                 socials: [
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                    "https://github.com/diptanshumahish",
+                    "https://www.linkedin.com/in/diptanshumahish/",
+                    "https://www.instagram.com/_diptanshuu_/"
                 ]
             },
             {
@@ -193,19 +200,19 @@ export const teams = [
                 name: 'Mayukh Ghosh',
                 desg: "PR Lead",
                 socials: [
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                    "https://github.com/Mayukh-Ghosh",
+                    "https://www.linkedin.com/in/mayukh-ghosh-7ab511200/ ",
+                    "https://www.instagram.com/mr._.mayukh1011/"
                 ]
             },
             {
-                img: avatar,
+                img: debdeep,
                 name: 'Debdeep Maitra',
                 desg: "PR Co-Lead",
                 socials: [
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                    "",
+                    "https://www.linkedin.com/in/debdeep-maitra-b66552220/",
+                    "https://www.instagram.com/its_wrishi/"
                 ]
             },
             {
@@ -223,15 +230,15 @@ export const teams = [
                 name: 'Aratrik Bandhopadhyay',
                 desg: "Marketing Lead",
                 socials: [
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                    "",
+                    "https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222",
+                    "https://www.instagram.com/in_dealing_dead_03/"
                 ]
             },
             {
                 img: RohitC,
                 name: 'Rohit Chakrabarti',
-                desg: "Member",
+                desg: "Social-Media Team",
                 socials: [
                     "https://github.com/rohit32999",
                     "https://www.linkedin.com/in/rohit-chakrabarti-04b981230/",
@@ -239,9 +246,9 @@ export const teams = [
                 ]
             },
             {
-                img: avatar,
+                img: pritanshu,
                 name: 'Pritanshu Samanta ',
-                desg: "Member",
+                desg: "Social-Media Team",
                 socials: [
                     "https://github.com/Pritanshu69",
                     "https://www.linkedin.com/in/pritanshu-samanta-956450260/",
@@ -249,13 +256,13 @@ export const teams = [
                 ]
             },
             {
-                img: avatar,
+                img: joydeep,
                 name: 'Joydip Rakshit',
-                desg: "Member",
+                desg: "Social-Media Team",
                 socials: [
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                    "https://github.com/0ShinChane",
+                    "https://www.linkedin.com/in/joydip-rakshit-157740271/",
+                    "https://www.instagram.com/joydip_rakshit/"
                 ]
             }
 
@@ -264,6 +271,16 @@ export const teams = [
     {
         title: "Design Team",
         members: [
+            {
+                img: dhriti,
+                name: 'Dhriti Sundar Saha',
+                desg: "Asst. Convener",
+                socials: [
+                    "https://github.com/DhritiSundarSaha",
+                    "https://www.linkedin.com/in/dhriti-sundar-saha-90403b1b4",
+                    "https://instagram.com/dhritisundarsaha?igshid=MzRlODBiNWFlZA=="
+                ]
+            },
             {
                 img: Moulendu,
                 name: 'Moulendu Chowley',
@@ -277,7 +294,7 @@ export const teams = [
             {
                 img: Abhraneel,
                 name: 'Abhraneel Karmakar',
-                desg: "Member",
+                desg: "Designer",
                 socials: [
                     "https://github.com/abhraneel2004",
                     "https://www.linkedin.com/in/abhraneel-karmakar-1b51971ba/",
@@ -285,7 +302,7 @@ export const teams = [
                 ]
             },
             {
-                img: avatar,
+                img: rohitp,
                 name: 'Rohit Paul ',
                 desg: "Designer",
                 socials: [
@@ -298,7 +315,7 @@ export const teams = [
             {
                 img: Neelakshi,
                 name: 'Neelakshi Das',
-                desg: "Member",
+                desg: "Designer",
                 socials: [
                     "https://github.com/bluecoder2003",
                     "https://www.linkedin.com/in/neelakshi-das-b0ba68244",
