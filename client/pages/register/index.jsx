@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
+
+import styles from '../../styles/RegistrationForm.module.css'
+
 const index = () => {
     const { register, handleSubmit } = useForm();
     const [image_base64, setImage_base64] = useState();
@@ -50,89 +53,148 @@ const index = () => {
     //const getBase64;
 
     return (
-        <div className="register_container">
-            <h1 className="register_text">Register Student's Chapter</h1>
-            <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
-                <label htmlFor="name">Name:</label>
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Your name"
-                    {...register('name', { required: true })}
-                />
+        <div className={styles.formHolder}>
+            <div className={styles.formContent}>
+                <h1 className={styles.formHeading}>
+                    <div>Register</div>
+                    <div>Student's Chapter</div>
+                </h1>
+                <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+                    <FormSection name='Personal Info'>
+                        <div className={styles.col}>
+                            <div className={styles.textInput}>
+                                <label htmlFor="name">Name:</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Your name"
+                                    {...register('name', { required: true })}
+                                />
+                            </div>
+                            <div className={styles.textInput}>
+                                <label htmlFor="rollno">Roll no:</label>
+                                <input
+                                    type="number"
+                                    id="rollno"
+                                    {...register('rollno', { required: true })}
+                                    placeholder="Your Roll no."
+                                />
+                            </div>
+                        </div>
+                        <div className={styles.col}>
+                            <div className={styles.textInput}>
+                                <label htmlFor="section">Section</label>
+                                <input
+                                    type="text"
+                                    id="section"
+                                    {...register('section', { required: true })}
+                                    placeholder="Your section"
+                                />
+                            </div>
+                            <div className={styles.textInput}>
+                                <label htmlFor="courseCompletionYear">
+                                    Course Completion year:
+                                </label>
+                                <input
+                                    type="number"
+                                    id="courseCompletionYear"
+                                    {...register('courseCompletionYear', { required: true })}
+                                    placeholder="Year"
+                                    style={{ width: '10em' }}
+                                />
+                            </div>
+                        </div>
 
-                <label htmlFor="email">Email:</label>
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Your email"
-                    {...register('email', { required: true })}
-                />
+                        <div className={styles.inputChooseFile}>
+                            <label htmlFor="picture">Photo</label>
+                            <input
+                                className={styles.chooseFileBtn}
+                                type="file"
+                                id="picture"
+                                placeholder="picture"
+                                onChange={(e) => handleFileRead(e)}
+                            />
+                        </div>
+                    </FormSection>
 
-                <label htmlFor="rollno">Roll no:</label>
-                <input
-                    type="number"
-                    id="rollno"
-                    {...register('rollno', { required: true })}
-                    placeholder="Your Roll no."
-                />
+                    <Sectionless>
+                        <div className={styles.formQuestion}>
+                            <label htmlFor="memberof">Which team do you want to join ?</label>
+                            <input
+                                type="text"
+                                id="memberof"
+                                {...register('memberOf', { required: true })}
+                                placeholder="Member of team"
+                            />
+                        </div>
+                    </Sectionless>
 
-                <label htmlFor="memberof">Member of:</label>
-                <input
-                    type="text"
-                    id="memberof"
-                    {...register('memberOf', { required: true })}
-                    placeholder="Member of team"
-                />
+                    <FormSection name="Contact Details">
+                        <div className={styles.col}>
+                            <div className={styles.textInput}>
+                                <label htmlFor="email">Email:</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="Your email"
+                                    {...register('email', { required: true })}
+                                />
+                            </div>
+                            <div className={styles.textInput}>
+                                <label htmlFor="phonenumber">Phone number</label>
+                                <input
+                                    type="text"
+                                    id="phonenumber"
+                                    {...register('phonenumber', { required: true })}
+                                    placeholder="Your phone number"
+                                />
+                            </div>
+                        </div>
+                    </FormSection>
 
-                <label htmlFor="courseCompletionYear">
-                    Course Completion year:
-                </label>
-                <input
-                    type="number"
-                    id="courseCompletionYear"
-                    {...register('courseCompletionYear', { required: true })}
-                    placeholder="Course Completion year"
-                />
+                    <Sectionless>
+                        <div className={styles.checkboxInput + ' ' +
+                                        styles.paymentSection}>
+                            <label htmlFor="PaymentStatus">Payment Status</label>
+                            <input
+                                type="checkbox"
+                                id="PaymentStatus"
+                                {...register('paymentDone')}
+                                placeholder="Your pPaymentStatus"
+                                name='Payment Status'
+                            />
+                        </div>
+                    </Sectionless>
 
-                <label htmlFor="section">Section</label>
-                <input
-                    type="text"
-                    id="section"
-                    {...register('section', { required: true })}
-                    placeholder="Your section"
-                />
-
-                <label htmlFor="phonenumber">Phone number</label>
-                <input
-                    type="text"
-                    id="phonenumber"
-                    {...register('phonenumber', { required: true })}
-                    placeholder="Your phone number"
-                />
-
-                <label htmlFor="PaymentStatus">Payment Status</label>
-                <input
-                    type="checkbox"
-                    id="PaymentStatus"
-                    {...register('paymentDone')}
-                    placeholder="Your pPaymentStatus"
-                />
-
-                <label htmlFor="picture">Picture</label>
-                <input
-                    type="file"
-                    id="picture"
-                    placeholder="picture"
-                    onChange={(e) => handleFileRead(e)}
-                />
-
-                <button className="btn-register" type="submit">
-                    Submit
-                </button>
-            </form>
+                    <div className={styles.formActionSection}>
+                        <button className={`${styles.btn} ${styles.saveBtn}`} type="submit">
+                            Submit
+                        </button>
+                        <button className={`${styles.btn} ${styles.cancelBtn}`}>
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };
 
 export default index;
+
+function FormSection({ name, children }) {
+    return (
+        <div className={styles.section}>
+            <div className={styles.sectionTitle}>{name}</div>
+            <div className={styles.sectionContent}>{children}</div>
+        </div>
+    )
+}
+
+function Sectionless({ children }) {
+    return (
+        <div className={styles.sectionless}>
+            {children}
+        </div>
+    )
+}
