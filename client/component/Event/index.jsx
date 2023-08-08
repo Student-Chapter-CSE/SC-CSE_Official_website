@@ -1,5 +1,5 @@
 import styles from '../../styles/Event.module.css';
-import Image from 'next/image'
+import Image from 'next/image';
 
 const Event = ({ img, heading, content, date }) => {
     return (
@@ -8,18 +8,13 @@ const Event = ({ img, heading, content, date }) => {
             <div className={styles.card}>
                 <div className={styles.box}>
                     <div className={styles.imgBx}>
-                        <Image src={img} />
+                        <Image src={img} alt={heading} />
                     </div>
                     <div className={styles.contentBx}>
-
                         <h2 className={styles.contentHeader}>{heading}</h2>
 
                         <div className={styles.color}>
-
-
-                            <p style={{ color: 'white' }}>
-                                {content}
-                            </p>
+                            <p style={{ color: 'white' }}>{content}</p>
                         </div>
                         <a href="#" style={{ marginTop: '20px' }}>
                             Register

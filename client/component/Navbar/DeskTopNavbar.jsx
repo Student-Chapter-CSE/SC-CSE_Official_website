@@ -1,27 +1,25 @@
 import styles from '../../styles/Navbar.module.css';
-import Link from 'next/link'
+import Link from 'next/link';
 
 import { useState, useEffect } from 'react';
 
 const DeskTopNavbar = () => {
-
     const [shouldMorph, setMorph] = useState(true);
 
     useEffect(() => {
-
-        const trigger = document.createElement('div')
+        const trigger = document.createElement('div');
         trigger.style.position = 'absolute';
         trigger.style.top = '0';
         trigger.style.height = '100vh';
-        document.body.appendChild(trigger)
+        document.body.appendChild(trigger);
 
         const o = new IntersectionObserver(([e]) => {
-            setMorph(!e.isIntersecting)
-        })
+            setMorph(!e.isIntersecting);
+        });
 
-        o.observe(trigger)
-        return () => o.unobserve(trigger)
-    }, [])
+        o.observe(trigger);
+        return () => o.unobserve(trigger);
+    }, []);
 
     return (
         <>
@@ -32,27 +30,20 @@ const DeskTopNavbar = () => {
                 </div>
                 <div className={styles.NavMid}>
                     <div className={styles.NavElement}>
-                        <Link href='/'>
-
-                            HOME
-                        </Link>
+                        <Link href="/">HOME</Link>
                     </div>
                     <div className={styles.NavElement}>
-                        <Link href='/team'>
-
-                            TEAM
-                        </Link>
+                        <Link href="/team">TEAM</Link>
                     </div>
                     {/* <div className={styles.NavElement}>GALLERY</div> */}
                     <div className={styles.NavElement}>
-                        <Link href='/events'>
-
-                            EVENTS
-                        </Link>
+                        <Link href="/events">EVENTS</Link>
                     </div>
                 </div>
                 <div className={styles.Navleft}>
-                    <Link href='/register' className={styles.Navbtn}>Become a member</Link>
+                    <Link href="/register" className={styles.Navbtn}>
+                        Become a member
+                    </Link>
                 </div>
             </div>
         </>

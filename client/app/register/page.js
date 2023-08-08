@@ -1,9 +1,9 @@
+'use client';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useRouter } from 'next/router'
 import axios from 'axios';
-
-import styles from '../../styles/RegistrationForm.module.css'
+import { useRouter } from 'next/navigation';
+import styles from '../../styles/RegistrationForm.module.css';
 
 import { ArrowLeft } from '@phosphor-icons/react';
 
@@ -26,6 +26,7 @@ const index = () => {
                     paymentDone: form_data?.paymentDone,
                 }
             );
+
             console.log(data);
         } catch (err) {
             throw new Error(err);
@@ -60,14 +61,13 @@ const index = () => {
             <div className={styles.formContent}>
                 <div className={styles.leftBorder}>
                     <BackButton />
-                    <div></div>
                 </div>
                 <h1 className={styles.formHeading}>
                     <div>Register</div>
                     <div>Student's Chapter</div>
                 </h1>
                 <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-                    <FormSection name='Personal Info'>
+                    <FormSection name="Personal Info">
                         <div className={styles.col}>
                             <div className={styles.textInput}>
                                 <label htmlFor="name">Name:</label>
@@ -105,7 +105,9 @@ const index = () => {
                                 <input
                                     type="number"
                                     id="courseCompletionYear"
-                                    {...register('courseCompletionYear', { required: true })}
+                                    {...register('courseCompletionYear', {
+                                        required: true,
+                                    })}
                                     placeholder="Year"
                                     style={{ width: '10em' }}
                                 />
@@ -126,7 +128,9 @@ const index = () => {
 
                     <Sectionless>
                         <div className={styles.formQuestion}>
-                            <label htmlFor="memberof">Which team do you want to join ?</label>
+                            <label htmlFor="memberof">
+                                Which team do you want to join ?
+                            </label>
                             <input
                                 type="text"
                                 id="memberof"
@@ -148,11 +152,15 @@ const index = () => {
                                 />
                             </div>
                             <div className={styles.textInput}>
-                                <label htmlFor="phonenumber">Phone number</label>
+                                <label htmlFor="phonenumber">
+                                    Phone number
+                                </label>
                                 <input
                                     type="text"
                                     id="phonenumber"
-                                    {...register('phonenumber', { required: true })}
+                                    {...register('phonenumber', {
+                                        required: true,
+                                    })}
                                     placeholder="Your phone number"
                                 />
                             </div>
@@ -160,21 +168,31 @@ const index = () => {
                     </FormSection>
 
                     <Sectionless>
-                        <div className={styles.checkboxInput + ' ' +
-                                        styles.paymentSection}>
-                            <label htmlFor="PaymentStatus">Payment Status</label>
+                        <div
+                            className={
+                                styles.checkboxInput +
+                                ' ' +
+                                styles.paymentSection
+                            }
+                        >
+                            <label htmlFor="PaymentStatus">
+                                Payment Status
+                            </label>
                             <input
                                 type="checkbox"
                                 id="PaymentStatus"
                                 {...register('paymentDone')}
                                 placeholder="Your pPaymentStatus"
-                                name='Payment Status'
+                                name="Payment Status"
                             />
                         </div>
                     </Sectionless>
 
                     <div className={styles.formActionSection}>
-                        <button className={`${styles.btn} ${styles.saveBtn}`} type="submit">
+                        <button
+                            className={`${styles.btn} ${styles.saveBtn}`}
+                            type="submit"
+                        >
                             Submit
                         </button>
                         <button className={`${styles.btn} ${styles.cancelBtn}`}>
@@ -195,22 +213,18 @@ function FormSection({ name, children }) {
             <div className={styles.sectionTitle}>{name}</div>
             <div className={styles.sectionContent}>{children}</div>
         </div>
-    )
+    );
 }
 
 function Sectionless({ children }) {
-    return (
-        <div className={styles.sectionless}>
-            {children}
-        </div>
-    )
+    return <div className={styles.sectionless}>{children}</div>;
 }
 
 function BackButton() {
-    const router = useRouter()
+    const router = useRouter();
     return (
         <div className={styles.backButton} onClick={() => router.back()}>
-            <ArrowLeft display='block' />
+            <ArrowLeft display="block" />
         </div>
-    )
+    );
 }

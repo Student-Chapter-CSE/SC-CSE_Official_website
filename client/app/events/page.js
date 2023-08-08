@@ -1,19 +1,15 @@
-import styles from '../styles/Event.module.css';
-import Event from '../component/Event';
-import Navbar from '../component/Navbar';
+'use client';
 
-import { eventsData } from '../assets/data';
+import styles from '../../styles/Event.module.css';
+import Event from '../../component/Event';
+
+import { eventsData } from '../../assets/data';
 const events = () => {
     return (
         <>
-            <Navbar />
             <div>
                 <div className={styles.events_container}>
-
-                    <div className={styles.events_header}>
-                        Events
-                    </div>
-
+                    <div className={styles.events_header}>Events</div>
 
                     <div className={styles.each_events_wrap}>
                         <div className={styles.events_cards}>
@@ -31,9 +27,7 @@ const events = () => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
 export default events;
-
-
