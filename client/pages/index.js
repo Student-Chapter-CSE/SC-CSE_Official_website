@@ -18,7 +18,7 @@ export default function Home() {
         <>
             <div className={styles.container}>
                 <div><Navbar /></div>
-                <Suspense fallback={<Preloader />}>
+                <Suspense fallback={<Preloader width='5rem' height='5rem' />}>
                     <div><Header /></div>
                     <div className={styles.sectionHolder}><Counter /></div>
                     <div className={styles.sectionHolder}><Hod /></div>
