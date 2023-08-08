@@ -52,7 +52,7 @@ const DeskTopNavbar = () => {
                     </div>
                 </div>
                 <div className={styles.Navleft}>
-                    <button className={styles.Navbtn}>Become a member</button>
+                    <Link href='/register' className={styles.Navbtn}>Become a member</Link>
                 </div>
             </div>
         </>

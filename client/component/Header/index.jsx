@@ -31,7 +31,7 @@ const Header = () => {
                     <p>We are,</p>
                     <p className={styles.herotextBigfont}>
                         {text}
-                        <Cursor cursorColor='var(--themeYellowDark)' cursorStyle='.' />
+                        <Cursor cursorColor='var(--fontColor)' cursorStyle='.' />
                     </p>
                     <p>and this is our,</p>
                     <p className={styles.herotextHighlight}>Official Website</p>

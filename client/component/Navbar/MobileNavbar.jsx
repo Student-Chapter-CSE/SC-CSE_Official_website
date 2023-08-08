@@ -64,7 +64,7 @@ const MobileNavbar = () => {
                         </Link></li>
 
                         <li>
-                            <button className={styles.BecomeAMemberMobile}>Become a member</button>
+                            <Link href='/register' className={styles.BecomeAMemberMobile}>Become a member</Link>
                         </li>
                     </ul>
                 </div>

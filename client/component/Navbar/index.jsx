@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import DeskTopNavbar from './DeskTopNavbar';
 import MobileNavbar from './MobileNavbar';

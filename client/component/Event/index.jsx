@@ -1,7 +1,7 @@
 import styles from '../../styles/Event.module.css';
 import Image from 'next/image'
-import Avatar from '../../assets/avatar.png'
-const upcoming = ({ img, heading, content, date }) => {
+
+const Event = ({ img, heading, content, date }) => {
     return (
         // <div className={styles.body}>
         <div className={styles.container}>
@@ -12,7 +12,7 @@ const upcoming = ({ img, heading, content, date }) => {
                     </div>
                     <div className={styles.contentBx}>
 
-                        <h2>{heading}</h2>
+                        <h2 className={styles.contentHeader}>{heading}</h2>
 
                         <div className={styles.color}>
 
@@ -34,4 +34,4 @@ const upcoming = ({ img, heading, content, date }) => {
     );
 };
 
-export default upcoming;
+export default Event;

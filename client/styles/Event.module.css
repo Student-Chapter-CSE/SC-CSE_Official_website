@@ -28,7 +28,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--themeYellowDark);
+    background: var(--fontColor);
     clip-path: circle(150px at 80% 20%);
     transition: 0.5s ease-in-out;
     z-index: 100;
@@ -212,13 +212,16 @@
 
 .events_header {
     margin-top: 5rem;
-    font-size: 2rem;
+    font-size: 4rem;
     display: flex;
     font-weight: bolder;
     align-self: center;
-    color: var(--themeYellowDark);
+    color: var(--fontColor);
 }
 
+.contentHeader {
+    color: var(--fontColor) !important;
+}
 
 .each_events_wrap {
     padding: 2rem;
