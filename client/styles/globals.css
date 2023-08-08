@@ -72,24 +72,15 @@ h1 {
 
 label {
     display: block;
-    font-size: 16px;
-    margin-top: 10px;
     color: #bbb; /* Label color for dark mode */
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 10px;
+    background: transparent;
     border: none;
-    font-size: 16px;
     /* Border color for dark mode */
     border-radius: 5px;
-    margin-top: 5px;
-    background-color: var(
-        --backGroundLight
-    ); /* Input background color for dark mode */
-    /* Text color for dark mode */
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -107,22 +98,4 @@ input[type='number'] {
 input:focus {
     border: none;
     outline: none;
-}
-
-.btn-register {
-    background-color: var(
-        --themeYellowDark
-    ); /* Button background color for dark mode */
-    color: #fff; /* Text color for dark mode */
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-register:focus {
-    box-shadow: none;
 }

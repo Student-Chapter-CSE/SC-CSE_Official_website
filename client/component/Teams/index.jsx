@@ -1,15 +1,16 @@
 import styles from '../../styles/Team.module.css';
 import TeamCards from '../TeamCards';
 import { teams } from '../../assets/data';
-
+import { lazy, Suspense } from 'react';
 import { forwardRef } from 'react';
+const Footer = lazy(() => import('../Footer/index'))
 
 export default function Teams() {
     return (
         <>
             <div className={styles.teams_holder}>
                 <div className={styles.team_container}>
-                    <div className={styles.junction}><NodePointSvg color='#555' data-no-margin/></div>
+                    <div className={styles.junction}><NodePointSvg color='#555' data-no-margin /></div>
                     {teams.map((team, idx) => (
                         <div key={idx}>
                             <div className={styles.each_team_wrap} key={idx}>
