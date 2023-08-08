@@ -19,7 +19,7 @@ const Hod = () => {
                         <div className={styles.hod_body}>
                             <div>
                                 <div className={styles.hod_desciption}>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dignissimos facere impedit provident quod eaque nihil, at magni perspiciatis sapiente consectetur similique nisi inventore molestiae itaque illo corporis iusto veritatis.
+                                    It is my immense pleasure to extend a warm welcome to you on behalf of the IEI Students' Chapter CSE (AOT). Our chapter serves as a dynamic platform for aspiring engineers to connect, collaborate, and create. At IEI SC CSE, we are committed to nurturing a community of curious minds who are passionate about the ever-evolving field of computer science and engineering. Through a range of meticulously crafted events, workshops, seminars, and projects, we aim to provide you with opportunities to expand your horizons, exchange ideas, and enhance your technical prowess.
                                 </div>
                                 <div className={styles.hod_name}>Sir Prasenjit Das</div>
                             </div>
