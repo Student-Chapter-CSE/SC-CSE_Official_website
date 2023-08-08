@@ -5,7 +5,6 @@ import { teams } from '../../assets/data';
 import { forwardRef } from 'react';
 
 export default function Teams() {
-    console.log(teams)
     return (
         <>
             <div className={styles.teams_holder}>
