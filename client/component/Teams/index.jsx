@@ -1,6 +1,6 @@
 import styles from '../../styles/Team.module.css';
 import TeamCards from '../TeamCards';
-import { teams } from '../../public/static/assets/data';
+import { teams } from '../../data';
 import { forwardRef } from 'react';
 
 

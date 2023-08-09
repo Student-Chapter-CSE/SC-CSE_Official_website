@@ -1,6 +1,5 @@
 import styles from '../../styles/Hod.module.css';
 import Image from 'next/image';
-import Avatar from '../../public/static/assets/hod_img.webp'
 
 const Hod = () => {
     return (
@@ -9,7 +8,7 @@ const Hod = () => {
                 <div className={styles.hod_container_wrap}>
 
                     <div className={styles.hod_image}>
-                        <Image src={Avatar} width={200} height={200} className={styles.hod_image_style} alt='' />
+                        <Image src='/static/assets/hod_img.webp' width={200} height={200} className={styles.hod_image_style} alt='' />
                     </div>
                     <div className={styles.line}></div>
                     <div className={styles.hod_right}>

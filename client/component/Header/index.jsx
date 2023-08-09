@@ -1,5 +1,4 @@
 import styles from '../../styles/Header.module.css';
-import CardImg from '../../public/static/assets/cardimg.webp';
 import Image from 'next/image';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
@@ -18,10 +17,11 @@ const Header = () => {
                 <div className={styles.Card}>
                     <Image
                         className={styles.CardImageContainer}
-                        src={CardImg}
+                        src='/static/assets/cardimg.webp'
                         alt="Image container pic"
                         width={500}
                         height={350}
+                        priority={true}
                     />
                 </div>
             </div>

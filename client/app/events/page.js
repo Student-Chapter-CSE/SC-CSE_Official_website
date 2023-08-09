@@ -2,8 +2,8 @@
 
 import styles from '../../styles/Event.module.css';
 import Event from '../../component/Event';
+import { eventsData } from '../../data'
 
-import { eventsData } from '../../public/static/assets/data';
 const events = () => {
     return (
         <>
