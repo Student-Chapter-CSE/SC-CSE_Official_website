@@ -41,7 +41,7 @@ a {
 
 @font-face {
     font-family: 'quaz';
-    src: url('/fonts/Qaz-ZV74m.ttf');
+    src: url('/static/fonts/Qaz-ZV74m.ttf');
     font-display: swap;
 }
 

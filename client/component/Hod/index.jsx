@@ -1,6 +1,6 @@
 import styles from '../../styles/Hod.module.css';
 import Image from 'next/image';
-import Avatar from '../../assets/hod_img.webp'
+import Avatar from '../../public/static/assets/hod_img.webp'
 
 const Hod = () => {
     return (

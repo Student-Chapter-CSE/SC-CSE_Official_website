@@ -1,8 +1,8 @@
 import '../../styles/globals.css';
 export const metadata = {
-    title: 'Register',
-    description: 'Register to become a Member',
-};
+    title: 'Events',
+    description: "Students' Chapter CSE events"
+}
 
 export default function Layout({ children }) {
     return <div>{children}</div>;

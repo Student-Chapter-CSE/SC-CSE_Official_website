@@ -1,5 +1,5 @@
 import styles from '../../styles/Header.module.css';
-import CardImg from '../../assets/cardimg.webp';
+import CardImg from '../../public/static/assets/cardimg.webp';
 import Image from 'next/image';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 

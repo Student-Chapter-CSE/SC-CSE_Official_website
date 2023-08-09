@@ -1,9 +1,8 @@
 import styles from '../../styles/Team.module.css';
 import TeamCards from '../TeamCards';
-import { teams } from '../../assets/data';
-import { lazy, Suspense } from 'react';
+import { teams } from '../../public/static/assets/data';
 import { forwardRef } from 'react';
-const Footer = lazy(() => import('../Footer/index'))
+
 
 export default function Teams() {
     return (

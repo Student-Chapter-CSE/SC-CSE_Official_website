@@ -22,6 +22,7 @@
         "react-dom": "18.2.0",
         "react-hook-form": "^7.45.4",
         "react-icons": "^4.10.1",
+        "react-lazy-load-image-component": "^1.6.0",
         "react-simple-typewriter": "^5.0.1"
     },
     "devDependencies": {

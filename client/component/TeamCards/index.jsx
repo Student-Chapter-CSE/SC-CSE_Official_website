@@ -37,14 +37,6 @@ export default function TeamCards({ img, name, desg, socials }) {
                             </Link>
                         </div>
                     </div>
-                    {/*<div className={styles.mailHolder}>
-                        <div className={styles.mail}>
-                            <div className={styles.mailLogo}>
-                                <EnvelopeSimple display='block' />
-                            </div>
-                            <div className={styles.mailAddress}>example@gmail.com</div>
-                        </div>
-    </div>*/}
                 </div>
             </div>
         </>
