@@ -18,6 +18,7 @@ import dhriti from '../public/static/assets/Dhriti.webp';
 import rohitp from '../public/static/assets/rohitP.webp';
 import diptanshu from '../public/static/assets/diptanshu.webp';
 import debdeep from '../public/static/assets/debdeep.webp';
+import sayan from '../public/static/assets/sayan.webp';
 
 export const testimonialCards = [
     {
@@ -64,6 +65,7 @@ export const eventsData = [
         heading: 'Hack For Bengal',
         content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
         date: '9th June',
+        category: 'past'
     },
     {
         id: 2,
@@ -71,6 +73,7 @@ export const eventsData = [
         heading: 'InterHacktive 1.0',
         content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
         date: '20th Aug',
+        category: 'upcoming'
     },
 ];
 
@@ -237,6 +240,16 @@ export const teams = [
                     'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
                     'https://www.instagram.com/in_dealing_dead_03/',
                 ],
+            },
+            {
+                img: sayan,
+                name: 'Sayan Mukherjee',
+                desg: 'Co-Marketing Lead',
+                socials: [
+                    'https://github.com/Sayan044',
+                    'www.linkedin.com/in/sayan-mukherjee-975175229',
+                    'https://instagram.com/1010_sayhack?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D'
+                ]
             },
             {
                 img: RohitC,
