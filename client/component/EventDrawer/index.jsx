@@ -3,7 +3,7 @@ import styles from '../../styles/EventDrawer.module.css'
 import { useState } from 'react'
 
 
-export default function EventDrawer({ children }) {
+export default function EventDrawer({ children, className }) {
 
     const tabs = [
         { name: 'Upcoming' },
@@ -19,7 +19,11 @@ export default function EventDrawer({ children }) {
     }
 
     return (
-        <div>
+        <div className={styles.holder + ' ' + className}>
+            <div className={styles.events_header}>
+                Events
+            </div>
+
             {/* Tabs */}
             <nav className={styles.tabNav}>
                 {
@@ -38,7 +42,7 @@ export default function EventDrawer({ children }) {
             {/* Content  */}
             <div className={styles.drawers}>
                 {
-                    children && [...children].map((c, i) => (
+                    children && (children instanceof Array ? [...children] : [children]).map((c, i) => (
                         <div
                             className={styles.drawer}
                             key={i}

@@ -1,48 +1,43 @@
+.holder {
+    --border-color: #555;
+    position: relative;
+    width: 100%;
+}
+
 .tabNav {
     position: relative;
     display: flex;
     justify-content: left;
-    margin-bottom: 2rem;
 }
+
 
 .tabNav::after {
     content: "";
     position: absolute;
     top:100%;
-    left: -3rem;
+    left: 0;
     right: 0;
 
-    border-bottom: 1px dashed #0003;
+    border-bottom: 1px dashed var(--border-color);
 }
 
-.tabNav::before {
-    content: "";
-    position: absolute;
-    top: -1rem;
-    left: -1rem;
-    height: 40vh;
-
-    width: 1px;
-
-    border-left-width: 1px;
-    border-left-style: dashed;
-    border-image:  linear-gradient(to bottom, #0002, rgba(0, 0, 0, 0)) 1 100%;
-}
 
 .tab {
     position: relative;
-    padding: 0.4rem 0;
+    padding: 0.8rem 0.5rem;
     font-size: 1.2rem;
     font-weight: lighter;
     text-transform: uppercase;
     margin-right: 1.5em;
 
     transition: all 100ms;
+
+    color: var(--textColor);
+    letter-spacing: 0.2em;
 }
 
 .tab[data-active=true] {
     font-weight: bold;
-    letter-spacing: 0.05rem;
 }
 
 .tab[data-active=true]::after {
@@ -51,7 +46,7 @@
     top: calc(100% - 1px);
     left: 0; right: 0;
     height: 3px;
-    background: var(--themeYellowDark);
+    background: var(--fontColor);
 
     z-index: 1;
 }
@@ -67,7 +62,7 @@
     height: 1px;
     left: 0; right: 100%;
     
-    background: gray;
+    background: var(--fontColor);
 
     z-index: 1;
 
@@ -80,10 +75,19 @@
 
 .drawers {
     display: flex;
+    padding: 2rem 0;
 }
 
 .drawer {
     transition: all 400ms;
+    width: 100%;
+}
+
+.drawer > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .drawer[data-active=true] {
@@ -100,4 +104,30 @@
     transition: all 400ms;
     opacity: 0;
     filter: blur(5px);
+}
+
+.events_header {
+    font-size: 5rem;
+    display: flex;
+    font-weight: bolder;
+    color: var(--textColor);
+    margin-bottom: 0.5em;
+}
+
+@media only screen and (min-width: 768px) {
+    .drawer > * {
+        flex-direction: row;
+    }
+
+    .holder {
+        border-left-width: 1px;
+        border-left-style: dashed;
+        border-image:  linear-gradient(to bottom, var(--border-color), rgba(0, 0, 0, 0)) 1 100%;
+
+        padding: 2rem;
+    }
+
+    .tabNav::after {
+        left: -3rem;
+    }
 }
