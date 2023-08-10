@@ -9,20 +9,20 @@ const Counter = () => {
                 <div className={styles.counter_container_wrap}>
                     
                     <div className={styles.counter_item}>
-                        <div className={styles.counter_number}>150+</div>
-                        <div className={styles.counter_title}>Students</div>
+                        <div className={styles.counter_number}>200+</div>
+                        <div className={styles.counter_title}>Community Members</div>
                     </div>
                     <div className={styles.counter_item}>
-                        <div className={styles.counter_number}>10+</div>
-                        <div className={styles.counter_title}>Students</div>
+                        <div className={styles.counter_number}>30+</div>
+                        <div className={styles.counter_title}>Events</div>
                     </div>
                     <div className={styles.counter_item}>
                         <div className={styles.counter_number}>15+</div>
-                        <div className={styles.counter_title}>Students</div>
+                        <div className={styles.counter_title}>Core Members</div>
                     </div>
                     <div className={styles.counter_item}>
-                        <div className={styles.counter_number}>1500+</div>
-                        <div className={styles.counter_title}>Students</div>
+                        <div className={styles.counter_number}>2500+</div>
+                        <div className={styles.counter_title}>Participants</div>
                     </div>
                     
 
