@@ -13,7 +13,7 @@ const Hod = () => {
                     <div className={styles.line}></div>
                     <div className={styles.hod_right}>
                         <div className={styles.hod_title}>
-                            A note from the SC CSE Head
+                            A note from the IEI  Student Chapter CSE Head
                         </div>
                         <div className={styles.hod_body}>
                             <div>

@@ -162,6 +162,12 @@
         margin-bottom: 0;
         margin-top: 0;
     }
+
+    .CopyrightNotice {
+        display: flex;
+        gap: 0.7em;
+        align-items: flex-start;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
