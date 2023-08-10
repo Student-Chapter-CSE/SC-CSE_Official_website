@@ -67,7 +67,16 @@
     font-weight: bold;
     color: #e5e5e5;
 
+    text-transform: uppercase;
+
     position: relative;
+
+    transition: all 300ms;
+}
+
+.NavElement[data-active=true] {
+    color: var(--fontColor);
+    letter-spacing: 0.05em;
 }
 
 .NavElement:hover {

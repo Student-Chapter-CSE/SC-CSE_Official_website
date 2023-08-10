@@ -1,11 +1,23 @@
+'use client'
+
 import styles from '../../styles/Navbar.module.css';
 import Link from 'next/link';
 
 import { useState, useEffect } from 'react';
 
+import { usePathname } from 'next/navigation'
+
+const LINKS = [
+    {href: "/", name: "home"},
+    {href: "/team", name: "team"},
+    {href: "/events", name: "events"}
+]
+
+
 const DeskTopNavbar = () => {
     const [shouldMorph, setMorph] = useState(true);
-
+    const pathName = usePathname();
+    
     useEffect(() => {
         const trigger = document.createElement('div');
         trigger.style.position = 'absolute';
@@ -21,6 +33,8 @@ const DeskTopNavbar = () => {
         return () => o.unobserve(trigger);
     }, []);
 
+
+
     return (
         <>
             <div className={styles.NavbarContainer} data-morphed={shouldMorph}>
@@ -29,16 +43,13 @@ const DeskTopNavbar = () => {
                     <p className={styles.Navlogopara}>CSE</p>
                 </div>
                 <div className={styles.NavMid}>
-                    <div className={styles.NavElement}>
-                        <Link href="/">HOME</Link>
-                    </div>
-                    <div className={styles.NavElement}>
-                        <Link href="/team">TEAM</Link>
-                    </div>
-                    {/* <div className={styles.NavElement}>GALLERY</div> */}
-                    <div className={styles.NavElement}>
-                        <Link href="/events">EVENTS</Link>
-                    </div>
+                    {
+                        LINKS.map((l, i) => (
+                            <div key={i} className={styles.NavElement} data-active={pathName == l.href}>
+                                <Link href={l.href}>{l.name}</Link>
+                            </div>
+                        ))
+                    }
                 </div>
                 <div className={styles.Navleft}>
                     <Link href="/register" className={styles.Navbtn}>
