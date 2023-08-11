@@ -1,6 +1,5 @@
 import Member from "../model/Member_model.js";
-
-cloudinary.uploader.upload();
+import { v2 as cloudinary } from "cloudinary";
 
 export const handleCreateMember = async (req, res) => {
   try {

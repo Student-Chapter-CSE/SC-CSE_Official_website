@@ -1,6 +1,6 @@
 import '../../styles/globals.css';
 export const metadata = {
-    title: 'Register',
+    title: "Student's Chapter CSE",
     description: 'Register to become a Member',
 };
 

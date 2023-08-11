@@ -5,14 +5,14 @@ import dotenv from "dotenv";
 import { memberRoute } from "./routes/route.js";
 import { v2 as cloudinary } from "cloudinary";
 
+dotenv.config();
+
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.API_KEY,
   api_secret: process.env.API_SECRET,
-  secure: true,
 });
 
-dotenv.config();
 connectDB();
 
 const app = express();
@@ -26,7 +26,7 @@ const port = 5000 || process.env.PORT;
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: process.env.CLIENT_URL,
   })
 );
 
