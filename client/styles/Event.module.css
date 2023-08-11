@@ -14,14 +14,13 @@
 
 .container .card {
     position: relative;
-    width: 320px;
-    height: 450px;
     background: rgb(28, 28, 28);
     border-radius: 20px;
     overflow: hidden;
+    z-index: 99999;
 }
 
-.container .card:before {
+/* .container .card:before {
     content: '';
     position: absolute;
     top: 0;
@@ -39,7 +38,7 @@
 }
 
 .container .card:after {
-    /* content: 'Events'; */
+    /* content: 'Events';
     position: center;
     font-size: 8em;
     font-weight: 800;
@@ -198,7 +197,7 @@
     right: 0;
     padding: 10px;
     color: wheat;
-}
+} */
 
 
 
@@ -207,10 +206,6 @@
     display: flex;
     justify-content: center;
     min-height: 100vh;
-}
-
-.contentHeader {
-    color: var(--fontColor) !important;
 }
 
 .each_events_wrap {
@@ -227,11 +222,114 @@
 
 
 .card {
+    --border-color: #323232;
+    --outline-color: #222;
+
+    transition: all 300ms;
+    border: 1px solid var(--border-color);
+
+    outline: 1px solid transparent;
+    outline-offset: 1.5mm;
+}
+
+.imgBx {
     transition: border 300ms;
+    border-bottom: 1px solid var(--border-color);
+
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+}
+
+.imgBx > img {
+    width: 100%;
 }
 
 .card:hover {
-    border: 1px solid #353535;
+    cursor: pointer;
+    outline-color: var(--outline-color);
+
+    transform: translateY(1rem);
+}
+
+.card:hover > .box > .imgBx {
+    border-bottom: 1px solid #383838;
+}
+
+.date {
+    text-align: left;
+}
+
+.contentBx {
+    padding: 1.5rem;
+    background: #222;
+    line-height: 1.5em;
+}
+
+.contentHeader {
+    margin-bottom: 0.5rem;
+    color: var(--fontColor);
+    letter-spacing: 0.1em;
+}
+
+.date {
+    margin-bottom: 1rem;
+    color: #555;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.contentContent {
+    color: var(--textColor);
+    transition: all 300ms;
+}
+
+.register {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background: var(--fontColor);
+    border-radius: 0.25rem;
+
+    outline: 1px dashed transparent;
+
+    transition: all 300ms, opacity 200ms ease-in-out 200ms;
+
+    transition-delay: opacity 300ms;
+
+    font-weight: bold;
+    letter-spacing: 0.05em;
+
+    color: #252525;
+
+    z-index: -100000000;
+    opacity: 0;
+}
+
+.registerDiv {
+    height: 0;
+    overflow: hidden;
+
+    transition: all 300ms;
+}
+
+.card:hover .contentContent {
+    margin-bottom: 2rem;
+}
+
+.card:hover .registerDiv {
+    height: fit-content;
+    overflow: visible;
+}
+
+.card:hover .register {
+    opacity: 1;
+}
+
+.register:hover {
+    z-index: 99999999;
+    outline-offset: 1mm;
+    outline: 1px dashed #555;
+    color: white;
 }
 
 
@@ -262,6 +360,14 @@
 
     .events_holder {
         width: 90vw;
+    }
+
+    .card {
+        width: 20rem;
+    }
+
+    .imgBx {
+        height: 15rem;
     }
 }
 

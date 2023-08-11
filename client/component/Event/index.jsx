@@ -13,16 +13,19 @@ const Event = ({ img, heading, content, date }) => {
                     <div className={styles.contentBx}>
                         <h2 className={styles.contentHeader}>{heading}</h2>
 
-                        <div className={styles.color}>
+                        <div className={styles.date}>
+                            <h3>{date}</h3>
+                        </div>
+
+                        <div className={styles.contentContent}>
                             <p style={{ color: 'white' }}>{content}</p>
                         </div>
-                        <a href="#" style={{ marginTop: '20px' }}>
-                            Register
-                        </a>
+                        <div className={styles.registerDiv}>
+                            <a href="#" className={styles.register}>
+                                Register
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div className={styles.date}>
-                    <h3>{date}</h3>
                 </div>
             </div>
         </div>

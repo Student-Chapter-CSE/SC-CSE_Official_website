@@ -75,7 +75,7 @@
 
 .drawers {
     display: flex;
-    padding: 2rem 0;
+    padding: 2.4rem 0;
 }
 
 .drawer {
@@ -88,6 +88,9 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;;
 }
 
 .drawer[data-active=true] {
@@ -115,6 +118,11 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .drawer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .drawer > * {
         flex-direction: row;
     }
