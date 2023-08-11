@@ -38,6 +38,12 @@
     box-shadow: 0px 2px 5px 1px #161616;
 }
 
+.NavLogoContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .NavLogo {
     font-size: 1.4em;
 
@@ -47,6 +53,14 @@
 .Navlogopara {
     /*color: var(--themeMainBlue);*/
     color: var(--textColor);
+}
+
+.sccseLogo {
+    height: 3rem;
+}
+
+.sccseLogo > img {
+    height: 100%;
 }
 
 .NavMid {
@@ -236,6 +250,7 @@
 .BecomeAMemberMobile:focus {
     outline-color: #fca02f88;
 }
+
 
 @media (min-width: 768px) {
     .Hamburger_menu {
