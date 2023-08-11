@@ -49,6 +49,7 @@
     font-size: 2rem;
     font-weight: 600;
     padding-top: 0.2rem;
+    text-align: center;
 }
 
 @media screen and (max-width: 770px) {
