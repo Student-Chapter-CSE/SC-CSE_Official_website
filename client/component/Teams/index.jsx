@@ -3,6 +3,8 @@ import TeamCards from '../TeamCards';
 import { teams } from '../../data';
 import { forwardRef } from 'react';
 
+import Link from 'next/link';
+import { CloudArrowDown } from '@phosphor-icons/react';
 
 export default function Teams() {
     return (
@@ -42,6 +44,23 @@ export default function Teams() {
                         </div>
                     ))}
                     <div className={styles.junction}><NodePointSvg color='#555' data-no-margin /></div>
+                </div>
+            </div>
+            <div className={styles.memberListDownloadHolder}>
+                <div className={styles.memberListDownload}>
+
+                    <div className={styles.memberListDownload_Upper}>
+                        <div className={styles.memberListDownload_Upper_Logo}>
+                            <CloudArrowDown display='block' />
+                        </div>
+                        <div className={styles.memberListDownloadLink}>
+                            <Link href='#'>Download</Link>
+                        </div>
+                    </div>
+                    <div className={styles.memberListDownload_Text}>
+                        <div className={styles.memberListDownload_Text_Upper}>The list of all our</div>
+                        <div className={styles.memberListDownload_Text_Lower}>members.</div>
+                    </div>
                 </div>
             </div>
         </>
