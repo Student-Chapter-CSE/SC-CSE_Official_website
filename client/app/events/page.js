@@ -32,10 +32,7 @@ function EventList({ events }) {
             {events.map((eventsData, idx) => (
                 <Event
                     key={idx}
-                    img={eventsData.img}
-                    heading={eventsData.heading}
-                    content={eventsData.content}
-                    date={eventsData.date}
+                    {...eventsData}
                 />
             ))}
         </div>
