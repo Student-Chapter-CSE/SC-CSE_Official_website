@@ -141,7 +141,7 @@
 }
 
 .Hamburger_menu {
-    z-index: 2000;
+    z-index: 9999999999;
     position: fixed;
     top: 0;
 }
@@ -198,7 +198,7 @@
 }
 
 .Menu_items li:hover {
-    color: var(--themeYellowDark);
+    color: var(--fontColor);
 }
 
 .BlurBackground {
