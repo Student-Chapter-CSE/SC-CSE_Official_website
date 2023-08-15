@@ -1,8 +1,9 @@
 import styles from '../../styles/Event.module.css';
 import Image from 'next/image';
+import { useEffect, useRef } from 'react';
 
-const Event = ({ img, heading, content, date, category }) => {
-    console.log(category)
+const Event = ({ img, heading, content, date, category, registrationLink }) => {
+    const descRef = useRef()
 
     function nth(d) {
         const dString = String(d)
@@ -21,6 +22,12 @@ const Event = ({ img, heading, content, date, category }) => {
         return `${date.getDate()}${nth(date.getDate())}  ${months[date.getMonth()]}, ${date.getFullYear()}`
     }
 
+    useEffect(() => {
+        // I know this is bad but I don't have any
+        // other option T_T
+        descRef.current.innerHTML = content
+    })
+
     return (
         // <div className={styles.body}>
         <div className={styles.container}>
@@ -36,14 +43,13 @@ const Event = ({ img, heading, content, date, category }) => {
                             <h3>{dateToText(date)}</h3>
                         </div>
 
-                        <div className={styles.contentContent}>
-                            <p style={{ color: 'white' }}>{content}</p>
+                        <div className={styles.contentContent} ref={descRef}>
                         </div>
 
                         {
                             category == 'upcoming' &&
                             <div className={styles.registerDiv}>
-                                <a href="#" className={styles.register}>
+                                <a href={registrationLink} className={styles.register}>
                                     Register
                                 </a>
                             </div>
