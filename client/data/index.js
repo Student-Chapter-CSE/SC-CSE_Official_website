@@ -79,9 +79,10 @@ export const eventsData = [
         id: 3,
         img: avatar,
         heading: 'InterHacktive 1.0',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+        content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Code, Collab, Conquer"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">First Intra-College Hackathon of AOT</div>',
         date: new Date(),
-        category: 'upcoming'
+        category: 'upcoming',
+        registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69"
     },
 ];
 
@@ -351,7 +352,7 @@ export const teams = [
 
 export const upcomingEvents = [
     {
-        title: 'Lorem ipsum dolor, sit amet consectetur.',
+        title: 'InterHacktive 1.0',
         date: new Date(),
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium deleniti cupiditate ullam, animi reprehenderit officiaaliquid ipsam veniam rem?',
     },
