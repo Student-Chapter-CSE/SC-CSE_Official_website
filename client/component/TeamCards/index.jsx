@@ -2,18 +2,15 @@ import styles from '../../styles/TeamCards.module.css';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRef } from 'react';
+
 import { GithubLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react';
-import { useIntersection } from '../../hooks/useIntersection';
 
 export default function TeamCards({ img, name, desg, socials }) {
-    const ref = useRef();
-    const isVisible = useIntersection(ref, '0px');
     return (
         <>
             <div className={styles.cards_container}>
                 <div className={styles.card_img} ref={ref}>
-                    {isVisible ? <Image src={img} alt={name}></Image> : <></>}
+                    <Image src={img} alt={name}></Image>
                 </div>
 
                 <div className={styles.content_wrap}>
