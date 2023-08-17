@@ -34,7 +34,7 @@ const Event = ({ img, heading, content, date, category, registrationLink }) => {
             <div className={styles.card} data-is-upcoming={category == 'upcoming'}>
                 <div className={styles.box}>
                     <div className={styles.imgBx}>
-                        <Image src={img} alt={heading} />
+                        <img src={img} alt={heading} />
                     </div>
                     <div className={styles.contentBx}>
                         <h2 className={styles.contentHeader}>{heading}</h2>

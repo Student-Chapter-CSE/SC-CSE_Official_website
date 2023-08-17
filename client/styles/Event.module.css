@@ -10,6 +10,7 @@
 
 .container {
     position: relative;
+    width: 100%;
 }
 
 .container .card {
@@ -50,19 +51,24 @@
 
     outline: 1px solid transparent;
     outline-offset: 1.5mm;
+
+    background: #222;
 }
 
 .imgBx {
     transition: border 300ms;
-    border-bottom: 1px solid var(--border-color);
-
-    aspect-ratio: 4 / 3;
+    padding: 0.5rem;
+    aspect-ratio: 1;
 
     overflow: hidden;
 }
 
 .imgBx > img {
     width: 100%;
+    height: 100%;
+
+    border: 1px solid #333;
+    border-radius: 1em 1em 0.5em 0.5em;
 }
 
 .card:hover {
@@ -72,17 +78,12 @@
     transform: translateY(1rem);
 }
 
-.card:hover > .box > .imgBx {
-    border-bottom: 1px solid #383838;
-}
-
 .date {
     text-align: left;
 }
 
 .contentBx {
     padding: 1.5rem;
-    background: #222;
     line-height: 1.5em;
 }
 
@@ -102,6 +103,7 @@
 .contentContent {
     color: var(--textColor);
     transition: all 300ms;
+    margin-bottom: 2rem;
 }
 
 .register {
@@ -122,18 +124,8 @@
     color: #252525;
 
     z-index: -100000000;
-    opacity: 0;
-}
 
-.registerDiv {
-    height: 0;
-    overflow: hidden;
-
-    transition: all 300ms;
-}
-
-.card[data-is-upcoming=true]:hover .contentContent {
-    margin-bottom: 2rem;
+    color: white;
 }
 
 .card:hover .registerDiv {
@@ -149,9 +141,12 @@
     z-index: 99999999;
     outline-offset: 1mm;
     outline: 1px dashed #555;
-    color: white;
 }
 
+.box {
+    display: flex;
+    flex-direction: column;
+}
 
 @media screen and (max-width: 770px) {
     .events_cards {
@@ -182,12 +177,27 @@
         width: 90vw;
     }
 
-    .card {
-        width: 20rem;
+    .contentBx {
+        width: 22rem;
+    }
+
+    .box {
+        flex-direction: row;
     }
 
     .imgBx {
-        height: 15rem;
+        width: 15rem;
+        padding: 0.7rem;
+        border-width: 0;
+    }
+
+    .imgBx > img {
+        border: 1px solid #333;
+        border-radius: 1em;
+    }
+
+    .container {
+        width: fit-content;
     }
 }
 
