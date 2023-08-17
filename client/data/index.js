@@ -61,7 +61,7 @@ export const testimonialCards = [
 export const eventsData = [
     {
         id: 1,
-        img: avatar,
+        img: '/static/assets/avatar.png',
         heading: 'Stride',
         content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
         date: new Date(),
@@ -69,7 +69,7 @@ export const eventsData = [
     },
     {
         id: 2,
-        img: avatar,
+        img: '/static/assets/avatar.png',
         heading: 'Technocruise',
         content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
         date: new Date(),
@@ -77,10 +77,10 @@ export const eventsData = [
     },
     {
         id: 3,
-        img: avatar,
-        heading: 'InterHacktive 1.0',
+        img: '/static/assets/ih_logo.png',
+        heading: 'InterHacktive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Code, Collab, Conquer"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">First Intra-College Hackathon of AOT</div>',
-        date: new Date(),
+        date: new Date(2023, 8, 26),
         category: 'upcoming',
         registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69"
     },
