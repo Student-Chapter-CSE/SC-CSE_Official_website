@@ -38,7 +38,7 @@ const DeskTopNavbar = () => {
             <div className={styles.NavbarContainer} data-morphed={shouldMorph}>
                 <div className={styles.NavLogoContainer}>
                     <div className={styles.sccseLogo}>
-                        <img src="/static/assets/sccse.png" alt='sccselogo' />
+                        <img src="/static/assets/sccse.png" alt='sccselogo' fetchPriority='high' />
                     </div>
                     <div>
                         <div className={styles.NavLogo}>Students' Chapter</div>
