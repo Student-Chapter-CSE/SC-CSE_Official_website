@@ -8,7 +8,7 @@ export default function About() {
                     <div className={styles.head}>
                         About Us
                     </div>
-                    <div className={styles.welcomeText}><div>Welcome to the</div> <div>IEI Student Chapter CSE</div></div>
+                    <div className={styles.welcomeText}><div>Welcome to the</div> <div>IEI Students' Chapter CSE</div></div>
                 </div>
                 <div className={styles.text}>
                     <P>We are a thriving community of passionate tech enthusiasts, committed to promoting <Imp>innovation</Imp> and <Imp>knowledge-sharing</Imp> in the field of computer science. Our organization is structured into three dynamic teams, each playing a crucial role in creating a vibrant tech ecosystem.

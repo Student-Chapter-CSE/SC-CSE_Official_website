@@ -65,6 +65,8 @@
     padding-top: 2rem;
     font-size: 1.2em;
     text-align: left;
+    display: flex;
+    gap: 1rem;
 }
 
 .hod_name::before {
