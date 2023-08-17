@@ -122,13 +122,10 @@
     padding: 0.5rem 1.8rem;
     font-size: 0.9rem;
     border-radius: 0.5em;
-
     color: var(--textColor);
     background: var(--fontColor);
     border: transparent;
-
     border: solid 1px var(--fontColor);
-
     transition: 500ms ease-in-out;
 }
 

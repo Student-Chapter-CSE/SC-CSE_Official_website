@@ -23,12 +23,10 @@ a {
     --backGroundLight: ;
     --themeYellow: #262626;
     --themeYellowDark: #262626;
-    --textColor: #111;
     --baseColor: #e74c3c;
     --fontColor: #da851e;
     --textColor: #eaf1f2;
     --textHighlightColor: #bf7822;
-
     --borderColor: #666;
     --cardBackgroundColor: #171717;
 }

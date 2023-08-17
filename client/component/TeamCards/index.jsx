@@ -9,8 +9,11 @@ export default function TeamCards({ img, name, desg, socials }) {
     return (
         <>
             <div className={styles.cards_container}>
-                <div className={styles.card_img} ref={ref}>
-                    <Image src={img} alt={name}></Image>
+                <div className={styles.card_img}>
+                    <Image
+                        src={img}
+                        alt={name}
+                    />
                 </div>
 
                 <div className={styles.content_wrap}>

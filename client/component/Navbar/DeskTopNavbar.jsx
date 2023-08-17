@@ -2,9 +2,7 @@
 
 import styles from '../../styles/Navbar.module.css';
 import Link from 'next/link';
-
 import { useState, useEffect } from 'react';
-
 import { usePathname } from 'next/navigation'
 
 const LINKS = [
@@ -40,7 +38,7 @@ const DeskTopNavbar = () => {
             <div className={styles.NavbarContainer} data-morphed={shouldMorph}>
                 <div className={styles.NavLogoContainer}>
                     <div className={styles.sccseLogo}>
-                        <img src="/static/assets/sccse.png"></img>
+                        <img src="/static/assets/sccse.png" alt='sccselogo' />
                     </div>
                     <div>
                         <div className={styles.NavLogo}>Student's Chapter</div>
