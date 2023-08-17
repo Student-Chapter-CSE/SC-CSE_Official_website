@@ -13,6 +13,8 @@ export default function TeamCards({ img, name, desg, socials }) {
                     <Image
                         src={img}
                         alt={name}
+                        placeholder='blur'
+                        blurDataURL='eZP%CbIU.Ax]RO%LWVa}ofof.9ofIAV@WBxuoekCR+WBtRjuROa|tS'
                     />
                 </div>
 
