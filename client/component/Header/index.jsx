@@ -14,28 +14,24 @@ const Header = () => {
     return (
         <div className={styles.HeroContainer}>
             <div className={styles.HeroCardContainer}>
-                <div className={styles.Card}>
-                    <Image
-                        className={styles.CardImageContainer}
-                        src='/static/assets/cardimg.webp'
-                        alt="Image container pic"
-                        width={500}
-                        height={350}
-                        priority={true}
-                    />
-                </div>
+                <Image
+                    className={styles.CardImageContainer}
+                    src='/static/assets/cardimg.webp'
+                    alt="Image container pic"
+                    width={500}
+                    height={350}
+                    priority={true}
+                />
             </div>
-            <div className={styles.HeroTextConatiner}>
-                <div className={styles.HeroTextContainer}>
-                    <p>Hey, there !</p>
-                    <p>We are,</p>
-                    <p className={styles.herotextBigfont}>
-                        {text}
-                        <Cursor cursorColor='var(--fontColor)' cursorStyle='.' />
-                    </p>
-                    <p>and this is our,</p>
-                    <p className={styles.herotextHighlight}>Official Website</p>
-                </div>
+            <div className={styles.HeroTextContainer}>
+                <p>Hey, there !</p>
+                <p>We are,</p>
+                <p className={styles.herotextBigfont}>
+                    {text}
+                    <Cursor cursorColor='var(--fontColor)' cursorStyle='.' />
+                </p>
+                <p>and this is our,</p>
+                <p className={styles.herotextHighlight}>Official Website</p>
             </div>
         </div>
     );
