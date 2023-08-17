@@ -256,7 +256,7 @@ export const teams = [
                 desg: 'Co-Marketing Lead',
                 socials: [
                     'https://github.com/Sayan044',
-                    'www.linkedin.com/in/sayan-mukherjee-975175229',
+                    'https://www.linkedin.com/in/sayan-mukherjee-975175229',
                     'https://instagram.com/1010_sayhack?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D'
                 ]
             },
