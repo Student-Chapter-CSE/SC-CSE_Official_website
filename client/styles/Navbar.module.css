@@ -156,7 +156,7 @@
     z-index: 1000;
     margin: 1rem;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    color: #333;
+    color: #888;
     background-color: var(--backGround);
     cursor: pointer;
 
@@ -193,6 +193,10 @@
 .Menu_items li {
     padding: 5px;
     cursor: pointer;
+}
+
+.Menu_items > li[data-active=true] {
+    color: var(--fontColor);
 }
 
 .Menu_items li:hover {

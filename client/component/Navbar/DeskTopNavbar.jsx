@@ -41,7 +41,7 @@ const DeskTopNavbar = () => {
                         <img src="/static/assets/sccse.png" alt='sccselogo' />
                     </div>
                     <div>
-                        <div className={styles.NavLogo}>Student's Chapter</div>
+                        <div className={styles.NavLogo}>Students' Chapter</div>
                         <p className={styles.Navlogopara}>CSE</p>
                     </div>
                 </div>
