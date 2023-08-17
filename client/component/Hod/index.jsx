@@ -8,7 +8,7 @@ const Hod = () => {
                 <div className={styles.hod_container_wrap}>
 
                     <div className={styles.hod_image}>
-                        <Image src='/static/assets/hod_img.webp' width={200} height={200} className={styles.hod_image_style} alt='' />
+                        <Image src='/static/assets/hod_img.webp' width={200} height={200} className={styles.hod_image_style} alt='hod' />
                     </div>
                     <div className={styles.line}></div>
                     <div className={styles.hod_right}>
