@@ -46,9 +46,40 @@ export const eventsData = [
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Code, Collab, Conquer"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">First Intra-College Hackathon of AOT</div>',
         date: new Date(2023, 8, 26),
         category: 'upcoming',
-        registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69"
+        registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69",
+        sponsors: [
+            {
+                name: 'Google Cloud Kolkata',
+                logoUrl: '/static/assets/sponsors/gdg_kolkata.jpg',
+                href: 'https://gdgcloud.kolkata.dev/ccd2023/'
+            },
+            {
+                name: 'Flutter Kolkata', 
+                logoUrl: '/static/assets/sponsors/flutter_kolkata.jpg',
+                href: 'https://in.linkedin.com/company/flutter-kolkata'
+            },
+            {
+                name: 'Grid Reputation',
+                logoUrl: '/static/assets/sponsors/grid_reputation.jpg',
+                href: 'https://gridreputation.com/'
+            },
+            {
+                name: 'Dimension Labs',
+                logoUrl: '/static/assets/sponsors/dim_labs.png',
+                href: 'https://www.dimensionlabs.in/'
+            }
+        ]
     },
 ];
+
+// Returns the list of upcoming events by filtering the provided
+// event list based on the category property.
+// If no list is provided, then it returns the events in  `eventsData`.
+export function getUpcomingEvents(events) {
+    if (!Array.isArray(events))
+        events = eventsData
+    return events.filter(event => event.category == 'upcoming')
+}
 
 export const teams = [
     {
@@ -311,13 +342,5 @@ export const teams = [
                 ],
             },
         ],
-    },
-];
-
-export const upcomingEvents = [
-    {
-        title: 'InterHacktive 1.0',
-        date: new Date(),
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium deleniti cupiditate ullam, animi reprehenderit officiaaliquid ipsam veniam rem?',
     },
 ];
