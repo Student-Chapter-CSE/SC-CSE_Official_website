@@ -78,7 +78,7 @@ export const eventsData = [
 export function getUpcomingEvents(events) {
     if (!Array.isArray(events))
         events = eventsData
-    return events.filter(event => event.category == 'upcoming')
+    return events.filter(event => event.category === 'upcoming')
 }
 
 export const teams = [
@@ -248,7 +248,7 @@ export const teams = [
             {
                 img: sayan,
                 name: 'Sayan Mukherjee',
-                desg: 'Co-Marketing Lead',
+                desg: 'Marketing Co-Lead',
                 socials: [
                     'https://github.com/Sayan044',
                     'https://www.linkedin.com/in/sayan-mukherjee-975175229',
