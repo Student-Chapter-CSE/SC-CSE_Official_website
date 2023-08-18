@@ -19,6 +19,14 @@
     margin-bottom: 3rem;
 }
 
+.aot {
+    color: transparent;
+    font-size: 1em;
+    -webkit-text-stroke: 2px #999;
+    letter-spacing: 0.08em;
+    font-weight: bolder;
+}
+
 .welcomeText {
     font-size: 2.5rem;
     font-weight: bold;
@@ -93,6 +101,14 @@
 
 @media only screen and (min-width: 1280px) {
     .content {
+        padding: 7vw;
+    }
+}
+
+
+@media only screen and (min-width: 1536px) {
+    .content {
         padding: 10vw;
     }
 }
+
