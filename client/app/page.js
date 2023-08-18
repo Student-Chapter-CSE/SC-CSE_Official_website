@@ -2,7 +2,7 @@
 import { lazy, Suspense } from 'react';
 import styles from '../styles/Home.module.css';
 
-import { upcomingEvents } from '../data';
+import { getUpcomingEvents } from '../data';
 import Loading from './loading';
 import About from '../component/About';
 import Counter from '../component/Counter';
@@ -29,7 +29,7 @@ export default function Home() {
                     <About />
                 </div>
                 <div className={styles.sectionHolder}>
-                    <UpcomingEvents events={upcomingEvents} />
+                    <UpcomingEvents events={getUpcomingEvents()} />
                 </div>
                 <div>
                     <Footer />
