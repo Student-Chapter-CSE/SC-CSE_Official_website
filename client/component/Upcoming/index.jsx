@@ -3,6 +3,7 @@ import Link from 'next/link';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import { SponsorList } from '../Sponsor';
 import { useEffect, useRef } from 'react';
+import DateElement from '../Date/date';
 
 export default function UpcomingEvents({ events }) {
     return (
@@ -45,24 +46,7 @@ function Card({ details, descriptionMaxLength = 200 }) {
     useEffect(() => {
         contentRef.current.innerHTML = details.content
     })
-
-    function nth(d) {
-        const dString = String(d)
-        const last = +dString.slice(-2)
-        if (last > 3 && last < 21) return 'th'
-        switch (last % 10) {
-            case 1: return "st"
-            case 2: return "nd"
-            case 3: return "rd"
-            default: return "th"
-        }
-    }
-
-    function dateToText(date) {
-        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-        return `${date.getDate()}${nth(date.getDate())}  ${months[date.getMonth()]}, ${date.getFullYear()}`
-    }
-
+    
     function gotoLink(link) {
         /* TODO */
     }
@@ -70,7 +54,7 @@ function Card({ details, descriptionMaxLength = 200 }) {
     return (
         <div className={styles.card}>
             <div className={styles.cardImg}>
-                <img src='/static/assets/ih_1.png'></img>
+                <img src={details.bannerImgUrl}></img>
             </div>
             <div className={styles.cardContent}>
                 <div className={styles.cardContent_Left}>
@@ -79,7 +63,7 @@ function Card({ details, descriptionMaxLength = 200 }) {
                             {details && details.heading}
                         </div>
                         <div className={styles.cardDate}>{
-                            details && details.date && dateToText(details.date)
+                            details && details.date && <DateElement date={details.date}/>
                         }</div>
                     </div>
                     {
