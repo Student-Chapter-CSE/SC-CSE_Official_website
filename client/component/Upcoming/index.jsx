@@ -1,9 +1,9 @@
 import styles from '../../styles/Upcoming.module.css';
 import Link from 'next/link';
 import useMediaQuery from '../../hooks/useMediaQuery';
-import { SponsorList } from '../Sponsor';
+import SponsorList from '../Sponsor';
 import { useEffect, useRef } from 'react';
-import DateElement from '../Date/date';
+import DateElement from '../Date';
 
 const UpcomingEvents = ({ events }) => {
     return (
@@ -38,14 +38,14 @@ const UpcomingEvents = ({ events }) => {
     )
 }
 
-const Card = ({ details, descriptionMaxLength = 200 }) => {
+const Card = ({ details }) => {
     const contentRef = useRef()
 
     const isMedScreen = useMediaQuery('(min-width: 768px)')
 
     useEffect(() => {
         contentRef.current.innerHTML = details.content
-    })
+    }, [])
     
     function gotoLink(link) {
         /* TODO */
