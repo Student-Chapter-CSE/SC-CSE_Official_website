@@ -46,10 +46,7 @@ const Card = ({ event }) => {
     useEffect(() => {
         contentRef.current.innerHTML = event.content
     }, [])
-    
-    function gotoLink(link) {
-        /* TODO */
-    }
+
 
     return (
         <div className={styles.card}>
@@ -59,15 +56,15 @@ const Card = ({ event }) => {
             <div className={styles.cardContent}>
                 <div className={styles.cardContent_Left}>
                     <div>
-                        <div className={styles.cardTitle} onClick={() => event && event.link && gotoLink(event.link)}>
+                        <div className={styles.cardTitle}>
                             {event && event.heading}
                         </div>
                         <div className={styles.cardDate}>{
-                            event && event.date && <DateElement date={event.date}/>
+                            event && event.date && <DateElement date={event.date} />
                         }</div>
                     </div>
                     {
-                        isMedScreen && event.sponsors && <CardSponsorSection sponsors={event.sponsors}/>
+                        isMedScreen && event.sponsors && <CardSponsorSection sponsors={event.sponsors} />
                     }
                 </div>
                 <div className={styles.cardContent_Right}>
@@ -75,21 +72,16 @@ const Card = ({ event }) => {
 
                     </div>
                     <div className={styles.learnMore}>
-                        <Link href={
-                            typeof(event.pageUrl) === 'string' ?
-                                event.pageUrl
-                                :
-                                "#" 
-                        }>
+                        <Link href={typeof (event.pageUrl) === 'string' ? event.pageUrl : "#"}>
                             Learn More
                         </Link>
                     </div>
                 </div>
                 {
-                        !isMedScreen && event.sponsors && 
-                        <div>
-                            <CardSponsorSection sponsors={event.sponsors}/>
-                        </div>
+                    !isMedScreen && event.sponsors &&
+                    <div>
+                        <CardSponsorSection sponsors={event.sponsors} />
+                    </div>
                 }
             </div>
         </div>

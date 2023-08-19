@@ -109,33 +109,28 @@
     gap: 0.7em;
 }
 
-.registerBtn, .registerBtn > div {
+.registerBtn {
     width: fit-content;
     color: black;
     font-size: 0.94em;
     font-weight: bold;
     color: white;
     letter-spacing: 0.08em;
-}
 
-.registerBtn {
     --outline-offset: 0.25em;
     padding: calc(var(--outline-offset) + 1px);
     cursor: pointer;
-}
 
-.registerBtn > div {
     background: var(--fontColor);
     padding: 0.7em 0.8em;
     border-radius: 0.2em;
 
     outline: 1px dashed #666;
     outline-offset: var(--outline-offset);
-
     transition: all 300ms;
 }
 
-.registerBtn:hover > div {
+.registerBtn:hover {
     outline-color: #888;
 }
 
@@ -144,7 +139,6 @@
     font-weight: bold;
     font-size: 5em;
     letter-spacing: 0.1em;
-
     margin: 1em 0;
 }
 
