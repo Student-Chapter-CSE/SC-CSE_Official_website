@@ -1,6 +1,6 @@
 import styles from '../../styles/Event.module.css';
 import { useEffect, useRef } from 'react';
-import DateElement from '../Date/date';
+import DateElement from '../Date';
 
 const Event = ({ img, heading, content, date, category, registrationLink }) => {
     const descRef = useRef()
@@ -9,7 +9,7 @@ const Event = ({ img, heading, content, date, category, registrationLink }) => {
         // I know this is bad but I don't have any
         // other option T_T
         descRef.current.innerHTML = content
-    })
+    }, [])
 
     return (
         // <div className={styles.body}>
@@ -30,9 +30,9 @@ const Event = ({ img, heading, content, date, category, registrationLink }) => {
                         </div>
 
                         {
-                            category == 'upcoming' &&
+                            category === 'upcoming' &&
                             <div className={styles.registerDiv}>
-                                <a href={registrationLink} className={styles.register}>
+                                <a href={registrationLink} target='_blank' className={styles.register}>
                                     Register
                                 </a>
                             </div>

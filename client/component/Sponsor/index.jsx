@@ -6,7 +6,7 @@ const Sponsor = ({ name, href, logoUrl, className }) => {
         <div
             className={`${styles.sponsor} ${className || ''}`}
             data-name={name}
-            onClick={() => { if (typeof (href) === string) window.open(href, '_blank') }}
+            onClick={() => window.open(href, '_blank') }
         >
             <img src={logoUrl} alt={name} />
         </div>
