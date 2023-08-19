@@ -13,8 +13,6 @@ cloudinary.config({
   api_secret: process.env.API_SECRET,
 });
 
-connectDB();
-
 const app = express();
 app.use(
   express.json({
@@ -30,8 +28,17 @@ app.use(
   })
 );
 
+app.get("/api/v1", (req, res) => res.send('Hello from SCCSE-AOT'));
 app.use("/api/v1/member", memberRoute);
 
-app.listen(port, () => {
-  console.log("server is running on " + port);
-});
+
+connectDB()
+  .then(() => {
+    app.listen(port, () => {
+      console.log("server is running on " + port);
+    });
+  })
+  .catch(() => {
+    console.log("Couldn't start server");
+  })
+
