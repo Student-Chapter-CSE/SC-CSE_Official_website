@@ -1,0 +1,255 @@
+.image {
+    border-radius: 1em;
+    border: 1px solid #333;
+    width: 100%;
+    display: block;
+}
+
+.holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 4em;
+}
+
+.header {
+    margin-bottom: 2em;
+}
+
+.eventBanner {
+    margin-bottom: 2em;
+}
+
+.section {
+    margin-bottom: 2em;
+}
+
+.normalTxt {
+    color: #999;
+    line-height: 2em;
+    font-size: 0.9em;
+    letter-spacing: 0.07em;
+}
+
+.articleTitle {
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--fontColor);
+    letter-spacing: 0.1em;
+
+    position: relative;
+
+    padding: 0.5em 0;
+}
+
+.articleTitle::before {
+    content: "";
+    position: absolute;
+    left: -0.4em;
+    top: 0;
+    height: 0em;
+
+    border-left: 1px solid;
+
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to bottom, #333, 50%, transparent);
+}
+
+.articleTitle::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    border-bottom: 1px dashed #333;
+}
+
+.h1, .h2 {
+    color: var(--fontColor);
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid;
+
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #333, 90%, transparent);
+    padding: 1rem 0;
+
+    word-break: break-all;
+}
+
+.h2 {
+    font-size: 2em;;
+}
+
+.eventDate {
+    color: #444;
+    margin-top: 1.5em;
+    /* margin-bottom: 4em; */
+
+    display: flex;
+    align-items: center;
+
+    gap: 1em;
+}
+
+.eventDateCalender {
+    font-size: 1.5em;
+}
+
+.downloadBrochure {
+    width: fit-content;
+    color: var(--fontColor);
+    letter-spacing: 0.08em;
+
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+}
+
+.registerBtn, .registerBtn > div {
+    width: fit-content;
+    color: black;
+    font-size: 0.94em;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.08em;
+}
+
+.registerBtn {
+    --outline-offset: 0.25em;
+    padding: calc(var(--outline-offset) + 1px);
+    cursor: pointer;
+}
+
+.registerBtn > div {
+    background: var(--fontColor);
+    padding: 0.7em 0.8em;
+    border-radius: 0.2em;
+
+    outline: 1px dashed #666;
+    outline-offset: var(--outline-offset);
+
+    transition: all 300ms;
+}
+
+.registerBtn:hover > div {
+    outline-color: #888;
+}
+
+.personTableTitle {
+    color: var(--fontColor);
+    font-weight: bold;
+    font-size: 5em;
+    letter-spacing: 0.1em;
+
+    margin: 1em 0;
+}
+
+.personTableTable {
+    width: 100%;
+
+    border-spacing: 0 2em;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    width: fit-content;
+}
+
+.personDp > img  {
+    width: 4em;
+    height: 4em;
+
+    display: block;
+    border-radius: 100%;
+    outline: 2px dashed #666;
+    outline-offset: 1mm;
+}
+
+.personName {
+    color: var(--fontColor);
+
+    margin-bottom: 0.5em;
+}
+
+.personSocial {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    color: var(--textColor);
+
+    font-size: 0.8em;
+}
+
+
+.sponsorList {
+    font-size: 3em;
+}
+
+.sponsorListHeading {
+    color: var(--textColor);
+    font-size: 0.9rem;
+    padding: 1em 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 0.3em;
+}
+
+.sponsorListHeading::before {
+    content: '\2605';
+    font-size: 1.5em;
+    margin-right: 0.5rem;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .holder {
+        padding-top: 10rem;
+        margin-top: 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .h1, .articleTitle {
+        font-size: 5em;
+    }
+
+    .h2 {
+        font-size: 3em;
+    }
+
+    .articleTitle::before {
+        left: -0.5em;
+        height: 70vh;
+    }
+
+    .articleTitle::after {
+        left: -1em;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        width: 70%
+    }
+}
+
+@media only screen and (min-width: 1536px)  {
+    .container {
+        width: 50%;
+    } 
+}
