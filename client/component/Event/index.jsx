@@ -34,14 +34,15 @@ const Event = ({ img, heading, content, date, category, registrationLink, pageUr
                         <div className={styles.contentContent} ref={descRef}>
                         </div>
 
-                        {
+                        {/* Don't think it's necessary here, anyway you have to see full info about event *_* */}
+                        {/* {
                             category === 'upcoming' &&
                             <div className={styles.registerDiv}>
                                 <a href={registrationLink} target='_blank' className={styles.register}>
                                     Register
                                 </a>
                             </div>
-                        }
+                        } */}
                     </div>
                 </div>
             </div>
