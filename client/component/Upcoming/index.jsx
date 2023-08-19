@@ -4,7 +4,7 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 import { SponsorList } from '../Sponsor';
 import { useEffect, useRef } from 'react';
 
-export default function UpcomingEvents({ events }) {
+const UpcomingEvents = ({ events }) => {
     return (
         <>
             <section className={styles.upcomingItems}>
@@ -37,7 +37,7 @@ export default function UpcomingEvents({ events }) {
     )
 }
 
-function Card({ details, descriptionMaxLength = 200 }) {
+const Card = ({ details, descriptionMaxLength = 200 }) => {
     const contentRef = useRef()
 
     const isMedScreen = useMediaQuery('(min-width: 768px)')
@@ -105,7 +105,7 @@ function Card({ details, descriptionMaxLength = 200 }) {
     )
 }
 
-function CardSponsorSection({ sponsors }) {
+const CardSponsorSection = ({ sponsors }) => {
     return (
         <div className={styles.sponsorListSection}>
             <div className={styles.sponsorListHeading}>
@@ -117,3 +117,6 @@ function CardSponsorSection({ sponsors }) {
         </div>
     )
 }
+
+
+export default UpcomingEvents

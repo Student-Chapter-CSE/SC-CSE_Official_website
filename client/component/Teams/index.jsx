@@ -6,7 +6,7 @@ import { forwardRef } from 'react';
 import Link from 'next/link';
 import { CloudArrowDown } from '@phosphor-icons/react';
 
-export default function Teams() {
+const Teams = () => {
     return (
         <>
             <div className={styles.teams_holder}>
@@ -85,3 +85,6 @@ const NodePointSvg = forwardRef(function NodePointSvg({ width = '1.5rem', height
     )
 })
 
+
+
+export default Teams

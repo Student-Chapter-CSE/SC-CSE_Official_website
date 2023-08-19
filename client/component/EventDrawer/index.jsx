@@ -1,9 +1,8 @@
 import styles from '../../styles/EventDrawer.module.css'
-
 import { useState } from 'react'
 
 
-export default function EventDrawer({ children, className }) {
+const EventDrawer = ({ children, className }) => {
 
     const tabs = [
         { name: 'Upcoming' },
@@ -56,3 +55,5 @@ export default function EventDrawer({ children, className }) {
         </div>
     )
 }
+
+export default EventDrawer

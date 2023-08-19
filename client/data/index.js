@@ -44,7 +44,7 @@ export const eventsData = [
         img: '/static/assets/ih_logo.png',
         heading: 'InterHacktive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Code, Collab, Conquer"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">First Intra-College Hackathon of AOT</div>',
-        date: new Date(2023, 8, 26),
+        date: new Date(2023, 7, 26), //Provide month index
         category: 'upcoming',
         registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69",
         sponsors: [
@@ -72,13 +72,8 @@ export const eventsData = [
     },
 ];
 
-// Returns the list of upcoming events by filtering the provided
-// event list based on the category property.
-// If no list is provided, then it returns the events in  `eventsData`.
-export function getUpcomingEvents(events) {
-    if (!Array.isArray(events))
-        events = eventsData
-    return events.filter(event => event.category === 'upcoming')
+export const getUpcomingEvents = () => {
+    return eventsData.filter(event => event.category === 'upcoming')
 }
 
 export const teams = [

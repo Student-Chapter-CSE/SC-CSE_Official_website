@@ -6,10 +6,10 @@ import Event from '../../component/Event';
 import { eventsData } from '../../data';
 import EventDrawer from '../../component/EventDrawer';
 
-export default function events() {
+const Events = () => {
 
-    const upcoming = eventsData.filter(e => e.category == 'upcoming')
-    const past = eventsData.filter(e => e.category == 'past')
+    const upcoming = eventsData.filter(e => e.category === 'upcoming')
+    const past = eventsData.filter(e => e.category === 'past')
 
     return (
         <>
@@ -26,7 +26,7 @@ export default function events() {
 }
 
 
-function EventList({ events }) {
+const EventList = ({ events }) => {
     return (
         <div>
             {events.map((eventsData, idx) => (
@@ -39,3 +39,4 @@ function EventList({ events }) {
     )
 }
 
+export default Events

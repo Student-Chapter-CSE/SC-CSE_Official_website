@@ -12,7 +12,7 @@ const Header = lazy(() => import('../component/Header'));
 const Hod = lazy(() => import('../component/Hod'));
 const UpcomingEvents = lazy(() => import('../component/Upcoming'));
 
-export default function Home() {
+const Home = () => {
     return (
         <>
             <Suspense fallback={<Loading />}>
@@ -38,3 +38,6 @@ export default function Home() {
         </>
     );
 }
+
+
+export default Home

@@ -1,5 +1,4 @@
 import styles from '../../styles/Event.module.css';
-import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 
 const Event = ({ img, heading, content, date, category, registrationLink }) => {
