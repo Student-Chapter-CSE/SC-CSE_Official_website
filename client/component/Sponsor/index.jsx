@@ -1,19 +1,19 @@
 import styles from '../../styles/Sponsor.module.css'
 
 // href Link to the sponsors website. @nullable
-export function Sponsor({ name, href, logoUrl, className }) {
+const Sponsor = ({ name, href, logoUrl, className }) => {
     return (
         <div
             className={`${styles.sponsor} ${className || ''}`}
             data-name={name}
-            onClick={() => { if (typeof (href) == 'string') window.location.href = href; }}
+            onClick={() => { if (typeof (href) === string) window.open(href, '_blank') }}
         >
-            <img src={logoUrl}></img>
+            <img src={logoUrl} alt={name} />
         </div>
     )
 }
 
-export function SponsorList({ sponsors, sponsorClassName, className }) {
+const SponsorList = ({ sponsors, sponsorClassName, className }) => {
     return (
         <div className={`${styles.sponsorList} ${className || ''}`}>
             {
@@ -24,3 +24,5 @@ export function SponsorList({ sponsors, sponsorClassName, className }) {
         </div>
     )
 }
+
+export default SponsorList
