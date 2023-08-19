@@ -25,7 +25,7 @@ const Footer = () => {
                             <a href="https://www.instagram.com/sccse_aot/" aria-label='Way to SCCSE Instagram'>
                                 <InstagramLogo size={32} weight="bold" />
                             </a>
-                            <a href="https://www.youtube.com/channel/UCFvgz8LpzW5Vv9wSJWPpypQ" aria-label='Way to SCCSE Youtube'>
+                            <a href="https://youtube.com/@sccseaot" aria-label='Way to SCCSE Youtube'>
                                 <YoutubeLogo size={32} weight="bold" />
                             </a>
                             <a href="https://www.linkedin.com/company/sccseaot/about/" aria-label='Way to SCCSE LinkedIn'>

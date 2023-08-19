@@ -19,6 +19,44 @@ import rohitp from '../public/static/assets/rohitP.webp';
 import diptanshu from '../public/static/assets/diptanshu.webp';
 import debdeep from '../public/static/assets/debdeep.webp';
 import sayan from '../public/static/assets/sayan.webp';
+import sampurna from '../public/static/assets/sampurna.webp';
+import pratyush from '../public/static/assets/pratyush.webp';
+import shinjini_bose from '../public/static/assets/shinjini_bose.webp';
+
+
+export const EVENTS = {
+    'interhacktive0': {
+        img: '/static/assets/ih_logo.png',
+        bannerImgUrl: '/static/assets/ih_1.png',
+        heading: 'InterHacktive',
+        content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Code, Collab, Conquer"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">First Intra-College Hackathon of AOT</div>',
+        date: new Date(2023, 8, 26),
+        category: 'upcoming',
+        registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69",
+        sponsors: [
+            {
+                name: 'Grid Reputation',
+                logoUrl: '/static/assets/sponsors/grid_reputation.jpg',
+                href: 'https://gridreputation.com/'
+            },
+            {
+                name: 'Google Cloud Kolkata',
+                logoUrl: '/static/assets/sponsors/gdg_kolkata.jpg',
+                href: 'https://gdgcloud.kolkata.dev/ccd2023/'
+            },
+            {
+                name: 'Flutter Kolkata',
+                logoUrl: '/static/assets/sponsors/flutter_kolkata.jpg',
+                href: 'https://in.linkedin.com/company/flutter-kolkata'
+            },
+            {
+                name: 'Dimension Labs',
+                logoUrl: '/static/assets/sponsors/dim_labs.png',
+                href: 'https://www.dimensionlabs.in/'
+            }
+        ]
+    },
+}
 
 
 
@@ -40,36 +78,8 @@ export const eventsData = [
         category: 'past'
     },
     {
-        id: 3,
-        img: '/static/assets/ih_logo.png',
-        heading: 'InterHacktive',
-        content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Code, Collab, Conquer"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">First Intra-College Hackathon of AOT</div>',
-        date: new Date(2023, 7, 26), //Provide month index
-        category: 'upcoming',
-        registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69",
-        sponsors: [
-            {
-                name: 'Google Cloud Kolkata',
-                logoUrl: '/static/assets/sponsors/gdg_kolkata.jpg',
-                href: 'https://gdgcloud.kolkata.dev/ccd2023/'
-            },
-            {
-                name: 'Flutter Kolkata', 
-                logoUrl: '/static/assets/sponsors/flutter_kolkata.jpg',
-                href: 'https://in.linkedin.com/company/flutter-kolkata'
-            },
-            {
-                name: 'Grid Reputation',
-                logoUrl: '/static/assets/sponsors/grid_reputation.jpg',
-                href: 'https://gridreputation.com/'
-            },
-            {
-                name: 'Dimension Labs',
-                logoUrl: '/static/assets/sponsors/dim_labs.png',
-                href: 'https://www.dimensionlabs.in/'
-            }
-        ]
-    },
+        id: 3, ...EVENTS.interhacktive0
+    }
 ];
 
 export const getUpcomingEvents = () => {
@@ -229,6 +239,36 @@ export const teams = [
                     'https://www.linkedin.com/in/arnab-kumar-ghosh-3318a520b',
                     'https://instagram.com/arnab_ghosh04?igshid=NGExMmI2YTkyZg==',
                 ],
+            },
+            {
+                img: sampurna,
+                name: 'Sampurna Dan',
+                desg: 'PR Team Member',
+                socials: [
+                    'https://github.com/SampurnaDan23',
+                    'https://www.linkedin.com/in/sampurna-dan-a91423222',
+                    'https://instagram.com/sampurna__18?igshid=MzNlNGNkZWQ4Mg=='
+                ]
+            },
+            {
+                img: pratyush,
+                name: 'Pratyush Mohapatra',
+                desg: 'PR Team Member',
+                socials: [
+                    'https://github.com/Pratyush-0',
+                    'https://www.linkedin.com/in/pratyush-mahapatra-715a39258',
+                    'https://instagram.com/the_desi_bengali?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D'
+                ]
+            },
+            {
+                img: shinjini_bose,
+                name: 'Shinjini Bose',
+                desg: 'PR Team Member',
+                socials: [
+                    'https://github.com/shinjini-bose',
+                    'https://www.linkedin.com/in/shinjini-bose-9aa57b23a/',
+                    'https://www.instagram.com/shinjineeeeee/'
+                ]
             },
             {
                 img: Aratrik,
