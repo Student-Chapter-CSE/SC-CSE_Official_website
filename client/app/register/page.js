@@ -15,7 +15,7 @@ const index = () => {
     const onSubmit = async (form_data) => {
         SetIsLoading(true);
         try {
-            const { data } = await axios_instance.post('/api/v1/member', {
+            const { data } = await axios_instance.post('/member', {
                 name: form_data?.name,
                 email: form_data?.email,
                 rollno: form_data?.rollno,
