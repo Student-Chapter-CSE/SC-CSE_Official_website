@@ -22,19 +22,19 @@ const JUDGES = [
 
 
 
-export default function Interhacktive() {
-    const event = EVENTS.interhacktive0;
+const Interhacktive = () => {
+    const event = EVENTS?.interhacktive0;
 
     return (
         <div className={styles.holder}>
             <div className={styles.container}>
                 <div className={styles.header}>
                     <div className={styles.articleTitle}>
-                        {event.heading}
+                        {event?.heading}
                     </div>
                     <div className={styles.eventDate}>
                         <CalendarCheck className={styles.eventDateCalender} />
-                        <DateElement date={event.date} />
+                        <DateElement date={event?.date} />
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@ export default function Interhacktive() {
                 </div>
 
                 <div className={styles.section}>
-                    <div><RegisterButton /></div>
+                    <a className={styles.registerBtn} href={event?.registrationLink} target='_blank'>Register</a>
                 </div>
 
                 <div className={`${styles.normalTxt} ${styles.section}`}>
@@ -55,7 +55,7 @@ export default function Interhacktive() {
                 </div>
 
                 <div className={styles.section}>
-                    <SponsorSection sponsors={EVENTS.interhacktive0.sponsors}/>
+                    <SponsorSection sponsors={event?.sponsors} />
                 </div>
 
                 <div className={styles.section}>
@@ -66,27 +66,16 @@ export default function Interhacktive() {
     )
 }
 
-function DownloadBrochure() {
+const DownloadBrochure = () => {
     return (
-        <a
-            className={styles.downloadBrochure}
-            href="/downloads/interhacktive_brochure.pdf"
-        >
+        <a className={styles.downloadBrochure} href="/downloads/interhacktive_brochure.pdf">
             Download Brochure
             <ArrowDown />
         </a>
     )
 }
 
-function RegisterButton() {
-    return (
-        <div className={styles.registerBtn}>
-            <div>Register</div>
-        </div>
-    )
-}
-
-function SponsorSection({ sponsors }) {
+const SponsorSection = ({ sponsors }) => {
     return (
         <div className={styles.sponsorListSection}>
             <div className={styles.sponsorListHeading}>
@@ -102,7 +91,7 @@ function SponsorSection({ sponsors }) {
 
 
 
-function Person({ name, dpUrl = '/static/assets/avatar.png', linkedIn }) {
+const Person = ({ name, dpUrl = '/static/assets/avatar.png', linkedIn }) => {
     return (
         <div className={styles.person}>
             <div className={styles.personDp}><img src={dpUrl} /></div>
@@ -119,7 +108,7 @@ function Person({ name, dpUrl = '/static/assets/avatar.png', linkedIn }) {
     )
 }
 
-function PersonTable({ title, persons }) {
+const PersonTable = ({ title, persons }) => {
 
     const isMedScreen = useMediaQuery('(min-width: 768px)')
     const [ceil, setCeil] = useState();
@@ -159,7 +148,7 @@ function PersonTable({ title, persons }) {
     )
 }
 
-function PersonRow({ persons }) {
+const PersonRow = ({ persons }) => {
     return (
         <tr className={styles.personTableRow}>
             {
@@ -173,3 +162,6 @@ function PersonRow({ persons }) {
     )
 }
 
+
+
+export default Interhacktive
