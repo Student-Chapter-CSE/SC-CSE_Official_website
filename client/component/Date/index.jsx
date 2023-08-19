@@ -1,11 +1,11 @@
-export default function DateElement({date}) {
+const DateElement = ({ date }) => {
     return (
         <span>{dateToText(date)}</span>
     )
 }
 
 
-function nth(d) {
+const nth = (d) => {
     const dString = String(d)
     const last = +dString.slice(-2)
     if (last > 3 && last < 21) return 'th'
@@ -17,7 +17,9 @@ function nth(d) {
     }
 }
 
-function dateToText(date) {
+const dateToText = (date) => {
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-    return `${date.getDate()}${nth(date.getDate())}  ${months[date.getMonth() - 1]}, ${date.getFullYear()}`
+    return `${date.getDate()}${nth(date.getDate())}  ${months[date.getMonth()]}, ${date.getFullYear()}`
 }
+
+export default DateElement
