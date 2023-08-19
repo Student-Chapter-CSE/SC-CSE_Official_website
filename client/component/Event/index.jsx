@@ -2,8 +2,11 @@ import styles from '../../styles/Event.module.css';
 import { useEffect, useRef } from 'react';
 import DateElement from '../Date';
 
-const Event = ({ img, heading, content, date, category, registrationLink }) => {
+import { useRouter } from 'next/navigation';
+
+const Event = ({ img, heading, content, date, category, registrationLink, pageUrl }) => {
     const descRef = useRef()
+    const router = useRouter()
 
     useEffect(() => {
         // I know this is bad but I don't have any
@@ -14,7 +17,9 @@ const Event = ({ img, heading, content, date, category, registrationLink }) => {
     return (
         // <div className={styles.body}>
         <div className={styles.container}>
-            <div className={styles.card} data-is-upcoming={category == 'upcoming'}>
+            <div className={styles.card} data-is-upcoming={category == 'upcoming'}
+                onClick={() => typeof(pageUrl) === 'string' && router.push(pageUrl)}
+            >
                 <div className={styles.box}>
                     <div className={styles.imgBx}>
                         <img src={img} alt={heading} />

@@ -22,6 +22,7 @@ import sayan from '../public/static/assets/sayan.webp';
 import sampurna from '../public/static/assets/sampurna.webp';
 import pratyush from '../public/static/assets/pratyush.webp';
 import shinjini_bose from '../public/static/assets/shinjini_bose.webp';
+import sayandas from '../public/static/assets/sayandas.webp'
 
 
 export const EVENTS = {
@@ -30,9 +31,10 @@ export const EVENTS = {
         bannerImgUrl: '/static/assets/ih_1.png',
         heading: 'InterHacktive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Code, Collab, Conquer"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">First Intra-College Hackathon of AOT</div>',
-        date: new Date(2023, 7, 26), // Provide month index
+        date: new Date(2023, 8, 26), // Retard
         category: 'upcoming',
         registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69",
+        pageUrl: '/events/interhacktive',
         sponsors: [
             {
                 name: 'Grid Reputation',
@@ -243,7 +245,7 @@ export const teams = [
             {
                 img: sampurna,
                 name: 'Sampurna Dan',
-                desg: 'PR Team Member',
+                desg: 'PR Team',
                 socials: [
                     'https://github.com/SampurnaDan23',
                     'https://www.linkedin.com/in/sampurna-dan-a91423222',
@@ -253,7 +255,7 @@ export const teams = [
             {
                 img: pratyush,
                 name: 'Pratyush Mohapatra',
-                desg: 'PR Team Member',
+                desg: 'PR Team',
                 socials: [
                     'https://github.com/Pratyush-0',
                     'https://www.linkedin.com/in/pratyush-mahapatra-715a39258',
@@ -263,11 +265,21 @@ export const teams = [
             {
                 img: shinjini_bose,
                 name: 'Shinjini Bose',
-                desg: 'PR Team Member',
+                desg: 'PR Team',
                 socials: [
                     'https://github.com/shinjini-bose',
                     'https://www.linkedin.com/in/shinjini-bose-9aa57b23a/',
                     'https://www.instagram.com/shinjineeeeee/'
+                ]
+            },
+            {
+                img: sayandas,
+                name: 'Sayan Das',
+                desg: 'PR Team',
+                socials: [
+                    'https://github.com/Sayan67',
+                    'https://www.linkedin.com/in/sayan-das-435b1721a',
+                    'https://www.instagram.com/flute_buddy/'
                 ]
             },
             {

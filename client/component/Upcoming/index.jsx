@@ -22,7 +22,7 @@ const UpcomingEvents = ({ events }) => {
                             <div className={styles.upcomingCards}>
                                 {
                                     events.map((event, i) => (
-                                        <Card key={i} details={event} />
+                                        <Card key={i} event={event} />
                                     ))
                                 }
                             </div>
@@ -38,13 +38,13 @@ const UpcomingEvents = ({ events }) => {
     )
 }
 
-const Card = ({ details }) => {
+const Card = ({ event }) => {
     const contentRef = useRef()
 
     const isMedScreen = useMediaQuery('(min-width: 768px)')
 
     useEffect(() => {
-        contentRef.current.innerHTML = details.content
+        contentRef.current.innerHTML = event.content
     }, [])
     
     function gotoLink(link) {
@@ -54,20 +54,20 @@ const Card = ({ details }) => {
     return (
         <div className={styles.card}>
             <div className={styles.cardImg}>
-                <img src={details.bannerImgUrl}></img>
+                <img src={event.bannerImgUrl}></img>
             </div>
             <div className={styles.cardContent}>
                 <div className={styles.cardContent_Left}>
                     <div>
-                        <div className={styles.cardTitle} onClick={() => details && details.link && gotoLink(details.link)}>
-                            {details && details.heading}
+                        <div className={styles.cardTitle} onClick={() => event && event.link && gotoLink(event.link)}>
+                            {event && event.heading}
                         </div>
                         <div className={styles.cardDate}>{
-                            details && details.date && <DateElement date={details.date}/>
+                            event && event.date && <DateElement date={event.date}/>
                         }</div>
                     </div>
                     {
-                        isMedScreen && details.sponsors && <CardSponsorSection sponsors={details.sponsors}/>
+                        isMedScreen && event.sponsors && <CardSponsorSection sponsors={event.sponsors}/>
                     }
                 </div>
                 <div className={styles.cardContent_Right}>
@@ -75,13 +75,20 @@ const Card = ({ details }) => {
 
                     </div>
                     <div className={styles.learnMore}>
-                        <Link href="#">Learn More</Link>
+                        <Link href={
+                            typeof(event.pageUrl) === 'string' ?
+                                event.pageUrl
+                                :
+                                "#" 
+                        }>
+                            Learn More
+                        </Link>
                     </div>
                 </div>
                 {
-                        !isMedScreen && details.sponsors && 
+                        !isMedScreen && event.sponsors && 
                         <div>
-                            <CardSponsorSection sponsors={details.sponsors}/>
+                            <CardSponsorSection sponsors={event.sponsors}/>
                         </div>
                 }
             </div>

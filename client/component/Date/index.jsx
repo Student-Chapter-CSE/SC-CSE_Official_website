@@ -19,7 +19,7 @@ const nth = (d) => {
 
 const dateToText = (date) => {
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-    return `${date.getDate()}${nth(date.getDate())}  ${months[date.getMonth()]}, ${date.getFullYear()}`
+    return `${date.getDate()}${nth(date.getDate())}  ${months[date.getMonth()] - 1}, ${date.getFullYear()}`
 }
 
 export default DateElement
