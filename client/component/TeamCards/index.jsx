@@ -23,19 +23,28 @@ export default function TeamCards({ img, name, desg, socials }) {
 
                     <div className={styles.socials}>
                         <div className={styles.icons1}>
-                            <Link href={socials[0]} target="_blank" aria-label='GitHub'>
-                                <GithubLogo />
-                            </Link>
+                            {
+                                socials[0] !== '' &&
+                                <Link href={socials[0]} target="_blank" aria-label='GitHub'>
+                                    <GithubLogo />
+                                </Link>
+                            }
                         </div>
                         <div className={styles.icons2}>
-                            <Link href={socials[1]} target="_blank" aria-label='LinkedIn'>
-                                <LinkedinLogo />
-                            </Link>
+                            {
+                                socials[1] !== '' &&
+                                <Link href={socials[1]} target="_blank" aria-label='LinkedIn'>
+                                    <LinkedinLogo />
+                                </Link>
+                            }
                         </div>
                         <div className={styles.icons3}>
-                            <Link href={socials[2]} target="_blank" aria-label='Instagram'>
-                                <InstagramLogo />
-                            </Link>
+                            {
+                                socials[2] !== '' &&
+                                <Link href={socials[2]} target="_blank" aria-label='Instagram'>
+                                    <InstagramLogo />
+                                </Link>
+                            }
                         </div>
                     </div>
                 </div>
