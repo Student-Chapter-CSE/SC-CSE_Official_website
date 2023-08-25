@@ -13,6 +13,9 @@ import { useEffect, useState } from 'react';
 
 const JUDGES = [
     { name: 'Aakash Munshi', linkedIn: 'https://www.linkedin.com/in/akash-munshi/' },
+    { name: 'Arnab Chatterjee', linkedIn: 'https://www.linkedin.com/in/arnab-chatterjee-9a0253187'},
+    { name: 'Bisakh Neogi', linkedIn: 'https://www.linkedin.com/in/bishakh-neogi-387815205/'},
+    { name: 'Irshit Mukherjee', linkedIn: 'https://www.linkedin.com/in/irshit-mukherjee-693a99219/'},
     { name: 'Jyoti Mishra', linkedIn: 'https://www.linkedin.com/in/jyotim29/' },
     { name: 'Rahul Jaiswal', linkedIn: 'https://www.linkedin.com/in/rahul-jaiswal-570042ab/' },
     { name: 'Sandip Palit', linkedIn: 'https://www.linkedin.com/in/sandip-palit/' },
