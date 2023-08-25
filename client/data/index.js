@@ -23,6 +23,12 @@ import sampurna from '../public/static/assets/sampurna.webp';
 import pratyush from '../public/static/assets/pratyush.webp';
 import shinjini_bose from '../public/static/assets/shinjini_bose.webp';
 import sayandas from '../public/static/assets/sayandas.webp'
+import shanit from '../public/static/assets/shanit.webp'
+import rayoti from '../public/static/assets/rayoti.webp'
+import koustav from '../public/static/assets/koustav.webp'
+import sulagna from '../public/static/assets/sulagna.webp'
+import heya from '../public/static/assets/heya.webp'
+import srijan from '../public/static/assets/srijan.webp'
 
 
 export const EVENTS = {
@@ -168,6 +174,26 @@ export const teams = [
                 ],
             },
             {
+                img: shanit,
+                name: 'Shanit Paul',
+                desg: 'Member',
+                socials: [
+                    'https://github.com/SlicePoh',
+                    'https://www.linkedin.com/in/shanit-paul-746026205/',
+                    'https://www.instagram.com/_s_h_a_n_i_t_/',
+                ],
+            },
+            {
+                img: rayoti,
+                name: 'Rayoti Kar',
+                desg: 'Member',
+                socials: [
+                    'https://github.com/RayotiKar',
+                    'https://www.linkedin.com/in/rayoti-kar/',
+                    'https://www.instagram.com/ra_eyo_tiiiii/',
+                ],
+            },
+            {
                 img: avatar,
                 name: 'Abhirup Saha',
                 desg: 'Upcoming Tech Lead',
@@ -243,6 +269,16 @@ export const teams = [
                 ],
             },
             {
+                img: srijan,
+                name: 'Srijan Mukherjee',
+                desg: 'PR Team',
+                socials: [
+                    '',
+                    'https://www.linkedin.com/in/srijan-mukherjee-6342a321b/',
+                    'https://www.instagram.com/srijan_mukherjee/',
+                ],
+            },
+            {
                 img: sampurna,
                 name: 'Sampurna Dan',
                 desg: 'PR Team',
@@ -310,6 +346,36 @@ export const teams = [
                     'https://github.com/rohit32999',
                     'https://www.linkedin.com/in/rohit-chakrabarti-04b981230/',
                     'https://instagram.com/dr3am3r_2002?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D',
+                ],
+            },
+            {
+                img: koustav,
+                name: 'Koustav Chatterjee',
+                desg: 'Social-Media Team',
+                socials: [
+                    'https://github.com/Koustavjr',
+                    'https://www.linkedin.com/in/koustav-chatterjee-9b060b226/',
+                    'https://www.instagram.com/koustav216/',
+                ],
+            },
+            {
+                img: sulagna,
+                name: 'Sulagna Hore',
+                desg: 'Social-Media Team',
+                socials: [
+                    '',
+                    'https://www.linkedin.com/in/sulagna-hore-934526254/',
+                    'https://www.instagram.com/sulagna_._/',
+                ],
+            },
+            {
+                img: heya,
+                name: 'Heya Banerjee',
+                desg: 'PR Team',
+                socials: [
+                    '',
+                    '',
+                    '',
                 ],
             },
             {
