@@ -38,7 +38,7 @@ export const EVENTS = {
         heading: 'InterHacktive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Code, Collab, Conquer"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">First Intra-College Hackathon of AOT</div>',
         date: new Date(2023, 8, 26), // Retard
-        category: 'upcoming',
+        category: 'recent',
         registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69",
         pageUrl: '/events/interhacktive',
         sponsors: [
@@ -86,7 +86,23 @@ export const eventsData = [
         category: 'past'
     },
     {
-        id: 3, ...EVENTS.interhacktive0
+        id: 3, ...(() => EVENTS.interhacktive0)()
+    },
+    {
+        id: 4,
+        img: '/static/assets/avatar.png',
+        heading: 'Workshop on ML with Cybersecurity',
+        content: '',
+        date: new Date(),
+        category: 'past'
+    },
+    {
+        id: 5,
+        img: '/static/assets/avatar.png',
+        heading: 'Soft Computing and Machine Learning',
+        content: '',
+        date: new Date(),
+        category: 'upcoming'
     }
 ];
 

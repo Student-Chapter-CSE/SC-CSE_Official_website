@@ -10,6 +10,7 @@ const Events = () => {
 
     const upcoming = eventsData.filter(e => e.category === 'upcoming')
     const past = eventsData.filter(e => e.category === 'past')
+    const recent = eventsData.filter(e => e.category === 'recent')
 
     return (
         <>
@@ -17,6 +18,7 @@ const Events = () => {
                 <div className={styles.events_holder}>
                     <EventDrawer>
                         <EventList events={upcoming}  />
+                        <EventList events={recent} />
                         <EventList events={past} />
                     </EventDrawer>
                 </div>
