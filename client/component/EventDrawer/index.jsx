@@ -6,7 +6,8 @@ const EventDrawer = ({ children, className }) => {
 
     const tabs = [
         { name: 'Upcoming' },
-        { name: 'Past' }
+        { name: 'Recent' },
+        { name: 'Past' },
     ]
 
     const [currentTabId, setCurrentTabId] = useState(0);

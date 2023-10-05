@@ -38,7 +38,7 @@ export const EVENTS = {
         heading: 'InterHacktive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Code, Collab, Conquer"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">First Intra-College Hackathon of AOT</div>',
         date: new Date(2023, 8, 26), // Retard
-        category: 'upcoming',
+        category: 'recent',
         registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69",
         pageUrl: '/events/interhacktive',
         sponsors: [
@@ -70,6 +70,14 @@ export const EVENTS = {
 
 export const eventsData = [
     {
+        id: 2,
+        img: '/static/assets/avatar.png',
+        heading: 'Technocruise',
+        content: '<b>Where Tomorrow\'s Tech Trends Begin Today!</b>',
+        date: new Date(),
+        category: 'past'
+    },
+    {
         id: 1,
         img: '/static/assets/avatar.png',
         heading: 'Stride',
@@ -78,15 +86,15 @@ export const eventsData = [
         category: 'past'
     },
     {
-        id: 2,
-        img: '/static/assets/avatar.png',
-        heading: 'Technocruise',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
-        date: new Date(),
-        category: 'past'
+        id: 3, ...EVENTS.interhacktive0
     },
     {
-        id: 3, ...EVENTS.interhacktive0
+        id: 4,
+        img: '/static/assets/avatar.png',
+        heading: 'One Day Symposium',
+        content: '<b>"Where innovation and intelligence converge"</b><div style="font-size: 0.9rem;filter: brightness(70%);">A session on Soft Computing and Machine Learning</div>',
+        date: new Date(2023, 10, 5),
+        category: 'upcoming',
     }
 ];
 
