@@ -101,7 +101,7 @@ const Person = ({ name, dpUrl = '/static/assets/avatar.png', linkedIn }) => {
             <div className={styles.personInfo}>
                 <div className={styles.personName}>{name}</div>
 
-                <Link href={linkedIn} className={styles.personSocial}>
+                <Link href={linkedIn} target='_blank' className={styles.personSocial}>
                     <LinkedinLogo width='1.5em' height='1.5em' />
                     <div>Linked In</div>
                 </Link>
