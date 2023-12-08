@@ -3,7 +3,7 @@
 import Teams from '../../component/Teams';
 import Footer from '../../component/Footer';
 
-const team = () => {
+const Team = () => {
     return (
         <>
             <Teams />
@@ -12,4 +12,4 @@ const team = () => {
     );
 };
 
-export default team;
+export default Team;

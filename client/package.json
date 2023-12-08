@@ -20,10 +20,11 @@
         "next-images": "^1.8.5",
         "react": "18.2.0",
         "react-dom": "18.2.0",
-        "react-hook-form": "^7.45.4",
+        "react-hook-form": "^7.48.2",
         "react-icons": "^4.10.1",
         "react-lazy-load-image-component": "^1.6.0",
-        "react-simple-typewriter": "^5.0.1"
+        "react-simple-typewriter": "^5.0.1",
+        "sharp": "^0.33.0"
     },
     "devDependencies": {
         "cypress": "12.17.1",

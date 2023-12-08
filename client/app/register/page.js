@@ -8,7 +8,7 @@ import { ArrowLeft } from '@phosphor-icons/react';
 import Preloader from '../../component/Preloader';
 import { axios_instance } from '../../axios/axios';
 
-const index = () => {
+const Register = () => {
     const { register, handleSubmit } = useForm();
     const [Isloading, SetIsLoading] = useState(false);
     const [image_base64, setImage_base64] = useState();
@@ -58,7 +58,6 @@ const index = () => {
         });
     };
 
-    //const getBase64;
     if (Isloading) {
         return <Preloader width="5rem" height="5rem" />;
     } else
@@ -70,7 +69,7 @@ const index = () => {
                     </div>
                     <h1 className={styles.formHeading}>
                         <div>Register</div>
-                        <div>Student's Chapter</div>
+                        <div>Students&apos; Chapter</div>
                     </h1>
                     <form
                         className={styles.form}
@@ -226,7 +225,6 @@ const index = () => {
         );
 };
 
-export default index;
 
 function FormSection({ name, children }) {
     return (
@@ -249,3 +247,6 @@ function BackButton() {
         </div>
     );
 }
+
+
+export default Register;

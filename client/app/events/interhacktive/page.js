@@ -42,7 +42,7 @@ const Interhacktive = () => {
                 </div>
 
                 <div className={styles.eventBanner}>
-                    <img src="/static/assets/ih_1.png" className={styles.image}></img>
+                    <img src="/static/assets/ih_1.png" className={styles.image} alt='interhacktive'></img>
                 </div>
 
                 <div className={styles.section}>
@@ -50,7 +50,7 @@ const Interhacktive = () => {
                 </div>
 
                 <div className={`${styles.normalTxt} ${styles.section}`}>
-                    <p>Unleash Your Ideas At Interhacktive, The First Intra-College Hackathon Hosted By IEI Students' Chapter CSE (AOT). Begin The Two- Part Journey By Completing Tasks Online In The First Phase And In The Second Phase, Shine At The Offline Project Demonstration. Make History At AOT As We Embark In A New Age Of Technological Brilliance! Showcase Your Creativity, Win Exciting Prizes, And Pave Your Path To Success</p>
+                    <p>Unleash Your Ideas At Interhacktive, The First Intra-College Hackathon Hosted By IEI Students&apos; Chapter CSE (AOT). Begin The Two- Part Journey By Completing Tasks Online In The First Phase And In The Second Phase, Shine At The Offline Project Demonstration. Make History At AOT As We Embark In A New Age Of Technological Brilliance! Showcase Your Creativity, Win Exciting Prizes, And Pave Your Path To Success</p>
                 </div>
 
                 <div className={styles.section}>
@@ -97,7 +97,7 @@ const SponsorSection = ({ sponsors }) => {
 const Person = ({ name, dpUrl = '/static/assets/avatar.png', linkedIn }) => {
     return (
         <div className={styles.person}>
-            <div className={styles.personDp}><img src={dpUrl} /></div>
+            <div className={styles.personDp}><img src={dpUrl} alt='dp' /></div>
             <div className={styles.personInfo}>
                 <div className={styles.personName}>{name}</div>
 
