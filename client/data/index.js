@@ -13,7 +13,7 @@ import pratyush from '../public/static/assets/pratyush.webp';
 import sayandas from '../public/static/assets/sayandas.webp'
 import heya from '../public/static/assets/heya.webp'
 import surendra from '../public/static/assets/surendranath.png'
-import ssc from '../public/static/assets/ssc.png'
+import ssc from '../public/static/assets/SSC.png'
 import abhi from '../public/static/assets/abhi.jpg'
 import suvoneel from '../public/static/assets/suvoneel.jpg'
 
