@@ -111,11 +111,11 @@ export const teams = [
                 name: 'Aratrik Bandyopadhay',
                 desg: 'Convener',
                 socials: [
-                    '',
+                    'https://github.com/Aratrik123',
                     'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
                     'https://www.instagram.com/in_dealing_dead_03/',
                 ],
-                quotes:'" Lack Of Communication,Transparency and initiative degrades a community "',//socials are updated
+                quotes:'" Lack Of Communication,Transparency and Initiative degrades a community "',//socials are updated
             },
            
         ],
@@ -164,9 +164,9 @@ export const teams = [
                 socials: [
                     'https://github.com/NabajitBhadury',
                     'https://www.linkedin.com/in/nabajit-bhadury-5a123b24a/',
-                    '',//socials are not updated
+                    'https://www.instagram.com/dh__eu/',//socials are not updated
                 ],
-                quotes:'" Follow your dreams, but donot forget your duty towards yourself ! "',
+                quotes:'" Follow your dreams, but do not forget your duty towards yourself ! "',
             },
             {
                 img: Rohan,
@@ -175,20 +175,20 @@ export const teams = [
                 socials: [
                     'https://github.com/Rohan-450',
                     'https://www.linkedin.com/in/rohan-mitra-63b7a1245/',
-                    'https://www.instagram.com/_rohan._.mitra_/',//socials are not updated
+                    'https://www.instagram.com/_rohan._.mitra_/',//socials are updated
                 ],
-                quotes:'" Being jovial and funny doesnot mean you arent serious, it means you care more for the people around you. "',
+                quotes:'" Being jovial and funny doesnot mean you aren\'t serious, it means you care more for the people around you. "',
             },
             {
                 img: Indrani,
                 name: 'Indrani Som',
                 desg: 'Tech-Team',
                 socials: [
-                    'https://github.com/bishakhne0gi',
-                    'https://www.linkedin.com/in/bishakh-neogi-387815205/',
-                    'https://www.instagram.com/bishakh.neogi/',//socials are not updated
+                    'https://github.com/IndraniSom',
+                    'https://www.linkedin.com/in/indrani-som-258498248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+                    'https://instagram.com/404_coder_not_found?igshid=MXNiczM3ZzJpMW1taA==',//socials are updated
                 ],
-                quotes:'" Intelligence doesnot matter unless you work smart with proper timemanagement! "',
+                quotes:'" Intelligence does not matter unless you work smart with proper time management! "',
             },
             {
                 img: Ashis,
@@ -197,7 +197,7 @@ export const teams = [
                 socials: [
                     'https://github.com/ASHISH26940',
                     'https://www.linkedin.com/in/ashish-gupta-1a75ba253/',
-                    'https://www.instagram.com/just_ashish__/',//socials are not updated
+                    'https://www.instagram.com/just_ashish__/',//socials are updated
                 ],
                 quotes:'" Smart work is always rewarded with knowledge. "',
             },
@@ -231,7 +231,6 @@ export const teams = [
             },
             {
                 img: Jishnu,
-                img: avatar,
                 name: 'Jisnu Hazra',
                 desg: 'Design Associate',
                 socials: [
@@ -250,7 +249,7 @@ export const teams = [
                     'https://www.linkedin.com/in/sankha-subhra-chakraborty-119598273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
                     'https://www.instagram.com/honour_in_blood?igshid=MzMyNGUyNmU2YQ%3D%3D',
                 ],
-                quotes:'" Learn to balance your work and friendships together, as this time wont come back ! "',
+                quotes:'" Learn to balance your work and friendships together, as this time won\'t come back ! "',
             },
             
         ],
@@ -286,7 +285,7 @@ export const teams = [
                 desg: 'Marketing Associate',
                 socials: [
                     '',
-                    '',
+                    'https://www.linkedin.com/in/heya-banerjee-963801280/',
                     'https://www.instagram.com/_.__heya__._/',
                 ],
                 quotes:'" Self-confidence and seriousness is very much necessary to form a perfect community. "',
@@ -314,7 +313,7 @@ export const teams = [
                 name: 'Aratrik Bandyopadhay',
                 desg: 'Convener',
                 socials: [
-                    '',
+                    'https://github.com/Aratrik123',
                     'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
                     'https://www.instagram.com/in_dealing_dead_03/'
                 ],
@@ -338,9 +337,9 @@ export const teams = [
                 socials: [
                     'https://github.com/NabajitBhadury',
                     'https://www.linkedin.com/in/nabajit-bhadury-5a123b24a/',
-                    '',//socials are updated
+                    'https://www.instagram.com/dh__eu/',//socials are updated
                 ],
-                quotes:'" Follow your dreams, but donot forget your duty towards yourself ! "',
+                quotes:'" Follow your dreams, but do not forget your duty towards yourself ! "',
             },
             {
                 img: sayan,
@@ -348,7 +347,7 @@ export const teams = [
                 desg: 'Management Team',
                 socials: [
                     '',
-                    '',
+                    'https://www.linkedin.com/in/sayan-mukherjee-975175229/',
                     'https://www.instagram.com/1010_sayhack/',
                 ],
                 quotes:'" A perfect life is impossible, but stay true to your conscience always ! "',
