@@ -128,20 +128,20 @@ export const teams = [
                 name: 'Abhirup Saha',
                 desg: 'Tech Associate',
                 socials: [
-                    'https://github.com/arnab2001',
-                    'https://www.linkedin.com/in/arnab-chatterjee-9a0253187',
-                    'https://instagram.com/arnab.chatterjee.0?igshid=MzNlNGNkZWQ4Mg==',//socials are not updated
+                    'https://github.com/Abhirup-02',
+                    'https://www.linkedin.com/in/abhirup-saha-9605b0228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+                    'https://instagram.com/lead_u_to_reason?igshid=OGQ5ZDc2ODk2ZA==',//socials are updated
                 ],
                 quotes:'" Do whatever you want, but do it with complete focus. "',
             },
             {
                 img: diptanshu,
-                name: 'Diptanshu Mhaish',
+                name: 'Diptanshu Mahish',
                 desg: 'Tech Associate',
                 socials: [
-                    'https://github.com/bishakhne0gi',
-                    'https://www.linkedin.com/in/bishakh-neogi-387815205/',
-                    'https://www.instagram.com/bishakh.neogi/',//socials are not updated
+                    'https://github.com/diptanshumahish',
+                    'https://in.linkedin.com/in/diptanshumahish',
+                    'https://instagram.com/_diptanshuu_',//socials are updated
                 ],
                 quotes:'" Check out the productivity of the things you are learning, on a daily basis. "',
             },
@@ -150,9 +150,9 @@ export const teams = [
                 name: 'Sayantan Sen',
                 desg: 'Tech Associate',
                 socials: [
-                    'https://github.com/bishakhne0gi',
-                    'https://www.linkedin.com/in/bishakh-neogi-387815205/',
-                    'https://www.instagram.com/bishakh.neogi/',//socials are not updated
+                    'http://github.com/sencrypt',
+                    '',
+                    '',//socials are updated
                 ],
                 quotes:'" Work Hard, to achieve perfection in any aspect of life. "',
 
@@ -162,9 +162,9 @@ export const teams = [
                 name: 'Nabajit Bhadury',
                 desg: 'Tech Associate',
                 socials: [
-                    'https://github.com/IRSHIT033',
-                    'https://www.linkedin.com/in/irshit-mukherjee-693a99219/',
-                    'https://www.instagram.com/irshit_mukerjee_10/',//socials are not updated
+                    'https://github.com/NabajitBhadury',
+                    'https://www.linkedin.com/in/nabajit-bhadury-5a123b24a/',
+                    '',//socials are not updated
                 ],
                 quotes:'" Follow your dreams, but donot forget your duty towards yourself ! "',
             },
@@ -195,9 +195,9 @@ export const teams = [
                 name: 'Ashish Gupta',
                 desg: 'Most Contributions',
                 socials: [
-                    'https://github.com/SlicePoh',
-                    'https://www.linkedin.com/in/shanit-paul-746026205/',
-                    'https://www.instagram.com/_s_h_a_n_i_t_/',//socials are not updated
+                    'https://github.com/ASHISH26940',
+                    'https://www.linkedin.com/in/ashish-gupta-1a75ba253/',
+                    'https://www.instagram.com/just_ashish__/',//socials are not updated
                 ],
                 quotes:'" Smart work is always rewarded with knowledge. "',
             },
@@ -212,9 +212,9 @@ export const teams = [
                 name: 'Sayan Das',
                 desg: 'Design Associate',
                 socials: [
-                    'https://github.com/Mayukh-Ghosh',
-                    'https://www.linkedin.com/in/mayukh-ghosh-7ab511200/ ',
-                    'https://www.instagram.com/mr._.mayukh1011/',
+                    '',
+                    'https://www.linkedin.com/in/sayan-daas/',
+                    '',
                 ],
                 quotes:'" Peace of mind is achieved only by enjoying the work you do. "',
             },
@@ -224,19 +224,20 @@ export const teams = [
                 desg: 'Design Associate',
                 socials: [
                     '',
-                    'https://www.linkedin.com/in/debdeep-maitra-b66552220/',
-                    'https://www.instagram.com/its_wrishi/',
+                    '',
+                    '',
                 ],
                 quotes:'" Enjoy whatever you do, never regret the path you chose in! "',
             },
             {
                 img: Jishnu,
+                img: avatar,
                 name: 'Jisnu Hazra',
                 desg: 'Design Associate',
                 socials: [
-                    'https://github.com/arnab-028',
-                    'https://www.linkedin.com/in/arnab-kumar-ghosh-3318a520b',
-                    'https://instagram.com/arnab_ghosh04?igshid=NGExMmI2YTkyZg==',
+                    'https://github.com/Jisnu3',
+                    'https://www.linkedin.com/in/jisnu-hazra-a26220261',
+                    'https://instagram.com/ilon.ilon.3998?igshid=ZDdkNTZiNTM=',
                 ],
                 quotes:'" A wonderful design gives a soothing sensation to your mind. "',
             },
@@ -246,8 +247,8 @@ export const teams = [
                 desg: 'Most Contributions',
                 socials: [
                     '',
-                    'https://www.linkedin.com/in/srijan-mukherjee-6342a321b/',
-                    'https://www.instagram.com/srijan_mukherjee/',
+                    'https://www.linkedin.com/in/sankha-subhra-chakraborty-119598273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+                    'https://www.instagram.com/honour_in_blood?igshid=MzMyNGUyNmU2YQ%3D%3D',
                 ],
                 quotes:'" Learn to balance your work and friendships together, as this time wont come back ! "',
             },
@@ -262,9 +263,9 @@ export const teams = [
                 name: 'Sayan Mukherjee',
                 desg: 'Marketing Associate',
                 socials: [
-                    'https://github.com/DhritiSundarSaha',
-                    'https://www.linkedin.com/in/dhriti-sundar-saha-90403b1b4',
-                    'https://instagram.com/dhritisundarsaha?igshid=MzRlODBiNWFlZA==',
+                    '',
+                    'https://www.linkedin.com/in/sayan-mukherjee-975175229/',
+                    'https://www.instagram.com/1010_sayhack/',
                 ],
                 quotes:'" A perfect life is impossible, but stay true to your conscience always ! "',
             },
@@ -273,9 +274,9 @@ export const teams = [
                 name: 'Rohit Chakrabarti',
                 desg: 'Designer',
                 socials: [
-                    'https://www.github.com/soumit-s',
-                    'https://www.linkedin.com/in/moulendu',
-                    'https://instagram.com/moulendu.dev',
+                    '',
+                    'https://www.linkedin.com/in/rohit-chakrabarti-04b981230/',
+                    'https://www.instagram.com/_.rohit.2002/',
                 ],
                 quotes:'" Sincerity to your work will help you gain a valuable virtue in future. "',
             },
@@ -284,9 +285,9 @@ export const teams = [
                 name: 'Heya Banerjee',
                 desg: 'Marketing Associate',
                 socials: [
-                    'https://github.com/abhraneel2004',
-                    'https://www.linkedin.com/in/abhraneel-karmakar-1b51971ba/',
-                    'https://www.instagram.com/abhraneel.karmakar/',
+                    '',
+                    '',
+                    'https://www.instagram.com/_.__heya__._/',
                 ],
                 quotes:'" Self-confidence and seriousness is very much necessary to form a perfect community. "',
             },
@@ -295,9 +296,9 @@ export const teams = [
                 name: 'Abhraneel Karmakar ',
                 desg: 'Most Contributions',
                 socials: [
-                    'https://github.com/rohitcodism',
-                    'https://www.linkedin.com/in/rohit-paul-bba868251',
-                    'https://instagram.com/rohitpaul332?igshid=MzNlNGNkZWQ4Mg==',
+                    'https://github.com/abhraneel2004',
+                    'https://www.linkedin.com/in/abhraneel-karmakar-1b51971ba/',
+                    'https://www.instagram.com/abhraneel.karmakar/',
                 ],
                 quotes:'" Love your art. Everyone will leave you, but your passion won\'t ! "',
             },
@@ -323,10 +324,11 @@ export const teams = [
                 name: 'Sayantan Sen',
                 desg: 'Management Team',
                 socials: [
-                    'https://github.com/bishakhne0gi',
-                    'https://www.linkedin.com/in/bishakh-neogi-387815205/',
-                    'https://www.instagram.com/bishakh.neogi/',//socials are not updated
+                    'http://github.com/sencrypt',
+                    '',
+                    '',
                 ],
+                quotes:'" Work Hard, to achieve perfection in any aspect of life. "',
 
             },
             {
@@ -334,20 +336,22 @@ export const teams = [
                 name: 'Nabajit Bhadury',
                 desg: 'Management Team',
                 socials: [
-                    'https://github.com/IRSHIT033',
-                    'https://www.linkedin.com/in/irshit-mukherjee-693a99219/',
-                    'https://www.instagram.com/irshit_mukerjee_10/',//socials are not updated
+                    'https://github.com/NabajitBhadury',
+                    'https://www.linkedin.com/in/nabajit-bhadury-5a123b24a/',
+                    '',//socials are updated
                 ],
+                quotes:'" Follow your dreams, but donot forget your duty towards yourself ! "',
             },
             {
                 img: sayan,
                 name: 'Sayan Mukherjee',
                 desg: 'Management Team',
                 socials: [
-                    'https://github.com/DhritiSundarSaha',
-                    'https://www.linkedin.com/in/dhriti-sundar-saha-90403b1b4',
-                    'https://instagram.com/dhritisundarsaha?igshid=MzRlODBiNWFlZA==',
+                    '',
+                    '',
+                    'https://www.instagram.com/1010_sayhack/',
                 ],
+                quotes:'" A perfect life is impossible, but stay true to your conscience always ! "',
             },
             {
                 img: pratyush,
@@ -355,8 +359,8 @@ export const teams = [
                 desg: 'Contributor and Advisor',
                 socials: [
                     '',
-                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
-                    'https://www.instagram.com/in_dealing_dead_03/'
+                    'https://www.linkedin.com/in/pratyush-mahapatra-715a39258/',
+                    'https://www.instagram.com/the_desi_bengali/'
                 ],
 
             },
@@ -365,8 +369,8 @@ export const teams = [
                 name: 'Soumit Srimany',
                 desg: 'Tech Team',
                 socials: [
-                    '',
-                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
+                    'https://github.com/soumit-s',
+                    'https://www.linkedin.com/in/soumit-srimany-4bb443241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
                     'https://www.instagram.com/in_dealing_dead_03/'
                 ],
 
@@ -376,9 +380,9 @@ export const teams = [
                 name: 'Kaushik Chowdhury',
                 desg: 'Tech Team',
                 socials: [
-                    '',
-                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
-                    'https://www.instagram.com/in_dealing_dead_03/'
+                    'https://github.com/darkard2003',
+                    'https://www.linkedin.com/in/kaushik-chowdhury-379146266/',
+                    'https://www.instagram.com/_.code._.life._/'
                 ],
 
             },
@@ -387,9 +391,9 @@ export const teams = [
                 name: 'Neelakshi Das',
                 desg: 'Tech Team',
                 socials: [
-                    '',
-                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
-                    'https://www.instagram.com/in_dealing_dead_03/'
+                    'https://github.com/bluecoder2003',
+                    'https://www.linkedin.com/in/neelakshi-das-b0ba68244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+                    'https://instagram.com/_crimson_2003?igshid=bXpxMmQ1b2RnamRh'
                 ],
 
             },
@@ -399,8 +403,8 @@ export const teams = [
                 desg: 'Contributor and Advisor',
                 socials: [
                     '',
-                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
-                    'https://www.instagram.com/in_dealing_dead_03/'
+                    '',
+                    'https://www.instagram.com/sampurna__18/'
                 ],
 
             },
@@ -409,9 +413,9 @@ export const teams = [
                 name: 'Moulendu Chowley',
                 desg: 'Design Team',
                 socials: [
-                    '',
-                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
-                    'https://www.instagram.com/in_dealing_dead_03/'
+                    'https://github.com/Moulendu-Chowley',
+                    'https://www.linkedin.com/in/moulendu',
+                    'https://instagram.com/moulendu.dev?igshid=cGg4ZjBkbjV2cWls'
                 ],
 
             },
@@ -420,9 +424,9 @@ export const teams = [
                 name: 'Surendra Nath Chakraborty',
                 desg: 'Design Team',
                 socials: [
-                    '',
-                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
-                    'https://www.instagram.com/in_dealing_dead_03/'
+                    'https://github.com/surendra4you',
+                    'https://www.linkedin.com/in/surendranath-chakraborty-740925260/',
+                    ''
                 ],
 
             },
