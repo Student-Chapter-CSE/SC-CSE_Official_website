@@ -188,7 +188,7 @@ export const teams = [
                     'https://www.linkedin.com/in/indrani-som-258498248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
                     'https://instagram.com/404_coder_not_found?igshid=MXNiczM3ZzJpMW1taA==',//socials are updated
                 ],
-                quotes:'" Intelligence does not matter unless you work smart with proper time management! "',
+                quotes:'" Intelligence does not matter unless you work smart with proper time management ! "',
             },
             {
                 img: Ashis,
@@ -317,6 +317,7 @@ export const teams = [
                     'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
                     'https://www.instagram.com/in_dealing_dead_03/'
                 ],
+                quotes:'" Lack Of Communication,Transparency and Initiative degrades a community "',
             },
             {
                 img: Sayantan,
