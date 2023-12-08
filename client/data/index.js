@@ -1,34 +1,18 @@
 import avatar from '../public/static/assets/avatar.png';
-import Bishakh from '../public/static/assets/neogi.webp';
-import Irshit from '../public/static/assets/irshit.webp';
 import Soumit from '../public/static/assets/soumit.webp';
 import Abhraneel from '../public/static/assets/abhraneel.webp';
-import Prasun from '../public/static/assets/prasun.webp';
-import Mayukh from '../public/static/assets/mayukh.webp';
 import Neelakshi from '../public/static/assets/neelakshi.webp';
 import RohitC from '../public/static/assets/rohitc.webp';
 import Moulendu from '../public/static/assets/moulendu.webp';
-import ArnabKr from '../public/static/assets/ArnabKr.webp';
 import Nabajit from '../public/static/assets/nabajit.webp';
 import Aratrik from '../public/static/assets/Aratrik.webp';
-import Arnab from '../public/static/assets/Arnab.webp';
-import pritanshu from '../public/static/assets/prit.webp';
-import joydeep from '../public/static/assets/joydeep.webp';
-import dhriti from '../public/static/assets/Dhriti.webp';
-import rohitp from '../public/static/assets/rohitP.webp';
 import diptanshu from '../public/static/assets/diptanshu.webp';
-import debdeep from '../public/static/assets/debdeep.webp';
 import sayan from '../public/static/assets/sayan.webp';
 import sampurna from '../public/static/assets/sampurna.webp';
 import pratyush from '../public/static/assets/pratyush.webp';
-import shinjini_bose from '../public/static/assets/shinjini_bose.webp';
 import sayandas from '../public/static/assets/sayandas.webp'
-import shanit from '../public/static/assets/shanit.webp'
-import rayoti from '../public/static/assets/rayoti.webp'
-import koustav from '../public/static/assets/koustav.webp'
-import sulagna from '../public/static/assets/sulagna.webp'
 import heya from '../public/static/assets/heya.webp'
-import srijan from '../public/static/assets/srijan.webp'
+
 
 
 export const EVENTS = {
@@ -140,6 +124,7 @@ export const teams = [
                     'https://www.linkedin.com/in/arnab-chatterjee-9a0253187',
                     'https://instagram.com/arnab.chatterjee.0?igshid=MzNlNGNkZWQ4Mg==',//socials are not updated
                 ],
+                quotes:'" Do whatever you want, but do it with complete focus. "',
             },
             {
                 img: diptanshu,
@@ -150,6 +135,7 @@ export const teams = [
                     'https://www.linkedin.com/in/bishakh-neogi-387815205/',
                     'https://www.instagram.com/bishakh.neogi/',//socials are not updated
                 ],
+                quotes:'" Check out the productivity of the things you are learning, on a daily basis. "',
             },
             {
                 img: avatar,
@@ -160,6 +146,7 @@ export const teams = [
                     'https://www.linkedin.com/in/bishakh-neogi-387815205/',
                     'https://www.instagram.com/bishakh.neogi/',//socials are not updated
                 ],
+                quotes:'" Work Hard, to achieve perfection in any aspect of life. "',
 
             },
             {
@@ -171,16 +158,18 @@ export const teams = [
                     'https://www.linkedin.com/in/irshit-mukherjee-693a99219/',
                     'https://www.instagram.com/irshit_mukerjee_10/',//socials are not updated
                 ],
+                quotes:'" Follow your dreams, but donot forget your duty towards yourself ! "',
             },
             {
                 img: avatar,
                 name: 'Ashish Gupta',
-                desg: 'Most Contributors',
+                desg: 'Most Contributions',
                 socials: [
                     'https://github.com/SlicePoh',
                     'https://www.linkedin.com/in/shanit-paul-746026205/',
                     'https://www.instagram.com/_s_h_a_n_i_t_/',//socials are not updated
                 ],
+                quotes:'" Smart work is always rewarded with knowledge. "',
             },
             
         ],
@@ -197,6 +186,7 @@ export const teams = [
                     'https://www.linkedin.com/in/mayukh-ghosh-7ab511200/ ',
                     'https://www.instagram.com/mr._.mayukh1011/',
                 ],
+                quotes:'" Peace of mind is achieved only by enjoying the work you do. "',
             },
             {
                 img: avatar,
@@ -207,6 +197,7 @@ export const teams = [
                     'https://www.linkedin.com/in/debdeep-maitra-b66552220/',
                     'https://www.instagram.com/its_wrishi/',
                 ],
+                quotes:'" Enjoy whatever you do, never regret the path you chose in! "',
             },
             {
                 img: avatar,
@@ -217,6 +208,7 @@ export const teams = [
                     'https://www.linkedin.com/in/arnab-kumar-ghosh-3318a520b',
                     'https://instagram.com/arnab_ghosh04?igshid=NGExMmI2YTkyZg==',
                 ],
+                quotes:'" A wonderful design gives a soothing sensation to your mind. "',
             },
             {
                 img: avatar,
@@ -227,11 +219,8 @@ export const teams = [
                     'https://www.linkedin.com/in/srijan-mukherjee-6342a321b/',
                     'https://www.instagram.com/srijan_mukherjee/',
                 ],
+                quotes:'" Learn to balance your work and friendships together, as this time won\'t come back ! "',
             },
-          
-      
-        
-
             
         ],
     },
@@ -247,6 +236,7 @@ export const teams = [
                     'https://www.linkedin.com/in/dhriti-sundar-saha-90403b1b4',
                     'https://instagram.com/dhritisundarsaha?igshid=MzRlODBiNWFlZA==',
                 ],
+                quotes:'" A perfect life is impossible, but stay true to your conscience always ! "',
             },
             {
                 img: RohitC,
@@ -257,6 +247,7 @@ export const teams = [
                     'https://www.linkedin.com/in/moulendu',
                     'https://instagram.com/moulendu.dev',
                 ],
+                quotes:'" Sincerity to your work will help you gain a valuable virtue in future. "',
             },
             {
                 img: heya,
@@ -267,6 +258,7 @@ export const teams = [
                     'https://www.linkedin.com/in/abhraneel-karmakar-1b51971ba/',
                     'https://www.instagram.com/abhraneel.karmakar/',
                 ],
+                quotes:'" Self-confidence and seriousness is very much necessary to form a perfect community. "',
             },
             {
                 img: Abhraneel,
@@ -277,6 +269,7 @@ export const teams = [
                     'https://www.linkedin.com/in/rohit-paul-bba868251',
                     'https://instagram.com/rohitpaul332?igshid=MzNlNGNkZWQ4Mg==',
                 ],
+                quotes:'" Love your art. Everyone will leave you, but your passion won\'t ! "',
             },
 
             
@@ -296,9 +289,9 @@ export const teams = [
                 ],
             },
             {
-                img: diptanshu,
+                img: avatar,
                 name: 'Sayantan Sen',
-                desg: 'Tech Associate',
+                desg: 'Management Team',
                 socials: [
                     'https://github.com/bishakhne0gi',
                     'https://www.linkedin.com/in/bishakh-neogi-387815205/',
@@ -309,7 +302,7 @@ export const teams = [
             {
                 img:Nabajit,
                 name: 'Nabajit Bhadury',
-                desg: 'Tech Associate',
+                desg: 'Management Team',
                 socials: [
                     'https://github.com/IRSHIT033',
                     'https://www.linkedin.com/in/irshit-mukherjee-693a99219/',
@@ -319,7 +312,7 @@ export const teams = [
             {
                 img: sayan,
                 name: 'Sayan Mukherjee',
-                desg: 'Marketing Associate',
+                desg: 'Management Team',
                 socials: [
                     'https://github.com/DhritiSundarSaha',
                     'https://www.linkedin.com/in/dhriti-sundar-saha-90403b1b4',
@@ -329,7 +322,7 @@ export const teams = [
             {
                 img: avatar,
                 name: 'Pratyush Mahapatra',
-                desg: 'Convener',
+                desg: 'Contributor and Advisor',
                 socials: [
                     '',
                     'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
@@ -338,9 +331,9 @@ export const teams = [
 
             },
             {
-                img: Aratrik,
-                name: 'Aratrik Bandyopadhay',
-                desg: 'Convener',
+                img: avatar,
+                name: 'Soumit Srimany',
+                desg: 'Tech Team',
                 socials: [
                     '',
                     'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
@@ -349,9 +342,9 @@ export const teams = [
 
             },
             {
-                img: Aratrik,
-                name: 'Aratrik Bandyopadhay',
-                desg: 'Convener',
+                img: avatar,
+                name: 'Kaushik Chowdhury',
+                desg: 'Tech Team',
                 socials: [
                     '',
                     'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
@@ -360,9 +353,9 @@ export const teams = [
 
             },
             {
-                img: Aratrik,
-                name: 'Aratrik Bandyopadhay',
-                desg: 'Convener',
+                img: avatar,
+                name: 'Neelakshi Das',
+                desg: 'Tech Team',
                 socials: [
                     '',
                     'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
@@ -371,9 +364,9 @@ export const teams = [
 
             },
             {
-                img: Aratrik,
-                name: 'Aratrik Bandyopadhay',
-                desg: 'Convener',
+                img: avatar,
+                name: 'Sampurna Dan',
+                desg: 'Contributor and Advisor',
                 socials: [
                     '',
                     'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
@@ -382,9 +375,9 @@ export const teams = [
 
             },
             {
-                img: Aratrik,
-                name: 'Aratrik Bandyopadhay',
-                desg: 'Convener',
+                img: avatar,
+                name: 'Moulendu Chowley',
+                desg: 'Design Team',
                 socials: [
                     '',
                     'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
@@ -393,9 +386,9 @@ export const teams = [
 
             },
             {
-                img: Aratrik,
-                name: 'Aratrik Bandyopadhay',
-                desg: 'Convener',
+                img: avatar,
+                name: 'Surendra Nath Chakraborty',
+                desg: 'Design Team',
                 socials: [
                     '',
                     'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
