@@ -1,21 +1,27 @@
 import avatar from '../public/static/assets/avatar.png';
-import Soumit from '../public/static/assets/soumit.webp';
+import Soumit from '../public/static/assets/srimany.jpg';
 import Abhraneel from '../public/static/assets/AbhraneelKarm.png';
-import Neelakshi from '../public/static/assets/neelakshi.webp';
+import Neelakshi from '../public/static/assets/neel.jpg';
 import RohitC from '../public/static/assets/rohitc.webp';
 import Moulendu from '../public/static/assets/moulendu.png';
 import Nabajit from '../public/static/assets/nabajitb.jpg';
-import Aratrik from '../public/static/assets/aratrik.jpg';
+import Aratrik from '../public/static/assets/convAratrik2.jpg';
 import diptanshu from '../public/static/assets/diptanshu.webp';
 import sayan from '../public/static/assets/sayan.webp';
 import sampurna from '../public/static/assets/sampurna.webp';
 import pratyush from '../public/static/assets/pratyush.webp';
 import sayandas from '../public/static/assets/sayandas.webp'
-import heya from '../public/static/assets/heya.webp'
+import heya from '../public/static/assets/heyaban.jpg'
 import surendra from '../public/static/assets/surendranath.png'
 import ssc from '../public/static/assets/SSC.png'
 import abhi from '../public/static/assets/abhi.jpg'
 import suvoneel from '../public/static/assets/suvoneel.jpg'
+import Kaushik from '../public/static/assets/kaushik.jpg';
+import Rohan from '../public/static/assets/rohan.jpg';
+import Ashis from '../public/static/assets/ashis.jpg';
+import Jishnu from '../public/static/assets/jisnu.jpg';
+import Sayantan from '../public/static/assets/sayantan.png';
+import Indrani from '../public/static/assets/indrani.jpg';
 
 export const EVENTS = {
     'interhacktive0': {
@@ -140,7 +146,7 @@ export const teams = [
                 quotes:'" Check out the productivity of the things you are learning, on a daily basis. "',
             },
             {
-                img: avatar,
+                img: Sayantan,
                 name: 'Sayantan Sen',
                 desg: 'Tech Associate',
                 socials: [
@@ -163,7 +169,29 @@ export const teams = [
                 quotes:'" Follow your dreams, but donot forget your duty towards yourself ! "',
             },
             {
-                img: avatar,
+                img: Rohan,
+                name: 'Rohan Mitra',
+                desg: 'Most Contributions',
+                socials: [
+                    'https://github.com/Rohan-450',
+                    'https://www.linkedin.com/in/rohan-mitra-63b7a1245/',
+                    'https://www.instagram.com/_rohan._.mitra_/',//socials are not updated
+                ],
+                quotes:'" Being jovial and funny doesnot mean you arent serious, it means you care more for the people around you. "',
+            },
+            {
+                img: Indrani,
+                name: 'Indrani Som',
+                desg: 'Most Contributions',
+                socials: [
+                    'https://github.com/bishakhne0gi',
+                    'https://www.linkedin.com/in/bishakh-neogi-387815205/',
+                    'https://www.instagram.com/bishakh.neogi/',//socials are not updated
+                ],
+                quotes:'" Intelligence doesnot matter unless you work smart with proper timemanagement! "',
+            },
+            {
+                img: Ashis,
                 name: 'Ashish Gupta',
                 desg: 'Most Contributions',
                 socials: [
@@ -202,7 +230,7 @@ export const teams = [
                 quotes:'" Enjoy whatever you do, never regret the path you chose in! "',
             },
             {
-                img: ssc,
+                img: Jishnu,
                 name: 'Jisnu Hazra',
                 desg: 'Design Associate',
                 socials: [
@@ -291,7 +319,7 @@ export const teams = [
                 ],
             },
             {
-                img: avatar,
+                img: Sayantan,
                 name: 'Sayantan Sen',
                 desg: 'Management Team',
                 socials: [
@@ -322,7 +350,7 @@ export const teams = [
                 ],
             },
             {
-                img: avatar,
+                img: pratyush,
                 name: 'Pratyush Mahapatra',
                 desg: 'Contributor and Advisor',
                 socials: [
@@ -344,7 +372,7 @@ export const teams = [
 
             },
             {
-                img: avatar,
+                img: Kaushik,
                 name: 'Kaushik Chowdhury',
                 desg: 'Tech Team',
                 socials: [
@@ -355,7 +383,7 @@ export const teams = [
 
             },
             {
-                img: avatar,
+                img: Neelakshi,
                 name: 'Neelakshi Das',
                 desg: 'Tech Team',
                 socials: [
@@ -366,7 +394,7 @@ export const teams = [
 
             },
             {
-                img: avatar,
+                img: sampurna,
                 name: 'Sampurna Dan',
                 desg: 'Contributor and Advisor',
                 socials: [
