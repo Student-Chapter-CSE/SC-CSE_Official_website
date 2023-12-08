@@ -118,7 +118,7 @@ export const teams = [
         title: 'Tech Team',
         members: [
             {
-                img: abhi,//picture of abhirup da is needed
+                img: abhi,
                 name: 'Abhirup Saha',
                 desg: 'Tech Associate',
                 socials: [
