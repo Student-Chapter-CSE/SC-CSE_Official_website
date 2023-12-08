@@ -1,19 +1,21 @@
 import avatar from '../public/static/assets/avatar.png';
 import Soumit from '../public/static/assets/soumit.webp';
-import Abhraneel from '../public/static/assets/abhraneel.webp';
+import Abhraneel from '../public/static/assets/AbhraneelKarm.png';
 import Neelakshi from '../public/static/assets/neelakshi.webp';
 import RohitC from '../public/static/assets/rohitc.webp';
-import Moulendu from '../public/static/assets/moulendu.webp';
-import Nabajit from '../public/static/assets/nabajit.webp';
-import Aratrik from '../public/static/assets/Aratrik.webp';
+import Moulendu from '../public/static/assets/moulendu.png';
+import Nabajit from '../public/static/assets/nabajitb.jpg';
+import Aratrik from '../public/static/assets/aratrik.jpg';
 import diptanshu from '../public/static/assets/diptanshu.webp';
 import sayan from '../public/static/assets/sayan.webp';
 import sampurna from '../public/static/assets/sampurna.webp';
 import pratyush from '../public/static/assets/pratyush.webp';
 import sayandas from '../public/static/assets/sayandas.webp'
 import heya from '../public/static/assets/heya.webp'
-
-
+import surendra from '../public/static/assets/surendranath.png'
+import ssc from '../public/static/assets/ssc.png'
+import abhi from '../public/static/assets/abhi.jpg'
+import suvoneel from '../public/static/assets/suvoneel.jpg'
 
 export const EVENTS = {
     'interhacktive0': {
@@ -116,7 +118,7 @@ export const teams = [
         title: 'Tech Team',
         members: [
             {
-                img: avatar,//picture of abhirup da is needed
+                img: abhi,//picture of abhirup da is needed
                 name: 'Abhirup Saha',
                 desg: 'Tech Associate',
                 socials: [
@@ -189,7 +191,7 @@ export const teams = [
                 quotes:'" Peace of mind is achieved only by enjoying the work you do. "',
             },
             {
-                img: avatar,
+                img: suvoneel,
                 name: 'Subhroneel Basu Roychowdhury',
                 desg: 'Design Associate',
                 socials: [
@@ -211,9 +213,9 @@ export const teams = [
                 quotes:'" A wonderful design gives a soothing sensation to your mind. "',
             },
             {
-                img: avatar,
+                img: ssc,
                 name: 'Sankha Subhro Chakraborty',
-                desg: 'Most Contributors',
+                desg: 'Most Contributions',
                 socials: [
                     '',
                     'https://www.linkedin.com/in/srijan-mukherjee-6342a321b/',
@@ -331,7 +333,7 @@ export const teams = [
 
             },
             {
-                img: avatar,
+                img: Soumit,
                 name: 'Soumit Srimany',
                 desg: 'Tech Team',
                 socials: [
@@ -375,7 +377,7 @@ export const teams = [
 
             },
             {
-                img: avatar,
+                img: Moulendu,
                 name: 'Moulendu Chowley',
                 desg: 'Design Team',
                 socials: [
@@ -386,7 +388,7 @@ export const teams = [
 
             },
             {
-                img: avatar,
+                img: surendra,
                 name: 'Surendra Nath Chakraborty',
                 desg: 'Design Team',
                 socials: [
