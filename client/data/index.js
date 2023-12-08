@@ -221,7 +221,7 @@ export const teams = [
                     'https://www.linkedin.com/in/srijan-mukherjee-6342a321b/',
                     'https://www.instagram.com/srijan_mukherjee/',
                 ],
-                quotes:'" Learn to balance your work and friendships together, as this time won\'t come back ! "',
+                quotes:'" Learn to balance your work and friendships together, as this time wont come back ! "',
             },
             
         ],

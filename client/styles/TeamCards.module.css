@@ -57,7 +57,10 @@
     height: 100%;
    
   }
-  .cards_container:hover .content_wrap {
+  .cards_container:hover .card_name {
+    visibility: hidden;
+}
+.cards_container:hover .card_desg {
     visibility: hidden;
 }
 .cards_container:hover .card_img {
@@ -119,7 +122,7 @@
     gap: 10px;
 
     color: #aaa;
-
+    transform: rotateY(360deg);
     font-size: 1.2rem;
 }
 
