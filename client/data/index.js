@@ -171,7 +171,7 @@ export const teams = [
             {
                 img: Rohan,
                 name: 'Rohan Mitra',
-                desg: 'Most Contributions',
+                desg: 'Tech-Team',
                 socials: [
                     'https://github.com/Rohan-450',
                     'https://www.linkedin.com/in/rohan-mitra-63b7a1245/',
@@ -182,7 +182,7 @@ export const teams = [
             {
                 img: Indrani,
                 name: 'Indrani Som',
-                desg: 'Most Contributions',
+                desg: 'Tech-Team',
                 socials: [
                     'https://github.com/bishakhne0gi',
                     'https://www.linkedin.com/in/bishakh-neogi-387815205/',
