@@ -11,8 +11,9 @@
     cursor: pointer;
     transition: 0.5s ease;
 
-    background: #181818;
-    border: 1px solid #242424;
+    background: rgba(255, 255, 255, 0.1); /* semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* thin white border */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* subtle shadow */
 
     text-align: center;
 
