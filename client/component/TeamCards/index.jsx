@@ -24,7 +24,9 @@ export default function TeamCards({ img, name, desg, socials,quotes }) {
                         <div className={styles.content_wrap}>
                         <div className={styles.card_name}>{name}</div>
                         <div className={styles.card_desg}>{desg}</div>
-                    
+                        </div>
+                </div>
+                </div>
                         <div className={styles.socials}>
                             <div className={styles.icons1}>
                                 {
@@ -52,12 +54,12 @@ export default function TeamCards({ img, name, desg, socials,quotes }) {
                         </div>
                         
                     </div>
-                    </div>
                     
-                    </div>
+                    
+                   
                    
                 
-                </div>
+                
             </div>
         </>
     );
