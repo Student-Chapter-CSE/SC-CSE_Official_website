@@ -12,9 +12,9 @@
     color: var(--fontColor);
 }
 
-.NavbarContainer[data-morphed=true] {
+/*.NavbarContainer[data-morphed=true] {
     background: var(--backGround);
-}
+}*/
 
 .NavbarContainer::after {
     content: "";
