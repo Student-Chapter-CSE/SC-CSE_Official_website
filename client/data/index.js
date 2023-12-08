@@ -202,7 +202,7 @@ export const teams = [
                 quotes:'" Enjoy whatever you do, never regret the path you chose in! "',
             },
             {
-                img: avatar,
+                img: ssc,
                 name: 'Jisnu Hazra',
                 desg: 'Design Associate',
                 socials: [
