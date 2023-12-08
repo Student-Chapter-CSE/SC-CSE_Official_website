@@ -70,6 +70,7 @@
 .cards_container:hover .card_quotes {
     visibility: visible;
 }
+
   .card_back {
     background-color: #f2eaea;
     color: rgb(20, 1, 1);
@@ -121,9 +122,9 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-
+    
     color: #aaa;
-    transform: rotateY(360deg);
+    
     font-size: 1.2rem;
 }
 
