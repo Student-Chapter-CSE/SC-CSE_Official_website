@@ -27,7 +27,9 @@ const Teams = () => {
                                                 img={member.img}
                                                 name={member.name}
                                                 desg={member.desg}
+                                                quotes={member.quotes}
                                                 socials={member.socials}
+                                                
                                             />
                                         </div>
                                     ))}

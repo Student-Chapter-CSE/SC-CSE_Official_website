@@ -5,31 +5,35 @@ import Link from 'next/link';
 
 import { GithubLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react';
 
-export default function TeamCards({ img, name, desg, socials }) {
+export default function TeamCards({ img, name, desg, socials,quotes }) {
     return (
         <>
             <div className={styles.cards_container}>
-                <div className={styles.card_img}>
-                    <Image
-                        src={img}
-                        alt={name}
-                        placeholder='blur'
-                    />
-                </div>
-
-                <div className={styles.content_wrap}>
-                    <div className={styles.card_name}>{name}</div>
-                    <div className={styles.card_desg}>{desg}</div>
-
-                    <div className={styles.socials}>
-                        <div className={styles.icons1}>
-                            {
-                                socials[0] !== '' &&
-                                <Link href={socials[0]} target="_blank" aria-label='GitHub'>
-                                    <GithubLogo />
-                                </Link>
-                            }
+                <div className={styles.cards_inner}>
+                    <div className={styles.cards_front}>
+                        <div className={styles.card_img}>
+                            <Image
+                                src={img}
+                                alt={name}
+                                placeholder='blur'
+                            />
                         </div>
+                        <div className={styles.card_back}>
+                   <div className={styles.card_quotes}>{quotes}</div>   
+                    </div> 
+                        <div className={styles.content_wrap}>
+                        <div className={styles.card_name}>{name}</div>
+                        <div className={styles.card_desg}>{desg}</div>
+                    
+                        <div className={styles.socials}>
+                            <div className={styles.icons1}>
+                                {
+                                    socials[0] !== '' &&
+                                    <Link href={socials[0]} target="_blank" aria-label='GitHub'>
+                                        <GithubLogo />
+                                    </Link>
+                                }
+                            </div>
                         <div className={styles.icons2}>
                             {
                                 socials[1] !== '' &&
@@ -46,7 +50,13 @@ export default function TeamCards({ img, name, desg, socials }) {
                                 </Link>
                             }
                         </div>
+                        
                     </div>
+                    </div>
+                    
+                    </div>
+                   
+                
                 </div>
             </div>
         </>

@@ -12,11 +12,11 @@
         "format:fix": "prettier --write --ignore-path .gitignore ."
     },
     "dependencies": {
-        "@phosphor-icons/react": "^2.0.10",
+        "@phosphor-icons/react": "^2.0.15",
         "axios": "^1.4.0",
         "eslint": "8.45.0",
         "eslint-config-next": "13.4.10",
-        "next": "13.4.10",
+        "next": "^14.0.3",
         "next-images": "^1.8.5",
         "react": "18.2.0",
         "react-dom": "18.2.0",

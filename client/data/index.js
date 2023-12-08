@@ -112,152 +112,86 @@ export const getUpcomingEvents = () => {
 
 export const teams = [
     {
-        title: 'Executive Team',
+        title: 'Convener',
         members: [
             {
-                img: Prasun,
-                name: 'Prasun kr Mondal',
+                img: Aratrik,
+                name: 'Aratrik Bandyopadhay',
                 desg: 'Convener',
                 socials: [
-                    'https://github.com/obito038',
-                    'https://www.linkedin.com/in/prasun-kr-mondal-b25320214/',
-                    'https://www.instagram.com/subodh_chele/',
-                ],
-            },
-            {
-                img: dhriti,
-                name: 'Dhriti Sundar Saha',
-                desg: 'Asst. Convener',
-                socials: [
-                    'https://github.com/DhritiSundarSaha',
-                    'https://www.linkedin.com/in/dhriti-sundar-saha-90403b1b4',
-                    'https://instagram.com/dhritisundarsaha?igshid=MzRlODBiNWFlZA==',
-                ],
-            },
-            {
-                img: Mayukh,
-                name: 'Mayukh Ghosh',
-                desg: 'PR Lead',
-                socials: [
-                    'https://github.com/Mayukh-Ghosh',
-                    'https://www.linkedin.com/in/mayukh-ghosh-7ab511200/ ',
-                    'https://www.instagram.com/mr._.mayukh1011/',
-                ],
-            },
-            {
-                img: debdeep,
-                name: 'Debdeep Maitra',
-                desg: 'PR Co-Lead',
-                socials: [
                     '',
-                    'https://www.linkedin.com/in/debdeep-maitra-b66552220/',
-                    'https://www.instagram.com/its_wrishi/',
+                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
+                    'https://www.instagram.com/in_dealing_dead_03/',
                 ],
+                quotes:'" Lack Of Communication,Transparency and initiative degrades a community "',//socials are updated
             },
+           
         ],
     },
     {
         title: 'Tech Team',
         members: [
             {
-                img: Arnab,
-                name: 'Arnab Chatterjee',
-                desg: 'Tech Lead',
+                img: avatar,//picture of abhirup da is needed
+                name: 'Abhirup Saha',
+                desg: 'Tech Associate',
                 socials: [
                     'https://github.com/arnab2001',
                     'https://www.linkedin.com/in/arnab-chatterjee-9a0253187',
-                    'https://instagram.com/arnab.chatterjee.0?igshid=MzNlNGNkZWQ4Mg==',
-                ],
-            },
-            {
-                img: Bishakh,
-                name: 'Bishakh Neogi',
-                desg: 'Tech Co-Lead',
-                socials: [
-                    'https://github.com/bishakhne0gi',
-                    'https://www.linkedin.com/in/bishakh-neogi-387815205/',
-                    'https://www.instagram.com/bishakh.neogi/',
-                ],
-            },
-            {
-                img: Irshit,
-                name: 'Irshit Mukherjee',
-                desg: 'Tech Co-Lead',
-                socials: [
-                    'https://github.com/IRSHIT033',
-                    'https://www.linkedin.com/in/irshit-mukherjee-693a99219/',
-                    'https://www.instagram.com/irshit_mukerjee_10/',
-                ],
-            },
-            {
-                img: shanit,
-                name: 'Shanit Paul',
-                desg: 'Member',
-                socials: [
-                    'https://github.com/SlicePoh',
-                    'https://www.linkedin.com/in/shanit-paul-746026205/',
-                    'https://www.instagram.com/_s_h_a_n_i_t_/',
-                ],
-            },
-            {
-                img: rayoti,
-                name: 'Rayoti Kar',
-                desg: 'Member',
-                socials: [
-                    'https://github.com/RayotiKar',
-                    'https://www.linkedin.com/in/rayoti-kar/',
-                    'https://www.instagram.com/ra_eyo_tiiiii/',
-                ],
-            },
-            {
-                img: avatar,
-                name: 'Abhirup Saha',
-                desg: 'Upcoming Tech Lead',
-                socials: [
-                    'https://github.com/Abhirup-02',
-                    'https://www.linkedin.com/in/abhirup-saha-9605b0228',
-                    'https://www.instagram.com/lead_u_to_reason/',
-                ],
-            },
-            {
-                img: Soumit,
-                name: 'Soumit Srimany',
-                desg: 'Upcoming Tech Co-Lead',
-                socials: [
-                    'https://www.github.com/soumit-s',
-                    'https://www.linkedin.com/in/soumit-srimany-4bb443241',
-                    'https://www.instagram.com/_._soumit_._/',
+                    'https://instagram.com/arnab.chatterjee.0?igshid=MzNlNGNkZWQ4Mg==',//socials are not updated
                 ],
             },
             {
                 img: diptanshu,
-                name: 'Diptanshu Mahish',
-                desg: 'Upcoming Tech Co-Lead',
+                name: 'Diptanshu Mhaish',
+                desg: 'Tech Associate',
                 socials: [
-                    'https://github.com/diptanshumahish',
-                    'https://www.linkedin.com/in/diptanshumahish/',
-                    'https://www.instagram.com/_diptanshuu_/',
+                    'https://github.com/bishakhne0gi',
+                    'https://www.linkedin.com/in/bishakh-neogi-387815205/',
+                    'https://www.instagram.com/bishakh.neogi/',//socials are not updated
                 ],
             },
             {
-                img: Nabajit,
-                name: 'Nabajit Bhadury',
-                desg: 'Member',
+                img: avatar,
+                name: 'Sayantan Sen',
+                desg: 'Tech Associate',
                 socials: [
-                    'https://github.com/NabajitBhadury',
-                    'https://www.linkedin.com/in/nabajit-bhadury-5a123b24a',
-                    'https://instagram.com/rohitpaul332?igshid=MzNlNGNkZWQ4Mg==',
+                    'https://github.com/bishakhne0gi',
+                    'https://www.linkedin.com/in/bishakh-neogi-387815205/',
+                    'https://www.instagram.com/bishakh.neogi/',//socials are not updated
+                ],
+
+            },
+            {
+                img:Nabajit,
+                name: 'Nabajit Bhadury',
+                desg: 'Tech Associate',
+                socials: [
+                    'https://github.com/IRSHIT033',
+                    'https://www.linkedin.com/in/irshit-mukherjee-693a99219/',
+                    'https://www.instagram.com/irshit_mukerjee_10/',//socials are not updated
                 ],
             },
+            {
+                img: avatar,
+                name: 'Ashish Gupta',
+                desg: 'Most Contributors',
+                socials: [
+                    'https://github.com/SlicePoh',
+                    'https://www.linkedin.com/in/shanit-paul-746026205/',
+                    'https://www.instagram.com/_s_h_a_n_i_t_/',//socials are not updated
+                ],
+            },
+            
         ],
     },
     {
-        title: 'PR Team',
+        title: 'Design Team',
         members: [
             {
-                img: Mayukh,
-                name: 'Mayukh Ghosh',
-                desg: 'PR Lead',
+                img: sayandas,
+                name: 'Sayan Das',
+                desg: 'Design Associate',
                 socials: [
                     'https://github.com/Mayukh-Ghosh',
                     'https://www.linkedin.com/in/mayukh-ghosh-7ab511200/ ',
@@ -265,9 +199,9 @@ export const teams = [
                 ],
             },
             {
-                img: debdeep,
-                name: 'Debdeep Maitra',
-                desg: 'PR Co-Lead',
+                img: avatar,
+                name: 'Subhroneel Basu Roychowdhury',
+                desg: 'Design Associate',
                 socials: [
                     '',
                     'https://www.linkedin.com/in/debdeep-maitra-b66552220/',
@@ -275,9 +209,9 @@ export const teams = [
                 ],
             },
             {
-                img: ArnabKr,
-                name: 'Arnab Ghosh',
-                desg: 'Content Lead',
+                img: avatar,
+                name: 'Jisnu Hazra',
+                desg: 'Design Associate',
                 socials: [
                     'https://github.com/arnab-028',
                     'https://www.linkedin.com/in/arnab-kumar-ghosh-3318a520b',
@@ -285,144 +219,29 @@ export const teams = [
                 ],
             },
             {
-                img: srijan,
-                name: 'Srijan Mukherjee',
-                desg: 'PR Team',
+                img: avatar,
+                name: 'Sankha Subhro Chakraborty',
+                desg: 'Most Contributors',
                 socials: [
                     '',
                     'https://www.linkedin.com/in/srijan-mukherjee-6342a321b/',
                     'https://www.instagram.com/srijan_mukherjee/',
                 ],
             },
-            {
-                img: sampurna,
-                name: 'Sampurna Dan',
-                desg: 'PR Team',
-                socials: [
-                    'https://github.com/SampurnaDan23',
-                    'https://www.linkedin.com/in/sampurna-dan-a91423222',
-                    'https://instagram.com/sampurna__18?igshid=MzNlNGNkZWQ4Mg=='
-                ]
-            },
-            {
-                img: pratyush,
-                name: 'Pratyush Mohapatra',
-                desg: 'PR Team',
-                socials: [
-                    'https://github.com/Pratyush-0',
-                    'https://www.linkedin.com/in/pratyush-mahapatra-715a39258',
-                    'https://instagram.com/the_desi_bengali?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D'
-                ]
-            },
-            {
-                img: shinjini_bose,
-                name: 'Shinjini Bose',
-                desg: 'PR Team',
-                socials: [
-                    'https://github.com/shinjini-bose',
-                    'https://www.linkedin.com/in/shinjini-bose-9aa57b23a/',
-                    'https://www.instagram.com/shinjineeeeee/'
-                ]
-            },
-            {
-                img: sayandas,
-                name: 'Sayan Das',
-                desg: 'PR Team',
-                socials: [
-                    'https://github.com/Sayan67',
-                    'https://www.linkedin.com/in/sayan-das-435b1721a',
-                    'https://www.instagram.com/flute_buddy/'
-                ]
-            },
-            {
-                img: Aratrik,
-                name: 'Aratrik Bandhopadhyay',
-                desg: 'Marketing Lead',
-                socials: [
-                    '',
-                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
-                    'https://www.instagram.com/in_dealing_dead_03/',
-                ],
-            },
-            {
-                img: sayan,
-                name: 'Sayan Mukherjee',
-                desg: 'Marketing Co-Lead',
-                socials: [
-                    'https://github.com/Sayan044',
-                    'https://www.linkedin.com/in/sayan-mukherjee-975175229',
-                    'https://instagram.com/1010_sayhack?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D'
-                ]
-            },
-            {
-                img: RohitC,
-                name: 'Rohit Chakrabarti',
-                desg: 'Social-Media Team',
-                socials: [
-                    'https://github.com/rohit32999',
-                    'https://www.linkedin.com/in/rohit-chakrabarti-04b981230/',
-                    'https://instagram.com/dr3am3r_2002?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D',
-                ],
-            },
-            {
-                img: koustav,
-                name: 'Koustav Chatterjee',
-                desg: 'Social-Media Team',
-                socials: [
-                    'https://github.com/Koustavjr',
-                    'https://www.linkedin.com/in/koustav-chatterjee-9b060b226/',
-                    'https://www.instagram.com/koustav216/',
-                ],
-            },
-            {
-                img: sulagna,
-                name: 'Sulagna Hore',
-                desg: 'Social-Media Team',
-                socials: [
-                    '',
-                    'https://www.linkedin.com/in/sulagna-hore-934526254/',
-                    'https://www.instagram.com/sulagna_._/',
-                ],
-            },
-            {
-                img: heya,
-                name: 'Heya Banerjee',
-                desg: 'PR Team',
-                socials: [
-                    '',
-                    '',
-                    '',
-                ],
-            },
-            {
-                img: pritanshu,
-                name: 'Pritanshu Samanta ',
-                desg: 'Social-Media Team',
-                socials: [
-                    'https://github.com/Pritanshu69',
-                    'https://www.linkedin.com/in/pritanshu-samanta-956450260/',
-                    'https://instagram.com/__pritfloyd__?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D',
-                ],
-            },
-            {
-                img: joydeep,
-                name: 'Joydip Rakshit',
-                desg: 'Social-Media Team',
-                socials: [
-                    'https://github.com/0ShinChane',
-                    'https://www.linkedin.com/in/joydip-rakshit-157740271/',
-                    'https://www.instagram.com/joydip_rakshit/',
-                ],
-            },
+          
+      
+        
+
+            
         ],
     },
     {
-        title: 'Design Team',
+        title: 'PR Team',
         members: [
             {
-                img: dhriti,
-                name: 'Dhriti Sundar Saha',
-                desg: 'Asst. Convener',
+                img: sayan,
+                name: 'Sayan Mukherjee',
+                desg: 'Marketing Associate',
                 socials: [
                     'https://github.com/DhritiSundarSaha',
                     'https://www.linkedin.com/in/dhriti-sundar-saha-90403b1b4',
@@ -430,8 +249,8 @@ export const teams = [
                 ],
             },
             {
-                img: Moulendu,
-                name: 'Moulendu Chowley',
+                img: RohitC,
+                name: 'Rohit Chakrabarti',
                 desg: 'Designer',
                 socials: [
                     'https://www.github.com/soumit-s',
@@ -440,9 +259,9 @@ export const teams = [
                 ],
             },
             {
-                img: Abhraneel,
-                name: 'Abhraneel Karmakar',
-                desg: 'Designer',
+                img: heya,
+                name: 'Heya Banerjee',
+                desg: 'Marketing Associate',
                 socials: [
                     'https://github.com/abhraneel2004',
                     'https://www.linkedin.com/in/abhraneel-karmakar-1b51971ba/',
@@ -450,9 +269,9 @@ export const teams = [
                 ],
             },
             {
-                img: rohitp,
-                name: 'Rohit Paul ',
-                desg: 'Designer',
+                img: Abhraneel,
+                name: 'Abhraneel Karmakar ',
+                desg: 'Most Contributions',
                 socials: [
                     'https://github.com/rohitcodism',
                     'https://www.linkedin.com/in/rohit-paul-bba868251',
@@ -460,16 +279,133 @@ export const teams = [
                 ],
             },
 
+            
+        ],
+    },
+    {
+        title:'Notable Contributors',
+        members:[
             {
-                img: Neelakshi,
-                name: 'Neelakshi Das',
-                desg: 'Designer',
+                img: Aratrik,
+                name: 'Aratrik Bandyopadhay',
+                desg: 'Convener',
                 socials: [
-                    'https://github.com/bluecoder2003',
-                    'https://www.linkedin.com/in/neelakshi-das-b0ba68244',
-                    'https://instagram.com/_crimson_2003?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D',
+                    '',
+                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
+                    'https://www.instagram.com/in_dealing_dead_03/'
                 ],
             },
-        ],
+            {
+                img: diptanshu,
+                name: 'Sayantan Sen',
+                desg: 'Tech Associate',
+                socials: [
+                    'https://github.com/bishakhne0gi',
+                    'https://www.linkedin.com/in/bishakh-neogi-387815205/',
+                    'https://www.instagram.com/bishakh.neogi/',//socials are not updated
+                ],
+
+            },
+            {
+                img:Nabajit,
+                name: 'Nabajit Bhadury',
+                desg: 'Tech Associate',
+                socials: [
+                    'https://github.com/IRSHIT033',
+                    'https://www.linkedin.com/in/irshit-mukherjee-693a99219/',
+                    'https://www.instagram.com/irshit_mukerjee_10/',//socials are not updated
+                ],
+            },
+            {
+                img: sayan,
+                name: 'Sayan Mukherjee',
+                desg: 'Marketing Associate',
+                socials: [
+                    'https://github.com/DhritiSundarSaha',
+                    'https://www.linkedin.com/in/dhriti-sundar-saha-90403b1b4',
+                    'https://instagram.com/dhritisundarsaha?igshid=MzRlODBiNWFlZA==',
+                ],
+            },
+            {
+                img: avatar,
+                name: 'Pratyush Mahapatra',
+                desg: 'Convener',
+                socials: [
+                    '',
+                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
+                    'https://www.instagram.com/in_dealing_dead_03/'
+                ],
+
+            },
+            {
+                img: Aratrik,
+                name: 'Aratrik Bandyopadhay',
+                desg: 'Convener',
+                socials: [
+                    '',
+                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
+                    'https://www.instagram.com/in_dealing_dead_03/'
+                ],
+
+            },
+            {
+                img: Aratrik,
+                name: 'Aratrik Bandyopadhay',
+                desg: 'Convener',
+                socials: [
+                    '',
+                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
+                    'https://www.instagram.com/in_dealing_dead_03/'
+                ],
+
+            },
+            {
+                img: Aratrik,
+                name: 'Aratrik Bandyopadhay',
+                desg: 'Convener',
+                socials: [
+                    '',
+                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
+                    'https://www.instagram.com/in_dealing_dead_03/'
+                ],
+
+            },
+            {
+                img: Aratrik,
+                name: 'Aratrik Bandyopadhay',
+                desg: 'Convener',
+                socials: [
+                    '',
+                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
+                    'https://www.instagram.com/in_dealing_dead_03/'
+                ],
+
+            },
+            {
+                img: Aratrik,
+                name: 'Aratrik Bandyopadhay',
+                desg: 'Convener',
+                socials: [
+                    '',
+                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
+                    'https://www.instagram.com/in_dealing_dead_03/'
+                ],
+
+            },
+            {
+                img: Aratrik,
+                name: 'Aratrik Bandyopadhay',
+                desg: 'Convener',
+                socials: [
+                    '',
+                    'https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222',
+                    'https://www.instagram.com/in_dealing_dead_03/'
+                ],
+
+            },
+
+
+        ]
+
     },
 ];
