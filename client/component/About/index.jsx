@@ -15,26 +15,22 @@ export default function About() {
                     </div>
                 </div>
                 <div className={styles.text}>
-                    <P>We are a thriving community of passionate tech enthusiasts, committed to promoting <Imp>innovation</Imp> and <Imp>knowledge-sharing</Imp> in the field of computer science. Our organization is structured into three dynamic teams, each playing a crucial role in creating a vibrant tech ecosystem.
+                    <P> Hey Folks, we are a college community, committed to promoting knowledge and values to people who look up to us! We work together, to gain skills and enjoy our college life by participating in events and doing something productive!
                     </P>
 
                     <P>
-                        Our <Imp styleIndex='1'>Tech Team</Imp> is at the forefront of cutting-edge development and innovation. Comprising talented and enthusiastic students, they actively engage in coding competitions, hackathons, and projects. They constantly strive to keep up with the latest trends in technology and contribute to open-source projects. The Tech Team plays a pivotal role in organizing coding contests and technical workshops for members to enhance their coding skills and stay updated with industry practices.
+                        Our <Imp styleIndex='1'>Tech Team</Imp> promotes development and innovation. Consisting of talented and enthusiastic students, we actively engage in learning new technologies and applying them for the betterment of ourselves and Students' Chapter!
                     </P>
                     <P>
-                        The <Imp styleIndex={1}>Public Relations (PR) Team</Imp> ensures effective communication and outreach within the student community and beyond. Comprising of Content and Social Media sub-teams, the Content Team deals with engaging articles and blog posts, showcasing the achievements and activities of our members.
+                        The <Imp styleIndex={1}>Public Relations (PR) Team</Imp> ensures effective communication and outreach within the student community and beyond. We are proud to have a PR Team with a variety of skills and plethora of qualities!
                     </P>
 
-                    <P>The <Imp styleIndex={1}>Social Media Team</Imp> takes charge of our online presence, keeping our followers informed about upcoming events, workshops, and the latest tech and entertainment news. Their efforts are instrumental in building a strong community and creating a meaningful connections among students and professionals.
-                    </P>
-
-                    <P>Our <Imp styleIndex={1}>Design Team</Imp> adds <Imp>creativity</Imp> and <Imp>aesthetics</Imp> to our social posts and our thoughts those arise within the community. They are responsible for designing visually appealing posters, banners, and promotional materials for our events. Their <Imp>eye-catching designs</Imp> reflect the spirit and energy of our organization, ensuring our activities leave a long lasting impression on participants and attendees.
+                    
+                    <P>Our <Imp styleIndex={1}>Design Team</Imp> helps us in various types of design, be it UI/UX or swags, captions, posters. The members of this team are really enthusiastic about working together in a community!
                     </P>
 
                     <P>
-                        In the past, we have successfully conducted two flagship events,&nbsp;
-                        <Imp styleIndex={2}>Stride</Imp> and&nbsp;
-                        <Imp styleIndex={2}>Technocruise</Imp>, in collaboration with IIT Kanpur, both of which garnered an overwhelming participation of over 1000 students combined from various institutions. These events were made possible with the dedication and the love for SC CSE of our <b>40+</b> volunteers, who played a pivotal role in ensuring their success. Additionally, in May 2023, we organized <Imp styleIndex={1}>"SUMMER OF BOOTCAMP"</Imp>, a special offline hands-on class facilitated by our own talented peers who have excelled in the field of web development. This bootcamp provided participants with valuable practical knowledge and insights into web development. Looking ahead, we are excited about the future and our plans to organize more engaging events, technical workshops, and activities that will empower students to excel in the ever-evolving world of technology. Our upcoming flagship event, <Imp styleIndex={2}>INTERHACKTIVE 1.0</Imp> , a hackathon, promises to challenge and inspire participants to unleash their creativity and problem-solving skills. We invite all tech enthusiasts to join us in our journey as we continue to explore the frontiers of technology, usher innovation, and make a lasting impact in the tech community. We never stop. We only keep growing!
+                        Students' Chapter CSE, is headed currently, by its convenor, Aratrik Bandyopadhyay and a fantastic management team of around 10 members. We have organised few brilliant events like <em>Technocruise</em> and <em>Stride</em>. Our flagship event <em>InterHacktive</em> was an online hackathon held for over 40 hours. It has been widely regarded, as one of the best events of last year, even by administrations of other colleges!
                     </P>
                 </div>
             </div>
