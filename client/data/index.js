@@ -212,9 +212,9 @@ export const teams = [
                 name: 'Sayan Das',
                 desg: 'Design Associate',
                 socials: [
-                    '',
+                    'https://github.com/Sayan67',
                     'https://www.linkedin.com/in/sayan-daas/',
-                    '',
+                    'https://instagram.com/flute_buddy?igshid=OGQ5ZDc2ODk2ZA',
                 ],
                 quotes:'" Peace of mind is achieved only by enjoying the work you do. "',
             },
@@ -262,7 +262,7 @@ export const teams = [
                 name: 'Sayan Mukherjee',
                 desg: 'Marketing Associate',
                 socials: [
-                    '',
+                    'https://github.com/Sayan044',
                     'https://www.linkedin.com/in/sayan-mukherjee-975175229/',
                     'https://www.instagram.com/1010_sayhack/',
                 ],
@@ -273,7 +273,7 @@ export const teams = [
                 name: 'Rohit Chakrabarti',
                 desg: 'Designer',
                 socials: [
-                    '',
+                    'https://github.com/rohit32999',
                     'https://www.linkedin.com/in/rohit-chakrabarti-04b981230/',
                     'https://www.instagram.com/_.rohit.2002/',
                 ],
@@ -347,7 +347,7 @@ export const teams = [
                 name: 'Sayan Mukherjee',
                 desg: 'Management Team',
                 socials: [
-                    '',
+                    'https://github.com/Sayan044',
                     'https://www.linkedin.com/in/sayan-mukherjee-975175229/',
                     'https://www.instagram.com/1010_sayhack/',
                 ],
@@ -358,7 +358,7 @@ export const teams = [
                 name: 'Pratyush Mahapatra',
                 desg: 'Contributor and Advisor',
                 socials: [
-                    '',
+                    'https://github.com/Pratyush-0',
                     'https://www.linkedin.com/in/pratyush-mahapatra-715a39258/',
                     'https://www.instagram.com/the_desi_bengali/'
                 ],
