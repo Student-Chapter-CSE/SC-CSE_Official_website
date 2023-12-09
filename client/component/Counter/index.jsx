@@ -22,7 +22,7 @@ const Counter = () => {
                     </div>
                     <div className={styles.counter_item}>
                         <div className={styles.counter_number}>2500+</div>
-                        <div className={styles.counter_title}>Participants</div>
+                        <div className={styles.counter_title}>Supporters</div>
                     </div>
                     
 

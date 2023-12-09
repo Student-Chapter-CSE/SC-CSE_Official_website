@@ -30,7 +30,7 @@ export default function About() {
                     </P>
 
                     <P>
-                        Students' Chapter CSE, is headed currently, by its convenor, Aratrik Bandyopadhyay and a fantastic management team of around 10 members. We have organised few brilliant events like <em>Technocruise</em> and <em>Stride</em>. Our flagship event <em>InterHacktive</em> was an online hackathon held for over 40 hours. It has been widely regarded, as one of the best events of last year, even by administrations of other colleges!
+                        Students' Chapter CSE, is currently headed, by its convenor, <Imp styleIndex={1}>Aratrik Bandyopadhyay</Imp> and a fantastic management team of around 10 members. We have organised few brilliant events like <Imp styleIndex={1}>Technocruise</Imp> and <Imp styleIndex={1}>Stride</Imp>. Our flagship event <Imp styleIndex={1}>InterHacktive</Imp> was an online hackathon held for over 40 hours. It has been widely regarded, as one of the best events of last year, even by administrations of other colleges!
                     </P>
                 </div>
             </div>

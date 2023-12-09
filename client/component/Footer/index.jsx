@@ -35,16 +35,16 @@ const Footer = () => {
                     </div>
                     <div className={styles.FooterText}>
                         <div className={styles.CopyrightNotice}>
-                            © {new Date().getFullYear()} Official Website of Student's
+                            © {new Date().getFullYear()} Official Website of IEI Student's
                             Chapter CSE of AOT.
                         </div>
                         <div className={styles.MadeBy}>
-                            <div className={styles.MadeBy_Upper}>Made with</div> 
+                            <div className={styles.MadeBy_Upper}>Created with</div> 
                             <div className={styles.MadeBy_Lower}>
                                 <div className={styles.MadeBy_HeartIcon}>
                                     <Heart size='1.5em' display='block' />
                                 </div> 
-                                by SC CSE Tech Team
+                                by Students' Chapter CSE Tech Team
                             </div>
                         </div>
                     </div>
