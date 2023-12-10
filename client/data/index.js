@@ -2,15 +2,15 @@ import avatar from '../public/static/assets/avatar.png';
 import Soumit from '../public/static/assets/srimany.jpg';
 import Abhraneel from '../public/static/assets/AbhraneelKarm.png';
 import Neelakshi from '../public/static/assets/neel.jpg';
-import RohitC from '../public/static/assets/rohitc.webp';
+import RohitC from '../public/static/assets/rohit.jpg';
 import Moulendu from '../public/static/assets/moulendu.png';
 import Nabajit from '../public/static/assets/nabajitb.jpg';
 import Aratrik from '../public/static/assets/convAratrik2.jpg';
 import diptanshu from '../public/static/assets/diptanshu.webp';
 import sayan from '../public/static/assets/sayan.webp';
 import sampurna from '../public/static/assets/sampurna.webp';
-import pratyush from '../public/static/assets/pratyush.webp';
-import sayandas from '../public/static/assets/sayandas.webp'
+import pratyush from '../public/static/assets/pratyushM.png';
+import sayandas from '../public/static/assets/sayanDass.jpg'
 import heya from '../public/static/assets/heyaban.jpg'
 import surendra from '../public/static/assets/surendranath.png'
 import ssc from '../public/static/assets/SSC.png'
@@ -30,7 +30,7 @@ export const EVENTS = {
         heading: 'InterHacktive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Code, Collab, Conquer"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">First Intra-College Hackathon of AOT</div>',
         date: new Date(2023, 8, 26), // Retard
-        category: 'recent',
+        category: 'past',
         registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69",
         pageUrl: '/events/interhacktive',
         sponsors: [
@@ -57,9 +57,9 @@ export const EVENTS = {
         ]
     },
     'CFP': {
-        img: '',
-        heading: '',
-        content: '',
+        img: '/static/assets/avatar.png',
+        heading: 'Upcoming Event',
+        content: 'Stay tuned for more updates!',
         date: new Date(),
         category: 'upcoming',
         pageUrl: '/downloads/SpecialSession_banner.pdf'
@@ -71,8 +71,32 @@ export const EVENTS = {
 export const eventsData = [
     {
         img: '/static/assets/avatar.png',
+        heading: 'One Day Symposium',
+        content: '<b>"Where innovation and intelligence converge"</b><div style="font-size: 0.8rem;filter: brightness(70%);">A session on Soft Computing and Machine Learning</div>',
+        date: new Date(2023, 10, 5),
+        category: 'past',
+    },
+    {
+        ...EVENTS.interhacktive0
+    },
+    {
+        img: '/static/assets/webmaster.jpg',
+        heading: 'Web Master',
+        content: '<b>"An online competition on website building"</b><div style="font-size: 0.8rem;filter: brightness(70%);">participants showcased their website designing skills and got cool prizes.</div>',
+        date: new Date(),
+        category: 'past'
+    },
+    {
+        img: '/static/assets/avatar.png',
+        heading: 'Techquisitive 4.0',
+        content: '<b>The fourth edition of our fabled tech quiz, encouraged by enthusiatic competitors from freshers to final years all over the college.</b>',
+        date: new Date(),
+        category: 'past'
+    },
+    {
+        img: '/static/assets/avatar.png',
         heading: 'Technocruise',
-        content: '<b>Where Tomorrow\'s Tech Trends Begin Today!</b>',
+        content: '<b>"Where Tomorrow\'s Tech Trends Begin Today!"</b><div style="font-size: 0.8rem;filter: brightness(70%);">An Ethical Hacking and IOT workshop conducted by IIT Kanpur</div>',
         date: new Date(),
         category: 'past'
     },
@@ -84,14 +108,18 @@ export const eventsData = [
         category: 'past'
     },
     {
-        img: '/static/assets/avatar.png',
-        heading: 'One Day Symposium',
-        content: '<b>"Where innovation and intelligence converge"</b><div style="font-size: 0.8rem;filter: brightness(70%);">A session on Soft Computing and Machine Learning</div>',
-        date: new Date(2023, 10, 5),
-        category: 'recent',
+        img: '/static/assets/kuruk.jpg',
+        heading: 'Kurukshetra',
+        content: '<b>Crack your brains and find the power within! An ultimate online chess tournament to prove your worth.</b>',
+        date: new Date(2023,11,21),
+        category: 'recent'
     },
     {
-        ...EVENTS.interhacktive0
+        img: '/static/assets/sportiac.jpg',
+        heading: 'Sportiac',
+        content: '<b>Buzz the buzzer to show your power. Bonus event for getting swags, it was an online sports quiz where hundreds of students competed!</b>',
+        date: new Date(2023,11,20),
+        category: 'recent'
     },
     {
         ...EVENTS.CFP
@@ -220,7 +248,7 @@ export const teams = [
             },
             {
                 img: suvoneel,
-                name: 'Subhroneel Basu Roychowdhury',
+                name: 'Suvoneel Basu Roychowdhury',
                 desg: 'Design Associate',
                 socials: [
                     '',
