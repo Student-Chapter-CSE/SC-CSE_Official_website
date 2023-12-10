@@ -43,10 +43,10 @@
     font-size: 4rem;
     font-weight: bold;
     padding-bottom: 2rem;
-
+    
     color: var(--textColor);
     position: relative;
-
+    max-width: 80vw;
     letter-spacing: 0.08em;
 }
 
