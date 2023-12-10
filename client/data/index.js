@@ -2,15 +2,15 @@ import avatar from '../public/static/assets/avatar.png';
 import Soumit from '../public/static/assets/srimany.jpg';
 import Abhraneel from '../public/static/assets/AbhraneelKarm.png';
 import Neelakshi from '../public/static/assets/neel.jpg';
-import RohitC from '../public/static/assets/rohitc.webp';
+import RohitC from '../public/static/assets/rohit.jpg';
 import Moulendu from '../public/static/assets/moulendu.png';
 import Nabajit from '../public/static/assets/nabajitb.jpg';
 import Aratrik from '../public/static/assets/convAratrik2.jpg';
 import diptanshu from '../public/static/assets/diptanshu.webp';
 import sayan from '../public/static/assets/sayan.webp';
 import sampurna from '../public/static/assets/sampurna.webp';
-import pratyush from '../public/static/assets/pratyush.webp';
-import sayandas from '../public/static/assets/sayandas.webp'
+import pratyush from '../public/static/assets/pratyushM.png';
+import sayandas from '../public/static/assets/sayanDass.jpg'
 import heya from '../public/static/assets/heyaban.jpg'
 import surendra from '../public/static/assets/surendranath.png'
 import ssc from '../public/static/assets/SSC.png'
@@ -220,7 +220,7 @@ export const teams = [
             },
             {
                 img: suvoneel,
-                name: 'Subhroneel Basu Roychowdhury',
+                name: 'Suvoneel Basu Roychowdhury',
                 desg: 'Design Associate',
                 socials: [
                     '',
