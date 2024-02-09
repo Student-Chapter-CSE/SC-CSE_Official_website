@@ -194,7 +194,7 @@ const Register = () => {
                                 }
                             >
                                 <label htmlFor="PaymentStatus">
-                                    Payment Status
+                                    Payment Status:
                                 </label>
                                 <input
                                     type="checkbox"

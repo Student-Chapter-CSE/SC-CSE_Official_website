@@ -72,7 +72,7 @@ const Interhacktive = () => {
 const DownloadBrochure = () => {
     return (
         <a className={styles.downloadBrochure} href="/downloads/interhacktive_brochure.pdf">
-            Download Brochure
+            Download Brochure:
             <ArrowDown />
         </a>
     )
@@ -103,7 +103,7 @@ const Person = ({ name, dpUrl = '/static/assets/avatar.png', linkedIn }) => {
 
                 <Link href={linkedIn} target='_blank' className={styles.personSocial}>
                     <LinkedinLogo width='1.5em' height='1.5em' />
-                    <div>Linked In</div>
+                    <div>LinkedIn</div>
                 </Link>
 
             </div>
