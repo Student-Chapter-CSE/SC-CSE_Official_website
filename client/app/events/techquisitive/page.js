@@ -11,22 +11,12 @@ import useMediaQuery from '../../../hooks/useMediaQuery'
 import { ArrowDown, CalendarCheck, LinkedinLogo } from '@phosphor-icons/react';
 import { useEffect, useState } from 'react';
 
-const JUDGES = [
-    { name: 'Aakash Munshi', linkedIn: 'https://www.linkedin.com/in/akash-munshi/' },
-    { name: 'Arnab Chatterjee', linkedIn: 'https://www.linkedin.com/in/arnab-chatterjee-9a0253187'},
-    { name: 'Bishakh Neogi', linkedIn: 'https://www.linkedin.com/in/bishakh-neogi-387815205/'},
-    { name: 'Irshit Mukherjee', linkedIn: 'https://www.linkedin.com/in/irshit-mukherjee-693a99219/'},
-    { name: 'Jyoti Mishra', linkedIn: 'https://www.linkedin.com/in/jyotim29/' },
-    { name: 'Rahul Jaiswal', linkedIn: 'https://www.linkedin.com/in/rahul-jaiswal-570042ab/' },
-    { name: 'Sandip Palit', linkedIn: 'https://www.linkedin.com/in/sandip-palit/' },
-    { name: 'Saswat Nayak', linkedIn: 'https://www.linkedin.com/in/saswat-nayak-a41212166/' },
-    { name: 'Sayan Sengupta', linkedIn: 'https://www.linkedin.com/in/sayansenguptaa' }
-]
+
 
 
 
 const Interhacktive = () => {
-    const event = EVENTS?.interhacktive0;
+    const event = EVENTS?.techquisitive5;
 
     return (
         <div className={styles.holder}>
@@ -42,7 +32,7 @@ const Interhacktive = () => {
                 </div>
 
                 <div className={styles.eventBanner}>
-                    <img src="/static/assets/ih_1.png" className={styles.image} alt='interhacktive'></img>
+                    <img src="/static/assets/techlogo.png" className={styles.image} alt='techquisitive'></img>
                 </div>
 
                 <div className={styles.section}>
@@ -50,46 +40,22 @@ const Interhacktive = () => {
                 </div>
 
                 <div className={`${styles.normalTxt} ${styles.section}`}>
-                    <p>Unleash Your Ideas At Interhacktive, The First Intra-College Hackathon Hosted By IEI Students&apos; Chapter CSE (AOT). Begin The Two- Part Journey By Completing Tasks Online In The First Phase And In The Second Phase, Shine At The Offline Project Demonstration. Make History At AOT As We Embark In A New Age Of Technological Brilliance! Showcase Your Creativity, Win Exciting Prizes, And Pave Your Path To Success</p>
+                    <p>The biggest event in the history of Students' Chapter AOT,Techquisitive Season 5 make the participants more inquisitive about technology and development as this is not just one or two events, but a combo of events, combining coding, gaming and quiz, in a grand way!</p>
                 </div>
 
-                <div className={styles.section}>
-                    <div><DownloadBrochure /></div>
-                </div>
+               
 
-                <div className={styles.section}>
-                    <SponsorSection sponsors={event?.sponsors} />
-                </div>
+                
 
-                <div className={styles.section}>
-                    <PersonTable title='Judges' persons={JUDGES} />
-                </div>
+                
             </div>
         </div>
     )
 }
 
-const DownloadBrochure = () => {
-    return (
-        <a className={styles.downloadBrochure} href="/downloads/interhacktive_brochure.pdf">
-            Download Brochure:
-            <ArrowDown />
-        </a>
-    )
-}
 
-const SponsorSection = ({ sponsors }) => {
-    return (
-        <div className={styles.sponsorListSection}>
-            <div className={styles.sponsorListHeading}>
-                Our Sponsors
-            </div>
-            <div className={styles.sponsorList}>
-                <SponsorList sponsors={sponsors} />
-            </div>
-        </div>
-    )
-}
+
+
 
 
 

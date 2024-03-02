@@ -12,7 +12,6 @@ const Footer = () => {
                                 Mail us at: 
                                 <PaperPlaneTilt size={24} weight="bold" style={{ marginLeft: '0.5em' }} />
                             </div>
-
                             <strong style={{ color: 'var(--fontColor)' }}>sccse.aot@gmail.com</strong>
                         </div>
                         <div className={styles.Footer_Anchor}>
@@ -36,7 +35,7 @@ const Footer = () => {
                     <div className={styles.FooterText}>
                         <div className={styles.CopyrightNotice}>
                             © {new Date().getFullYear()} Official Website of IEI Student's
-                            Chapter CSE of AOT.
+                            Chapter CSE(AOT).
                         </div>
                         <div className={styles.MadeBy}>
                             <div className={styles.MadeBy_Upper}>Created with</div> 
@@ -44,7 +43,7 @@ const Footer = () => {
                                 <div className={styles.MadeBy_HeartIcon}>
                                     <Heart size='1.5em' display='block' />
                                 </div> 
-                                by Students' Chapter CSE Tech Team
+                                by Students' Chapter CSE!
                             </div>
                         </div>
                     </div>

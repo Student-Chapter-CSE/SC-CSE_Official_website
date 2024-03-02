@@ -6,7 +6,7 @@ const NotFound = () => {
         <div className={styles.error}>
             <div className={styles.NotFound}>
                 <h1>404</h1>
-                <h2>Oops! That page cannot be found :(</h2>
+                <h2>Oops! Invalid Page!(</h2>
             </div>
 
             <div className={styles.button}>
@@ -14,7 +14,7 @@ const NotFound = () => {
                     style={{ textDecoration: 'none', color: 'black' }}
                     href="/"
                 >
-                    Return to Homepage
+                    Return to Homepage:
                 </NextLink>
             </div>
         </div>

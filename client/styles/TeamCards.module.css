@@ -38,7 +38,7 @@
 }
 
 .content_wrap {
-    padding: 3rem 0 0 0;
+    padding: 1.55rem 0 0 0;
 
 }
 .cards_inner {
@@ -101,6 +101,9 @@
     font-weight: bolder;
     margin-bottom: 0.5rem;
 }
+@media screen and (max-width: 600px) {
+    
+  }
 .card_quotes {
     color: white;
     font-size:0.5 rem;
@@ -161,6 +164,9 @@
     /* .cards_container {
         gap: 10px;
     } */
+    .card_name {
+        font-size: 1rem; /* Adjust the font size as needed */
+      }
 }
 
 @media only screen and (min-width: 768px) {

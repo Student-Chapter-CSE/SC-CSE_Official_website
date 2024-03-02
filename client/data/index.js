@@ -24,6 +24,17 @@ import Sayantan from '../public/static/assets/sayantan.png';
 import Indrani from '../public/static/assets/indrani.jpg';
 
 export const EVENTS = {
+    'techquisitive5':{
+        img: '/static/assets/techlogo.png',
+        bannerImgUrl: '/static/assets/techlogo.png',
+        heading: 'Techquisitive',
+        content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Coding,Gaming,Quizes"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">"One line caption"</div>',
+        date: new Date(2024, 3, 19), // Retard
+        category: 'upcoming',
+        registrationLink: "https://forms.gle/M5vL3sqn6HJ1AaRM9",
+        pageUrl: '/events/techquisitive',
+        
+    },
     'interhacktive0': {
         img: '/static/assets/ih_logo.png',
         bannerImgUrl: '/static/assets/ih_1.png',
@@ -58,10 +69,10 @@ export const EVENTS = {
     },
     'CFP': {
         img: '/static/assets/avatar.png',
-        heading: 'Upcoming Event',
-        content: 'Stay tuned for more updates!',
+        heading: 'Digital Water Solutions',
+        content: 'Navigating the Future of Sustainable Resource Management ',
         date: new Date(),
-        category: 'upcoming',
+        category: 'past',
         pageUrl: '/downloads/SpecialSession_banner.pdf'
     }
 }
@@ -123,6 +134,9 @@ export const eventsData = [
     },
     {
         ...EVENTS.CFP
+    },
+    {
+        ...EVENTS.techquisitive5
     }
 ];
 
