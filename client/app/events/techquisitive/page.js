@@ -44,6 +44,9 @@ const Interhacktive = () => {
                 </div>
 
                
+                <div className={styles.section}>
+                    <SponsorSection sponsors={event?.sponsors} />
+                </div>
 
                 
 
@@ -52,13 +55,18 @@ const Interhacktive = () => {
         </div>
     )
 }
-
-
-
-
-
-
-
+const SponsorSection = ({ sponsors }) => {
+    return (
+        <div className={styles.sponsorListSection}>
+            <div className={styles.sponsorListHeading}>
+                Track Details
+            </div>
+            <a className={styles.registerBtn} target='_blank'>Girls Track</a>
+            <a className={styles.registerBtn} target='_blank'>Freshers Track</a>
+            <a className={styles.registerBtn}  target='_blank'>Versatile track</a>
+        </div>
+    )
+}
 
 const Person = ({ name, dpUrl = '/static/assets/avatar.png', linkedIn }) => {
     return (

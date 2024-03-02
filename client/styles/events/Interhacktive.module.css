@@ -116,7 +116,7 @@
     font-weight: bold;
     color: white;
     letter-spacing: 0.08em;
-
+    margin-left: 15px;
     --outline-offset: 0.25em;
     padding: calc(var(--outline-offset) + 1px);
     cursor: pointer;

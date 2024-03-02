@@ -25,14 +25,32 @@ import Indrani from '../public/static/assets/indrani.jpg';
 
 export const EVENTS = {
     'techquisitive5':{
-        img: '/static/assets/techlogo.png',
+        img: '/static/assets/techsmalllogo.jpg',
         bannerImgUrl: '/static/assets/techlogo.png',
         heading: 'Techquisitive',
-        content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Coding,Gaming,Quizes"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">"One line caption"</div>',
+        content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">Coding,Gaming,Quizes</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">Continuing the legacy of previous seasons of Techquisitive SCCSE is back with Techquisitive season five with lots of events coding swags and many more</div>',
         date: new Date(2024, 3, 19), // Retard
         category: 'upcoming',
         registrationLink: "https://forms.gle/M5vL3sqn6HJ1AaRM9",
         pageUrl: '/events/techquisitive',
+        sponsors: [
+            {
+                name: 'Girls Track',
+                logoUrl: '/static/assets/sponsors/grid_reputation.jpg',
+                href: 'https://gridreputation.com/'
+            },
+            {
+                name: 'Most Versatile Track',
+                logoUrl: '/static/assets/sponsors/gdg_kolkata.jpg',
+                href: 'https://gdgcloud.kolkata.dev/ccd2023/'
+            },
+            {
+                name: 'Freshers Track',
+                logoUrl: '/static/assets/sponsors/flutter_kolkata.jpg',
+                href: 'https://in.linkedin.com/company/flutter-kolkata'
+            },
+           
+        ]
         
     },
     'interhacktive0': {
