@@ -40,7 +40,7 @@ const Interhacktive = () => {
                 </div>
 
                 <div className={`${styles.normalTxt} ${styles.section}`}>
-                    <p>The biggest event in the history of Students' Chapter AOT,Techquisitive Season 5 make the participants more inquisitive about technology and development as this is not just one or two events, but a combo of events, combining coding, gaming and quiz, in a grand way!</p>
+                    <p>The biggest event in the history of Students&apos; Chapter AOT,Techquisitive Season 5 make the participants more inquisitive about technology and development as this is not just one or two events, but a combo of events, combining coding, gaming and quiz, in a grand way!</p>
                 </div>
 
                
