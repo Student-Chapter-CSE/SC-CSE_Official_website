@@ -59,7 +59,9 @@ const Interhacktive = () => {
                 <div className={styles.sponsorListHeading}>
                 Track Details
                 </div>
-                <CircleDiv event={sponsor} />
+                
+                <div className={styles.alignment}>
+                <div><CircleDiv event={sponsor} /></div>
                 
 
                 
@@ -69,6 +71,7 @@ const Interhacktive = () => {
                
                 <div style={{marginTop:'2vw'}} className={styles.section}>
                     <SponsorSection sponsors={event?.sponsors} />
+                </div>
                 </div>
 
                 
@@ -90,7 +93,7 @@ const Prize = ({image, num,amt}) => {
 const CircleDiv=({event})=>{
     console.log(event);
     return(
-        <div style={{display:'flex',gap:'3vw'}}>
+        <div className={styles.flexed}>
             {
                 event.map((ev,id)=>(
                     <Circle key={id} {...ev} />
@@ -107,7 +110,7 @@ const SponsorSection = ({ sponsors }) => {
         <div className={styles.sponsorListSection}>
             
             
-            <div>  
+            <div styles={styles.column}>  
             <a className={styles.registerBtn} target='_blank'>Girls Track</a>
             <a className={styles.registerBtn} target='_blank'>Freshers Track</a>
             <a className={styles.registerBtn}  target='_blank'>Versatile track</a>

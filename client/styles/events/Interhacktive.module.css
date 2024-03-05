@@ -15,11 +15,116 @@
 
 .circle{
     margin-left: 2.5vw;
-    
-    display: flex;
     width:4vw;
     height:4vw;
+    
 }
+.sizing{
+    width:fit-content;
+    height:fit-content;
+    padding:0;
+    background-color: pink;
+}
+
+.flexed{
+    display: flex;
+    gap:4vw;
+    margin-left:1vw;
+}
+
+.prizeded{
+    width: '2vw'; 
+    height:'2vw';
+    object-fit:'cover'
+}
+
+@media(max-width: 2560px){
+    .flexed{
+        display: flex;
+        gap:5vw;
+        margin-left:3vw;
+    }
+    .circle{
+        width:2vw;
+        height:2vw;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 1440px){
+    .flexed{
+        display: flex;
+        gap:8vw;
+        margin-left:5vw;
+    }
+    .circle{
+        width:3vw;
+        height:3vw;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 1024px){
+    .flexed{
+        display: flex;
+        gap:12vw;
+        margin-left:5vw;
+    }
+    .circle{
+        width:4vw;
+        height:4vw;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 768px){
+    .flexed{
+        display: flex;
+        gap:12vw;
+        margin-left:6vw;
+    }
+    /* .registerBtn{
+        flex-direction: column;
+    } */
+    .circle{
+        width:8vw;
+        height:8vw;
+        margin-left: 0;
+    }
+    /* .column{
+        display: flex;
+        flex-direction: column;
+    } */
+}
+
+@media(max-width: 425px){
+    .flexed{
+        display: flex;
+        gap:10vw;
+        flex-direction: column;
+        margin-left:6vw;
+        margin-top:9vw;
+    }
+    .registerBtn{
+        display: block;
+        margin: 8vw 0;
+        width:3vw;
+        height:fit-content;
+    }
+    .circle{
+        width:8vw;
+        height:8vw;
+        margin-left: 0;
+    }
+    .column{
+        display: block;
+    }
+    .alignment{
+        display: flex;
+        gap:4vw;
+    }
+}
+
 
 .txtreform{
     color:'#fff'
@@ -136,7 +241,7 @@
     font-weight: bold;
     color: white;
     letter-spacing: 0.08em;
-    margin-left: 15px;
+    margin-left: 2vw;
     --outline-offset: 0.25em;
     padding: calc(var(--outline-offset) + 1px);
     cursor: pointer;
