@@ -11,13 +11,14 @@ import useMediaQuery from '../../../hooks/useMediaQuery'
 import { ArrowDown, CalendarCheck, LinkedinLogo } from '@phosphor-icons/react';
 import { useEffect, useState } from 'react';
 
-
-
+import Circle from '../../../Global/Circle';
+import Prizes from '../../../Global/Prizes';
 
 
 const Interhacktive = () => {
     const event = EVENTS?.techquisitive5;
-
+    const prize = event?.prizes;
+    const sponsor = event?.sponsors;
     return (
         <div className={styles.holder}>
             <div className={styles.container}>
@@ -42,9 +43,31 @@ const Interhacktive = () => {
                 <div className={`${styles.normalTxt} ${styles.section}`}>
                     <p>The biggest event in the history of Students&apos; Chapter AOT,Techquisitive Season 5 make the participants more inquisitive about technology and development as this is not just one or two events, but a combo of events, combining coding, gaming and quiz, in a grand way!</p>
                 </div>
+                <div className={styles.sponsorListHeading}>
+                    Prizes
+                </div>
+
+                {
+                    prize.map((pz,id)=>(
+                        <Prize key={id} {...pz} />
+                       
+                    ))
+                    
+                }
+                
+
+                <div className={styles.sponsorListHeading}>
+                Track Details
+                </div>
+                <CircleDiv event={sponsor} />
+                
+
+                
+                
 
                
-                <div className={styles.section}>
+               
+                <div style={{marginTop:'2vw'}} className={styles.section}>
                     <SponsorSection sponsors={event?.sponsors} />
                 </div>
 
@@ -55,15 +78,40 @@ const Interhacktive = () => {
         </div>
     )
 }
+
+const Prize = ({image, num,amt}) => {
+    return(
+        <div>
+            <Prizes img={image} num={num} amt={amt} />
+        </div>
+    )
+}
+
+const CircleDiv=({event})=>{
+    console.log(event);
+    return(
+        <div style={{display:'flex',gap:'3vw'}}>
+            {
+                event.map((ev,id)=>(
+                    <Circle key={id} {...ev} />
+                ))
+            }
+        </div>
+    )
+}
+
+
+
 const SponsorSection = ({ sponsors }) => {
     return (
         <div className={styles.sponsorListSection}>
-            <div className={styles.sponsorListHeading}>
-                Track Details
-            </div>
+            
+            
+            <div>  
             <a className={styles.registerBtn} target='_blank'>Girls Track</a>
             <a className={styles.registerBtn} target='_blank'>Freshers Track</a>
             <a className={styles.registerBtn}  target='_blank'>Versatile track</a>
+            </div>
         </div>
     )
 }
