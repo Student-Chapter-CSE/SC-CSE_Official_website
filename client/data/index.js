@@ -33,20 +33,38 @@ export const EVENTS = {
         category: 'upcoming',
         registrationLink: "https://forms.gle/M5vL3sqn6HJ1AaRM9",
         pageUrl: '/events/techquisitive',
+        prizes:[
+            {
+                num:'1st prize',
+                amt:'Rs.3000',
+                image:'/static/assets/techlogo.png'
+            },
+            {
+                num:'2nd prize',
+                amt:'Rs.2000',
+                image:'/static/assets/techlogo.png'
+            },
+            {
+                num:'3rd prize',
+                amt:'Rs.1000',
+                image:'/static/assets/techlogo.png'
+
+            }
+        ],
         sponsors: [
             {
                 name: 'Girls Track',
-                logoUrl: '/static/assets/sponsors/grid_reputation.jpg',
+                logoUrl: '/static/assets/girls.jpg',
                 href: 'https://gridreputation.com/'
             },
             {
                 name: 'Most Versatile Track',
-                logoUrl: '/static/assets/sponsors/gdg_kolkata.jpg',
+                logoUrl: '/static/assets/versatile.jpeg',
                 href: 'https://gdgcloud.kolkata.dev/ccd2023/'
             },
             {
                 name: 'Freshers Track',
-                logoUrl: '/static/assets/sponsors/flutter_kolkata.jpg',
+                logoUrl: '/static/assets/freshers.png',
                 href: 'https://in.linkedin.com/company/flutter-kolkata'
             },
            
