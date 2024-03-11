@@ -29,7 +29,7 @@ export const EVENTS = {
         bannerImgUrl: '/static/assets/techlogo.png',
         heading: 'Techquisitive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">Coding,Gaming,Quizes</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">Continuing the legacy of previous seasons of Techquisitive SCCSE is back with Techquisitive season five with lots of events coding swags and many more</div>',
-        prelimsdate: new Date(2024, 3, 19),
+        date: new Date(2024, 3, 19),
         finalsdate: new Date(2024,3,21), // Retard
         category: 'upcoming',
         registrationLink: "https://forms.gle/M5vL3sqn6HJ1AaRM9",
