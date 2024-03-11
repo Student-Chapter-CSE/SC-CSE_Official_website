@@ -29,47 +29,65 @@ export const EVENTS = {
         bannerImgUrl: '/static/assets/techlogo.png',
         heading: 'Techquisitive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">Coding,Gaming,Quizes</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">Continuing the legacy of previous seasons of Techquisitive SCCSE is back with Techquisitive season five with lots of events coding swags and many more</div>',
-        date: new Date(2024, 3, 19), // Retard
+        prelimsdate: new Date(2024, 3, 19),
+        finalsdate: new Date(2024,3,21), // Retard
         category: 'upcoming',
         registrationLink: "https://forms.gle/M5vL3sqn6HJ1AaRM9",
         pageUrl: '/events/techquisitive',
         prizes:[
             {
                 num:'1st prize',
-                amt:'Rs.3000',
-                image:'/static/assets/techlogo.png'
+                amt:'✔ Prizes worth of Rs.3000',
+                image:'/static/assets/first.png'
             },
             {
                 num:'2nd prize',
-                amt:'Rs.2000',
-                image:'/static/assets/techlogo.png'
+                amt:'✔ Prizes worth of Rs.2000',
+                image:'/static/assets/second.png'
             },
             {
                 num:'3rd prize',
-                amt:'Rs.1000',
-                image:'/static/assets/techlogo.png'
+                amt:'✔ Prizes worth of Rs.1000',
+                image:'/static/assets/third.png'
 
             }
         ],
-        sponsors: [
+        tracks: [
             {
-                name: 'Girls Track',
-                logoUrl: '/static/assets/girls.jpg',
-                href: 'https://gridreputation.com/'
+                name: 'Best All Girls Team',
+                logoUrl: '/static/assets/girls.png',
+                
             },
             {
-                name: 'Most Versatile Track',
-                logoUrl: '/static/assets/versatile.jpeg',
-                href: 'https://gdgcloud.kolkata.dev/ccd2023/'
+                name: 'Most Versatile Team',
+                logoUrl: '/static/assets/versatile.png',
+                
             },
             {
-                name: 'Freshers Track',
+                name: 'Best Freshers Team',
                 logoUrl: '/static/assets/freshers.png',
-                href: 'https://in.linkedin.com/company/flutter-kolkata'
+                
             },
            
-        ]
-        
+        ],
+        event: [
+            {
+                date:'1st March',
+                name:'Registration Open'
+            },
+            {
+                date:'10th March',
+                name:'Registration Close'
+            },
+            {
+                date: '19th April',
+                name: 'Prelims'
+            },
+            {
+                date: '21st April',
+                name: 'Finals'
+            }
+        ],
     },
     'interhacktive0': {
         img: '/static/assets/ih_logo.png',

@@ -5,20 +5,29 @@ import Link from 'next/link';
 import DateElement from '../../../component/Date';
 import SponsorList from '../../../component/Sponsor';
 import { EVENTS } from '../../../data'
-import styles from '../../../styles/events/Interhacktive.module.css'
+import styles from '../../../styles/events/techquisitive.module.css'
 import useMediaQuery from '../../../hooks/useMediaQuery'
 
 import { ArrowDown, CalendarCheck, LinkedinLogo } from '@phosphor-icons/react';
 import { useEffect, useState } from 'react';
 
-import Circle from '../../../Global/Circle';
+
 import Prizes from '../../../Global/Prizes';
 
-
-const Interhacktive = () => {
+const GlassCard = ({ image, text }) => {
+    return (
+      <div className={styles.glassCard}>
+        <img src={image} alt="Prize" className={styles.cardImage} />
+        <p className={styles.cardText}>{text}</p>
+      </div>
+    );
+  };
+  
+const Techquisitive = () => {
     const event = EVENTS?.techquisitive5;
     const prize = event?.prizes;
-    const sponsor = event?.sponsors;
+    const track = event?.tracks;
+    const eventSchedule=event?.event;
     return (
         <div className={styles.holder}>
             <div className={styles.container}>
@@ -26,10 +35,8 @@ const Interhacktive = () => {
                     <div className={styles.articleTitle}>
                         {event?.heading}
                     </div>
-                    <div className={styles.eventDate}>
-                        <CalendarCheck className={styles.eventDateCalender} />
-                        <DateElement date={event?.date} />
-                    </div>
+                    
+                    
                 </div>
 
                 <div className={styles.eventBanner}>
@@ -43,42 +50,54 @@ const Interhacktive = () => {
                 <div className={`${styles.normalTxt} ${styles.section}`}>
                     <p>The biggest event in the history of Students&apos; Chapter AOT,Techquisitive Season 5 make the participants more inquisitive about technology and development as this is not just one or two events, but a combo of events, combining coding, gaming and quiz, in a grand way!</p>
                 </div>
-                <div className={styles.sponsorListHeading}>
+                {/* <div className={styles.prizeHeading}>
+                    Event Schedule
+                </div>
+                <div className={styles.scheduleContainer}>
+                    {eventSchedule.map((event, id) => (
+                    <div key={id} className={styles.scheduleItem}>
+                     <div className={styles.event}>
+                        {event.name}
+                    </div>
+      <div className={styles.date}>{event.date}</div>
+      
+    </div>
+  ))}
+</div> */}
+                <div className={styles.prizeHeading}>
                     Prizes
                 </div>
 
-                {
-                    prize.map((pz,id)=>(
-                        <Prize key={id} {...pz} />
-                       
-                    ))
-                    
-                }
-                
+                <div className={styles.cardContainer}>
+        {prize.map((prize, id) => (
+          <GlassCard key={id} image={prize.image} text={<span className={styles.content}>{prize.amt}</span>} />
+        ))}
+      </div>
 
-                <div className={styles.sponsorListHeading}>
+                <div className={styles.prizeHeading}>
                 Track Details
                 </div>
                 
-                <div className={styles.alignment}>
-                <div><CircleDiv event={sponsor} /></div>
-                
-
-                
-                
-
-               
-               
-                <div style={{marginTop:'2vw'}} className={styles.section}>
-                    <SponsorSection sponsors={event?.sponsors} />
+                <div className={styles.cardContainer}>
+                    {track.map((track, id) => (
+                    <GlassCard key={id} image={track.logoUrl} className={styles.cardImageone} text={<span className={styles.content}>{track.name}</span>}  />
+                ))}
                 </div>
+                
+
+                
+                
+
+               
+               
+                
                 </div>
 
                 
 
                 
             </div>
-        </div>
+        
     )
 }
 
@@ -90,106 +109,14 @@ const Prize = ({image, num,amt}) => {
     )
 }
 
-const CircleDiv=({event})=>{
-    console.log(event);
-    return(
-        <div className={styles.flexed}>
-            {
-                event.map((ev,id)=>(
-                    <Circle key={id} {...ev} />
-                ))
-            }
-        </div>
-    )
-}
 
 
 
-const SponsorSection = ({ sponsors }) => {
-    return (
-        <div className={styles.sponsorListSection}>
-            
-            
-            <div styles={styles.column}>  
-            <a className={styles.registerBtn} target='_blank'>Girls Track</a>
-            <a className={styles.registerBtn} target='_blank'>Freshers Track</a>
-            <a className={styles.registerBtn}  target='_blank'>Versatile track</a>
-            </div>
-        </div>
-    )
-}
-
-const Person = ({ name, dpUrl = '/static/assets/avatar.png', linkedIn }) => {
-    return (
-        <div className={styles.person}>
-            <div className={styles.personDp}><img src={dpUrl} alt='dp' /></div>
-            <div className={styles.personInfo}>
-                <div className={styles.personName}>{name}</div>
-
-                <Link href={linkedIn} target='_blank' className={styles.personSocial}>
-                    <LinkedinLogo width='1.5em' height='1.5em' />
-                    <div>LinkedIn</div>
-                </Link>
-
-            </div>
-        </div>
-    )
-}
-
-const PersonTable = ({ title, persons }) => {
-
-    const isMedScreen = useMediaQuery('(min-width: 768px)')
-    const [ceil, setCeil] = useState();
-    const [rows, setRows] = useState([]);
-
-    useEffect(() => {
-        setCeil(isMedScreen ? 3 : 1)
-    }, [isMedScreen])
-
-    useEffect(() => {
-        let rows = []
-        for (let i = 0; i < persons.length; i += ceil) {
-            const row = persons.slice(i, Math.min(i + ceil, persons.length))
-            if (row.length < ceil) {
-                for (let k = row.length; k < ceil; ++k) {
-                    row.push(null)
-                }
-            }
-
-            rows.push(row)
-
-            setRows(rows)
-        }
-    }, [ceil])
-
-    return (
-        <div>
-            <div className={styles.h2}>{title}</div>
-            <table className={styles.personTableTable}>
-                <tbody>
-                    {rows.map((persons, id) => (
-                        <PersonRow key={id} persons={persons} />
-                    ))}
-                </tbody>
-            </table>
-        </div>
-    )
-}
-
-const PersonRow = ({ persons }) => {
-    return (
-        <tr className={styles.personTableRow}>
-            {
-                persons.map((person, id) => (
-                    <td key={id} className={styles.personTableCell}>
-                        {person && <Person {...person} />}
-                    </td>
-                ))
-            }
-        </tr>
-    )
-}
 
 
 
-export default Interhacktive
+
+
+
+
+export default Techquisitive;

@@ -19,14 +19,14 @@ a {
 :root {
     --themeMainBlue: #219ebc;
     --themeHighlightsBlue: #8ecae6;
-    --backGround: #151515;
+    --backGround: #0c0823;
     --pitchBlack: #010101;
     --backGroundLight: ;
     --themeYellow: #262626;
     --themeYellowDark: #262626;
     --baseColor: #e74c3c;
-    --fontColor: #da851e;
-    --textColor: #eaf1f2;
+    --fontColor: #d6b4fc;
+    --textColor:#a474fb;
     --textHighlightColor: #bf7822;
     --borderColor: #666;
     --cardBackgroundColor: #171717;

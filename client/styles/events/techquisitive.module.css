@@ -1,0 +1,544 @@
+.image {
+    border-radius: 1em;
+    border: 1px solid #333;
+    width: 100%;
+    display: block;
+}
+
+.imaged{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.circle{
+    margin-left: 2.5vw;
+    width:4vw;
+    height:4vw;
+    
+}
+.sizing{
+    width:fit-content;
+    height:fit-content;
+    padding:0;
+    background-color: pink;
+}
+
+.flexed{
+    display: flex;
+    gap:4vw;
+    margin-left:1vw;
+}
+
+.prizeded{
+    width: '2vw'; 
+    height:'2vw';
+    object-fit:'cover'
+}
+.glassCard {
+    width: 90%; /* Adjust to your preference */
+    height: 250px; /* Adjust to your preference */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+  }
+  .glassCard:hover {
+    transform: scale(1.1); /* Enlarge the card */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /* Lift up the card */
+  }
+  .cardImage {
+    width: 100%;
+    height: 80%;
+  }
+  
+  .cardText {
+    color: #000; /* Change to a darker color */
+    text-align: center;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left:10px;
+  }
+  .textStyle {
+    color: red;
+    font-size: 20px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: var(--fontColor);
+    margin-top: 10px;
+ /* Change to a darker color */
+  }
+  .circleCard {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Makes the card circular */
+    background: transparent;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .circleCard:hover {
+    transform: scale(1.1); /* Enlarge the card */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /* Lift up the card */
+  }
+  
+  .cardImageone {
+    width: 50%;
+    height: 30%;
+     
+  }
+  
+  .cardText {
+    color: #fff;
+    text-align: center;
+  }
+  .scheduleContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scheduleItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 5px; /* Reduced padding */
+    background: var(--fontColor);
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: min-content;
+    font-size: 0.8em; /* Reduced font size */
+  }
+  
+  .scheduleItem:hover {
+    transform: scale(1.05);
+  }
+  
+  .date {
+    text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  margin: 100px auto;
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  width: auto;
+  height: 30px;
+  line-height: 32px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--textColor);
+  text-align: center;
+  border-radius:4px;
+  padding:0 15px;
+}
+.date:after {
+    content: " ";
+    height: 22px;
+    width: 22px;
+    background:#fff;
+    position: absolute;
+    top:4px;
+    left:-9px;
+    border-radius:4px;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);  
+  }
+  .date:before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: #e57373;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  
+  .event {
+    color: #fff;
+    font-size: 3rem;
+    padding: 1em 0;
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 0.3em;
+  }
+@media(max-width: 2560px){
+    .flexed{
+        display: flex;
+        gap:5vw;
+        margin-left:3vw;
+    }
+    .circle{
+        width:2vw;
+        height:2vw;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 1440px){
+    .flexed{
+        display: flex;
+        gap:8vw;
+        margin-left:5vw;
+    }
+    .circle{
+        width:3vw;
+        height:3vw;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 1024px){
+    .flexed{
+        display: flex;
+        gap:12vw;
+        margin-left:5vw;
+    }
+    .circle{
+        width:4vw;
+        height:4vw;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 785px){
+    .flexed{
+        display: flex;
+        gap:12vw;
+        margin-left:6vw;
+    }
+    /* .registerBtn{
+        flex-direction: column;
+    } */
+    .circle{
+        width:8vw;
+        height:8vw;
+        margin-left: 0;
+    }
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .glassCard {
+        width: 30%; /* Adjust to your preference */
+        margin-bottom: 20px;
+      }
+}
+
+@media(max-width: 425px){
+    .flexed{
+        display: flex;
+        gap:10vw;
+        flex-direction: column;
+        margin-left:6vw;
+        margin-top:9vw;
+    }
+    .registerBtn{
+        display: block;
+        margin: 8vw 0;
+        width:3vw;
+        height:fit-content;
+    }
+    .circle{
+        width:8vw;
+        height:8vw;
+        margin-left: 0;
+    }
+    .column{
+        display: block;
+    }
+    .alignment{
+        display: flex;
+        gap:4vw;
+    }
+}
+
+
+.txtreform{
+    color:'#fff'
+}
+
+.holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 4em;
+}
+
+.header {
+    margin-bottom: 2em;
+}
+
+.eventBanner {
+    margin-bottom: 2em;
+}
+
+.section {
+    margin-bottom: 2em;
+}
+
+.normalTxt {
+    color: #999;
+    line-height: 2em;
+    font-size: 0.9em;
+    letter-spacing: 0.07em;
+}
+
+.articleTitle {
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--fontColor);
+    letter-spacing: 0.1em;
+
+    position: relative;
+
+    padding: 0.5em 0;
+}
+
+.articleTitle::before {
+    content: "";
+    position: absolute;
+    left: -0.4em;
+    top: 0;
+    height: 0em;
+
+    border-left: 1px solid;
+
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to bottom, #333, 50%, transparent);
+}
+
+.articleTitle::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    border-bottom: 1px dashed #333;
+}
+
+.h1, .h2 {
+    color: var(--fontColor);
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid;
+
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #333, 90%, transparent);
+    padding: 1rem 0;
+
+    word-break: break-all;
+}
+
+.h2 {
+    font-size: 2em;;
+}
+
+.eventDate {
+    color: #fff;
+    margin-top: 1.5em;
+    /* margin-bottom: 4em; */
+    flex-direction: row;
+    display: flex;
+    
+
+    
+}
+.text{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.eventDateCalender {
+    font-size: 2.5em;
+}
+
+.downloadBrochure {
+    width: fit-content;
+    color: var(--fontColor);
+    letter-spacing: 0.08em;
+
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+}
+
+.registerBtn {
+    width: fit-content;
+    color: black;
+    font-size: 0.94em;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.08em;
+    margin-left: 2vw;
+    --outline-offset: 0.25em;
+    padding: calc(var(--outline-offset) + 1px);
+    cursor: pointer;
+
+    background: var(--fontColor);
+    padding: 0.7em 0.8em;
+    border-radius: 0.2em;
+
+    outline: 1px dashed #666;
+    outline-offset: var(--outline-offset);
+    transition: all 300ms;
+}
+
+.registerBtn:hover {
+    outline-color: #888;
+}
+
+.personTableTitle {
+    color: var(--fontColor);
+    font-weight: bold;
+    font-size: 5em;
+    letter-spacing: 0.1em;
+    margin: 1em 0;
+}
+
+.personTableTable {
+    width: 100%;
+
+    border-spacing: 0 2em;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    width: fit-content;
+}
+
+.personDp > img  {
+    width: 4em;
+    height: 4em;
+
+    display: block;
+    border-radius: 100%;
+    outline: 2px dashed #666;
+    outline-offset: 1mm;
+}
+
+.personName {
+    color: var(--fontColor);
+
+    margin-bottom: 0.5em;
+}
+
+.personSocial {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    color: var(--textColor);
+
+    font-size: 0.8em;
+}
+
+
+.sponsorList {
+    font-size: 3em;
+}
+
+.prizeHeading {
+    color: var(--textColor);
+    font-size: 3rem;
+    padding: 1em 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 0.3em;
+}
+
+.sponsorListHeading::before {
+    content: '\2605';
+    font-size: 1.5em;
+    margin-right: 0.5rem;
+}
+
+.prize{
+    color:var(--fontColor);
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .holder {
+        padding-top: 10rem;
+        margin-top: 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .h1, .articleTitle {
+        font-size: 5em;
+    }
+
+    .h2 {
+        font-size: 3em;
+    }
+
+    .articleTitle::before {
+        left: -0.5em;
+        height: 70vh;
+    }
+
+    .articleTitle::after {
+        left: -1em;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        width: 70%
+    }
+}
+
+@media only screen and (min-width: 1536px)  {
+    .container {
+        width: 50%;
+    } 
+}
