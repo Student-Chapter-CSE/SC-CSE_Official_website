@@ -27,7 +27,7 @@ export const EVENTS = {
     'techquisitive5':{
         img: '/static/assets/techsmalllogo.jpg',
         bannerImgUrl: '/static/assets/techlogo.png',
-        heading: 'Techquisitive',
+        heading: 'TechQuisitive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">Coding,Gaming,Quizes</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">Continuing the legacy of previous seasons of Techquisitive SCCSE is back with Techquisitive season five with lots of events coding swags and many more</div>',
         date: new Date(2024, 3, 19),
         finalsdate: new Date(2024,3,21), // Retard
@@ -36,36 +36,30 @@ export const EVENTS = {
         pageUrl: '/events/techquisitive',
         prizes:[
             {
-                num:'1st prize',
-                amt:'✔ Prizes worth of Rs.3000',
-                image:'/static/assets/first.png'
+                num:'💰Cash prizes worth 8k',
+                amt:'🎁Swags worth 10k',
+                
+                image:'/static/assets/trophy.png'
             },
-            {
-                num:'2nd prize',
-                amt:'✔ Prizes worth of Rs.2000',
-                image:'/static/assets/second.png'
-            },
-            {
-                num:'3rd prize',
-                amt:'✔ Prizes worth of Rs.1000',
-                image:'/static/assets/third.png'
-
-            }
+            
         ],
         tracks: [
             {
                 name: 'Best All Girls Team',
                 logoUrl: '/static/assets/girls.png',
+                amt:' 🏆Prizes worth of Rs.500',
                 
             },
             {
                 name: 'Most Versatile Team',
                 logoUrl: '/static/assets/versatile.png',
+                amt:' 🏆Prizes worth of Rs.500',
                 
             },
             {
                 name: 'Best Freshers Team',
                 logoUrl: '/static/assets/freshers.png',
+                amt:' 🏆Prizes worth of Rs.500',
                 
             },
            

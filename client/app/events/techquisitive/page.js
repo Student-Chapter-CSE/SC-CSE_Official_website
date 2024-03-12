@@ -16,18 +16,26 @@ import Prizes from '../../../Global/Prizes';
 
 const GlassCard = ({ image, text }) => {
     return (
-      <div className={styles.glassCard}>
-        <img src={image} alt="Prize" className={styles.cardImage} />
-        <p className={styles.cardText}>{text}</p>
-      </div>
+        <div className={styles.glassCard}>
+            <img src={image} alt="Prize" className={styles.cardImage} />
+            <p className={styles.cardText}>{text}</p>
+        </div>
     );
-  };
-  
+};
+const BigCard = ({ image, text }) => {
+    return (
+        <div className={styles.bigCard}>
+            <img src={image} alt="Prize" className={styles.cardImage} />
+            <p className={styles.cardText}>{text}</p>
+        </div>
+    );
+};
+
 const Techquisitive = () => {
     const event = EVENTS?.techquisitive5;
     const prize = event?.prizes;
     const track = event?.tracks;
-    const eventSchedule=event?.event;
+    const eventSchedule = event?.event;
     return (
         <div className={styles.holder}>
             <div className={styles.container}>
@@ -35,8 +43,8 @@ const Techquisitive = () => {
                     <div className={styles.articleTitle}>
                         {event?.heading}
                     </div>
-                    
-                    
+
+
                 </div>
 
                 <div className={styles.eventBanner}>
@@ -69,40 +77,40 @@ const Techquisitive = () => {
                 </div>
 
                 <div className={styles.cardContainer}>
-        {prize.map((prize, id) => (
-          <GlassCard key={id} image={prize.image} text={<span className={styles.content}>{prize.amt}</span>} />
-        ))}
-      </div>
+                    {prize.map((prize, id) => (
+                        <BigCard key={id} image={prize.image} text={<span className={styles.content}>{prize.num}<br/>{prize.amt}</span>} />
+                    ))}
+                </div>
 
                 <div className={styles.prizeHeading}>
-                Track Details
+                    Track Details
                 </div>
-                
+
                 <div className={styles.cardContainer}>
                     {track.map((track, id) => (
-                    <GlassCard key={id} image={track.logoUrl} className={styles.cardImageone} text={<span className={styles.content}>{track.name}</span>}  />
-                ))}
-                </div>
-                
-
-                
-                
-
-               
-               
-                
+                        <GlassCard key={id} image={track.logoUrl} className={styles.cardImageone} text={<span className={styles.content}>{track.name}<br/>{track.amt}</span>} />
+                    ))}
                 </div>
 
-                
 
-                
+
+
+
+
+
+
             </div>
-        
+
+
+
+
+        </div>
+
     )
 }
 
-const Prize = ({image, num,amt}) => {
-    return(
+const Prize = ({ image, num, amt }) => {
+    return (
         <div>
             <Prizes img={image} num={num} amt={amt} />
         </div>
