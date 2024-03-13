@@ -174,15 +174,15 @@
     padding: 10px;
     /*box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;*/
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     /*background-color: var(--backGround);*/
     border-radius: 10px;
-
+    align-items: center;
     width: 60vw;
     height: 40vh;
-    font-weight: bold;
-    font-size: 5rem;
+    font-weight:bold;
+    font-size: 3rem;
     list-style: none;
 
     color: var(--textColor);

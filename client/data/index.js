@@ -25,7 +25,7 @@ import Indrani from '../public/static/assets/indrani.jpg';
 
 export const EVENTS = {
     'techquisitive5':{
-        img: '/static/assets/techsmalllogo.jpg',
+        img: '/static/assets/tqLogo_svg.svg',
         bannerImgUrl: '/static/assets/techlogo.png',
         heading: 'TechQuisitive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">Coding,Gaming,Quizes</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">Continuing the legacy of previous seasons of Techquisitive SCCSE is back with Techquisitive season five with lots of events coding swags and many more</div>',
