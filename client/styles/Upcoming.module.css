@@ -67,8 +67,8 @@
 
 .cardTitle {
     color: var(--fontColor);
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 3rem;
+    font-weight:bolder;
     margin-bottom: 1rem;
 
     letter-spacing: 0.1em;

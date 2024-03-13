@@ -328,7 +328,7 @@
 }
 
 .articleTitle {
-    font-size: 3em;
+    font-size: 5rem;
     font-weight: bold;
     color: var(--fontColor);
     letter-spacing: 0.1em;
