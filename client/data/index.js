@@ -67,19 +67,41 @@ export const EVENTS = {
         event: [
             {
                 date:'1st March',
-                name:'Registration Open'
+                name:'Registration Open',
+                
             },
             {
                 date:'10th March',
                 name:'Registration Close'
             },
             {
-                date: '19th April',
-                name: 'Prelims'
+                date: '19th March',
+                name: 'Prelims',
+                des:'OFFLINE PRELIMINARIES,VIA QUIZZ,IN A FIERCELY COMPETITIVE EVENT',
             },
             {
-                date: '21st April',
-                name: 'Finals'
+                date:'20th March',
+                name:'CXTGSENSE 1.0',
+                des:'CODING CONTEST FOR ONLY FIRST YEAR.',
+                
+            },
+            {
+                date: '21st March',
+                name: 'CXTGSENSE 2.0',
+                des:'CODING CONTEST FOR SECOND AND THIRD YEAR.',
+
+            },
+            {
+                date: '22nd March',
+                name: 'HEADSHOT',
+                des:'BGMI GAMING EVENT(ONLINE EVENT)',
+            },
+            {
+                
+                    date: '23rd March',
+                    name: 'GRAND FINALE',
+                    des:'REALITY GAMESHOW INFRONT OF LIVE AUDIENCE',
+                
             }
         ],
     },

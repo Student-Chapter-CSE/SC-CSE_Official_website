@@ -38,8 +38,8 @@
     object-fit:'cover'
 }
 .glassCard {
-    width: 50%; /* Adjust to your preference */
-    height: 70%; /* Adjust to your preference */
+    width: 30%; /* Adjust to your preference */
+    height: 30%; /* Adjust to your preference */
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -70,6 +70,8 @@
     flex-direction: row;
     margin-left:10px;
     width:100%;
+    align-items:center;
+    justify-content: center;
   }
   .textStyle {
     color: red;
@@ -255,7 +257,12 @@
         align-items: center;
         width:100%;
       }
+    .glassCard{
+        width: 50%;
+        height: 30%;
+        margin: 20px;
     
+    }
       
 }
 
@@ -271,7 +278,7 @@
         display: block;
         margin: 8vw 0;
         width:3vw;
-        height:fit-content;
+        
     }
     .circle{
         width:8vw;
@@ -285,6 +292,7 @@
         display: flex;
         gap:4vw;
     }
+    
 }
 
 
