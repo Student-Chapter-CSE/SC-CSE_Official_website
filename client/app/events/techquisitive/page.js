@@ -146,7 +146,7 @@ const Techquisitive = () => {
                                 COMPETITIVE EVENT{' '}
                             </div>
                             
-                            <div className="p-3 text-fontColor text-sm font-semibold">
+                            <div className="p-3 text-textColor text-sm font-semibold">
                                 19TH MARCH 2024{' '}
                             </div>
                         </div>
