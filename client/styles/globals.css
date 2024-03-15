@@ -56,7 +56,7 @@ a {
 body {
     background-color: var(--backGround);
     font-family: 'quaz';
-    /* overflow: hidden; */
+    overflow: scroll;
 }
 
 .register_text {
