@@ -17,11 +17,11 @@ const MobileNavbar = () => {
     const [shouldMorph, setMorph] = useState(false);
 
     const handleToggle = () => {
+        document.body.style.overflow = isOpen ? 'auto' : 'hidden';
         setIsOpen(!isOpen);
     };
 
     useEffect(() => {
-
         const trigger = document.createElement('div')
         trigger.style.position = 'absolute';
         trigger.style.top = '0';
@@ -39,6 +39,7 @@ const MobileNavbar = () => {
     useEffect(() => {
         // Hide the mobile navbar when the url changes.
         setIsOpen(false)
+        document.body.style.overflow = 'scroll'
     }, [urlPathname])
 
     return (
