@@ -12,13 +12,14 @@
         "format:fix": "prettier --write --ignore-path .gitignore ."
     },
     "dependencies": {
-        "@phosphor-icons/react": "^2.0.15",
+        "@phosphor-icons/react": "^2.1.4",
         "axios": "^1.4.0",
         "eslint": "8.45.0",
         "eslint-config-next": "13.4.10",
         "framer-motion": "^11.0.12",
         "next": "^14.0.4",
         "next-images": "^1.8.5",
+        "package.json": "^2.0.1",
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-hook-form": "^7.48.2",
@@ -35,6 +36,6 @@
         "postcss": "^8.4.35",
         "prettier": "3.0.0",
         "start-server-and-test": "^2.0.0",
-        "tailwindcss": "^3.4.1"
+        "tailwindcss": "^3.4.3"
     }
 }
