@@ -337,7 +337,7 @@ const Timeline=()=>{
                     transition={{ duration: .5 }} className="w-1/3 ">
                     
                     <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                        CXTGSENSE 1.0
+                        CXTHSENSE 1.0
                     </div>
                     
                     <div className="p-3 text-lg text-white italic">
@@ -364,7 +364,7 @@ const Timeline=()=>{
                  className="w-1/3 ">
                     
                     <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                        CXTGSENSE 2.0{' '}
+                        CXTHSENSE 2.0{' '}
                     </div>
                     
                     <div className="p-3 text-lg text-white italic">

@@ -81,13 +81,13 @@ export const EVENTS = {
             },
             {
                 date:'20th March',
-                name:'CXTGSENSE 1.0',
+                name:'CXTHSENSE 1.0',
                 des:'CODING CONTEST FOR ONLY FIRST YEAR.',
                 
             },
             {
                 date: '21st March',
-                name: 'CXTGSENSE 2.0',
+                name: 'CXTHSENSE 2.0',
                 des:'CODING CONTEST FOR SECOND AND THIRD YEAR.',
 
             },
