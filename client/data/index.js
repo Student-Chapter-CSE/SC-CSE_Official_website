@@ -151,6 +151,9 @@ export const EVENTS = {
 
 export const eventsData = [
     {
+        ...EVENTS.techquisitive5
+    },
+    {
         img: '/static/assets/avatar.png',
         heading: 'One Day Symposium',
         content: '<b>"Where innovation and intelligence converge"</b><div style="font-size: 0.8rem;filter: brightness(70%);">A session on Soft Computing and Machine Learning</div>',
@@ -205,9 +208,7 @@ export const eventsData = [
     {
         ...EVENTS.CFP
     },
-    {
-        ...EVENTS.techquisitive5
-    }
+    
 ];
 
 export const getUpcomingEvents = () => {
