@@ -95,6 +95,7 @@
 
 .drawer[data-active=true] {
     position: relative;
+    z-index: 1;
     display: block;
 
     opacity: 1;
@@ -104,6 +105,7 @@
 
 .drawer[data-active=false] {
     position: absolute;
+    z-index: 1;
     transition: all 400ms;
     opacity: 0;
     filter: blur(5px);
@@ -124,8 +126,10 @@
     }
 
     .drawer > * {
-        flex-direction: row;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        grid-gap: 30px;
+        justify-items: center;
     }
 
     .holder {
