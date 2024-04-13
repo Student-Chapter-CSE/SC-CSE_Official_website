@@ -22,7 +22,7 @@
     color: var(--textColor);
     margin: 3rem;
     font-size: 1.4rem;
-    min-width: 74vw;
+    min-width: auto;
 }
 
 .herotextBigfont {
