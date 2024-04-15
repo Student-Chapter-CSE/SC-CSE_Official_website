@@ -31,7 +31,7 @@ export const EVENTS = {
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">Coding,Gaming,Quizes</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">Continuing the legacy of previous seasons of Techquisitive SCCSE is back with Techquisitive season five with lots of events coding swags and many more</div>',
         date: new Date(2024, 3, 19),
         finalsdate: new Date(2024,3,21), // Retard
-        category: 'recent',
+        category: 'past',
         registrationLink: "https://forms.gle/M5vL3sqn6HJ1AaRM9",
         pageUrl: '/events/techquisitive',
         prizes:[
@@ -111,7 +111,7 @@ export const EVENTS = {
         heading: 'InterHacktive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Code, Collab, Conquer"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">First Intra-College Hackathon of AOT</div>',
         date: new Date(2023, 8, 26), // Retard
-        category: 'recent',
+        category: 'past',
         registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69",
         pageUrl: '/events/interhacktive',
         sponsors: [
