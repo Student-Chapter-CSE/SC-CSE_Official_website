@@ -27,7 +27,7 @@ export const EVENTS = {
         img: '/static/assets/tqLogo_svg.svg',
         bannerImgUrl: '/static/assets/techlogo.png',
         heading: 'TechQuisitive',
-        content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">Coding,Gaming,Quizes</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">Continuing the legacy of previous seasons of Techquisitive SCCSE is back with Techquisitive season five with lots of events coding swags and many more</div>',
+        content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">Coding,Gaming,Quizes</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">Continuing the legacy of previous seasons of Techquisitive SCCSE is back with Techquisitive season five </div>',
         date: new Date(2024, 3, 19),
         finalsdate: new Date(2024,3,21),
         category: 'recent',
@@ -145,20 +145,20 @@ export const EVENTS = {
         pageUrl: '/downloads/SpecialSession_banner.pdf'
     },
     'KuRookShetra':{
-        img: '/static/assets/avatar.png',
+        img: '/static/assets/kuruk.jpg',
         heading: 'KuRookShetra',
         content: 'First ever intra college online chess tournament',
         date: new Date(2023,11,21),
-        category: 'past',
+        category: 'recent',
         pageUrl: '/events/kurukshetra',
         prizes: [400 , 200 , 100]
     },
     'sportiac':{
-        img: '/static/assets/avatar.png',
+        img: '/static/assets/sportiac.jpg',
         heading: 'Sportiac',
         content: 'Online Sports Quiz',
         date: new Date(2023,11,21),
-        category: 'past',
+        category: 'recent',
         pageUrl: '/events/sportiac',
         prizes: "top 10 stickers"
     }
@@ -179,9 +179,7 @@ export const eventsData = [
         date: new Date(2023, 10, 5),
         category: 'past',
     },
-    {
-        ...EVENTS.interhacktive0
-    },
+    
     {
         img: '/static/assets/webmaster.jpg',
         heading: 'Web Master',
@@ -218,6 +216,9 @@ export const eventsData = [
     },
     {
         ...EVENTS.sportiac
+    },
+    {
+        ...EVENTS.interhacktive0
     }
     
 ];
