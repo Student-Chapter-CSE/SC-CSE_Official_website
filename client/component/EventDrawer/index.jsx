@@ -1,14 +1,14 @@
+'use client'
 import styles from '../../styles/EventDrawer.module.css'
 import { useState } from 'react'
 
+const tabs = [
+    { name: 'Upcoming' },
+    { name: 'Recent' },
+    { name: 'Past' },
+]
 
-const EventDrawer = ({ children, className }) => {
-
-    const tabs = [
-        { name: 'Upcoming' },
-        { name: 'Recent' },
-        { name: 'Past' },
-    ]
+export default function EventDrawer({ children }) {
 
     const [currentTabId, setCurrentTabId] = useState(0);
 
@@ -19,7 +19,7 @@ const EventDrawer = ({ children, className }) => {
     }
 
     return (
-        <div className={styles.holder + ' ' + className}>
+        <div className={styles.holder}>
             <div className={styles.events_header}>
                 Events
             </div>
@@ -56,5 +56,3 @@ const EventDrawer = ({ children, className }) => {
         </div>
     )
 }
-
-export default EventDrawer

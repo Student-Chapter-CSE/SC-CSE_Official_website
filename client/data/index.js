@@ -1,4 +1,3 @@
-import avatar from '../public/static/assets/avatar.png';
 import Soumit from '../public/static/assets/srimany.jpg';
 import Abhraneel from '../public/static/assets/AbhraneelKarm.png';
 import Neelakshi from '../public/static/assets/neel.jpg';
@@ -30,7 +29,7 @@ export const EVENTS = {
         heading: 'TechQuisitive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">Coding,Gaming,Quizes</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">Continuing the legacy of previous seasons of Techquisitive SCCSE is back with Techquisitive season five with lots of events coding swags and many more</div>',
         date: new Date(2024, 3, 19),
-        finalsdate: new Date(2024,3,21), // Retard
+        finalsdate: new Date(2024,3,21),
         category: 'recent',
         registrationLink: "https://forms.gle/M5vL3sqn6HJ1AaRM9",
         pageUrl: '/events/techquisitive',
@@ -110,7 +109,7 @@ export const EVENTS = {
         bannerImgUrl: '/static/assets/ih_1.png',
         heading: 'InterHacktive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Code, Collab, Conquer"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">First Intra-College Hackathon of AOT</div>',
-        date: new Date(2023, 8, 26), // Retard
+        date: new Date(2023, 8, 26),
         category: 'recent',
         registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69",
         pageUrl: '/events/interhacktive',
@@ -151,17 +150,16 @@ export const EVENTS = {
         content: 'First ever intra college online chess tournament',
         date: new Date(2023,11,21),
         category: 'past',
-        pageUrl: '/events/Kurukshetra',
+        pageUrl: '/events/kurukshetra',
         prizes: [400 , 200 , 100]
     },
     'sportiac':{
-        
         img: '/static/assets/avatar.png',
         heading: 'Sportiac',
         content: 'Online Sports Quiz',
         date: new Date(2023,11,21),
         category: 'past',
-        pageUrl: '/events/Sportiac',
+        pageUrl: '/events/sportiac',
         prizes: "top 10 stickers"
     }
    
@@ -212,20 +210,6 @@ export const eventsData = [
         date: new Date(),
         category: 'past'
     },
-    // {
-    //     img: '/static/assets/kuruk.jpg',
-    //     heading: 'Kurukshetra',
-    //     content: '<b>Crack your brains and find the power within! An ultimate online chess tournament to prove your worth.</b>',
-    //     date: new Date(2023,11,21),
-    //     category: 'recent'
-    // },
-    // {
-    //     img: '/static/assets/sportiac.jpg',
-    //     heading: 'Sportiac',
-    //     content: '<b>Buzz the buzzer to show your power. Bonus event for getting swags, it was an online sports quiz where hundreds of students competed!</b>',
-    //     date: new Date(2023,11,20),
-    //     category: 'recent'
-    // },
     {
         ...EVENTS.CFP
     },
