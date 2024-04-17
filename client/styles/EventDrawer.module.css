@@ -14,7 +14,7 @@
 .tabNav::after {
     content: "";
     position: absolute;
-    top:100%;
+    top: 100%;
     left: 0;
     right: 0;
 
@@ -44,10 +44,10 @@
     content: "";
     position: absolute;
     top: calc(100% - 1px);
-    left: 0; right: 0;
+    left: 0;
+    right: 0;
     height: 3px;
     background: var(--fontColor);
-
     z-index: 1;
 }
 
@@ -60,12 +60,10 @@
     position: absolute;
     top: calc(100%);
     height: 1px;
-    left: 0; right: 100%;
-    
+    left: 0;
+    right: 100%;
     background: var(--fontColor);
-
     z-index: 1;
-
     transition: all 300ms;
 }
 
@@ -73,41 +71,14 @@
     right: 0;
 }
 
-.drawers {
-    display: flex;
-    padding: 2.4rem 0;
-}
-
 .drawer {
-    transition: all 400ms;
+    padding: 2rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-.drawer > * {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;;
-}
-
-.drawer[data-active=true] {
-    position: relative;
-    display: block;
-
-    opacity: 1;
-    filter: none;
-    transition: all 400ms;
-}
-
-.drawer[data-active=false] {
-    position: absolute;
-    transition: all 400ms;
-    opacity: 0;
-    filter: blur(5px);
-}
 
 .events_header {
     font-size: 5rem;
@@ -123,7 +94,7 @@
         padding-right: 0;
     }
 
-    .drawer > * {
+    .drawer>* {
         flex-direction: row;
         align-items: flex-start;
     }
@@ -131,7 +102,7 @@
     .holder {
         border-left-width: 1px;
         border-left-style: dashed;
-        border-image:  linear-gradient(to bottom, var(--border-color), rgba(0, 0, 0, 0)) 1 100%;
+        border-image: linear-gradient(to bottom, var(--border-color), rgba(0, 0, 0, 0)) 1 100%;
 
         padding: 2rem;
     }
