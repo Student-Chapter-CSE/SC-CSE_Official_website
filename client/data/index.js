@@ -37,7 +37,6 @@ export const EVENTS = {
             {
                 num:'💰Cash prizes worth 8k',
                 amt:'🎁Swags worth 10k',
-                
                 image:'/static/assets/trophy.png'
             },
             
@@ -164,10 +163,6 @@ export const EVENTS = {
     }
    
 }
-
-
-
-
 export const eventsData = [
     {
         ...EVENTS.techquisitive5
