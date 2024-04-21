@@ -1,4 +1,3 @@
-import avatar from '../public/static/assets/avatar.png';
 import Soumit from '../public/static/assets/srimany.jpg';
 import Abhraneel from '../public/static/assets/AbhraneelKarm.png';
 import Neelakshi from '../public/static/assets/neel.jpg';
@@ -28,17 +27,16 @@ export const EVENTS = {
         img: '/static/assets/tqLogo_svg.svg',
         bannerImgUrl: '/static/assets/techlogo.png',
         heading: 'TechQuisitive',
-        content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">Coding,Gaming,Quizes</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">Continuing the legacy of previous seasons of Techquisitive SCCSE is back with Techquisitive season five with lots of events coding swags and many more</div>',
+        content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">Coding,Gaming,Quizes</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">Continuing the legacy of previous seasons of Techquisitive SCCSE is back with Techquisitive season five </div>',
         date: new Date(2024, 3, 19),
-        finalsdate: new Date(2024,3,21), // Retard
-        category: 'past',
+        finalsdate: new Date(2024,3,21),
+        category: 'recent',
         registrationLink: "https://forms.gle/M5vL3sqn6HJ1AaRM9",
         pageUrl: '/events/techquisitive',
         prizes:[
             {
                 num:'💰Cash prizes worth 8k',
                 amt:'🎁Swags worth 10k',
-                
                 image:'/static/assets/trophy.png'
             },
             
@@ -110,8 +108,8 @@ export const EVENTS = {
         bannerImgUrl: '/static/assets/ih_1.png',
         heading: 'InterHacktive',
         content: '<div style="margin-bottom: 0.2rem;"><b style="font-size: 1.1em;">"Code, Collab, Conquer"</b></div><div style="font-size: 0.9rem;filter: brightness(70%);">First Intra-College Hackathon of AOT</div>',
-        date: new Date(2023, 8, 26), // Retard
-        category: 'past',
+        date: new Date(2023, 8, 26),
+        category: 'recent',
         registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69",
         pageUrl: '/events/interhacktive',
         sponsors: [
@@ -144,11 +142,27 @@ export const EVENTS = {
         date: new Date(),
         category: 'past',
         pageUrl: '/downloads/SpecialSession_banner.pdf'
+    },
+    'KuRookShetra':{
+        img: '/static/assets/kuruk.jpg',
+        heading: 'KuRookShetra',
+        content: 'First ever intra college online chess tournament',
+        date: new Date(2023,11,21),
+        category: 'recent',
+        pageUrl: '/events/kurukshetra',
+        prizes: [400 , 200 , 100]
+    },
+    'sportiac':{
+        img: '/static/assets/sportiac.jpg',
+        heading: 'Sportiac',
+        content: 'Online Sports Quiz',
+        date: new Date(2023,11,21),
+        category: 'recent',
+        pageUrl: '/events/sportiac',
+        prizes: "top 10 stickers"
     }
+   
 }
-
-
-
 export const eventsData = [
     {
         ...EVENTS.techquisitive5
@@ -160,9 +174,7 @@ export const eventsData = [
         date: new Date(2023, 10, 5),
         category: 'past',
     },
-    {
-        ...EVENTS.interhacktive0
-    },
+    
     {
         img: '/static/assets/webmaster.jpg',
         heading: 'Web Master',
@@ -192,22 +204,17 @@ export const eventsData = [
         category: 'past'
     },
     {
-        img: '/static/assets/kuruk.jpg',
-        heading: 'Kurukshetra',
-        content: '<b>Crack your brains and find the power within! An ultimate online chess tournament to prove your worth.</b>',
-        date: new Date(2023,11,21),
-        category: 'recent'
-    },
-    {
-        img: '/static/assets/sportiac.jpg',
-        heading: 'Sportiac',
-        content: '<b>Buzz the buzzer to show your power. Bonus event for getting swags, it was an online sports quiz where hundreds of students competed!</b>',
-        date: new Date(2023,11,20),
-        category: 'recent'
-    },
-    {
         ...EVENTS.CFP
     },
+    {
+        ...EVENTS.KuRookShetra
+    },
+    {
+        ...EVENTS.sportiac
+    },
+    {
+        ...EVENTS.interhacktive0
+    }
     
 ];
 

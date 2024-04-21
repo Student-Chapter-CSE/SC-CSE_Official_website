@@ -1,15 +1,18 @@
+'use client'
+import { useEffect, useState } from 'react'
+import { eventsData } from '../../data';
 import styles from '../../styles/EventDrawer.module.css'
-import { useState } from 'react'
+import Event from '../../component/Event';
 
+const tabs = [
+    { name: 'Upcoming' },
+    { name: 'Recent' },
+    { name: 'Past' },
+]
 
-const EventDrawer = ({ children, className }) => {
+export default function EventDrawer({ children }) {
 
-    const tabs = [
-        { name: 'Upcoming' },
-        { name: 'Recent' },
-        { name: 'Past' },
-    ]
-
+    const [filteredData, setFilteredData] = useState([]);
     const [currentTabId, setCurrentTabId] = useState(0);
 
     const wantTabChange = (toId) => {
@@ -18,8 +21,13 @@ const EventDrawer = ({ children, className }) => {
         setCurrentTabId(toId)
     }
 
+    const events = eventsData.filter(e => e.category === tabs[currentTabId].name.toLowerCase())
+    useEffect(() => {
+        setFilteredData(events)
+    }, [currentTabId])
+
     return (
-        <div className={styles.holder + ' ' + className}>
+        <div className={styles.holder}>
             <div className={styles.events_header}>
                 Events
             </div>
@@ -39,22 +47,17 @@ const EventDrawer = ({ children, className }) => {
                 }
             </nav>
 
-            {/* Content  */}
-            <div className={styles.drawers}>
+
+            <div className={styles.drawer}>
                 {
-                    children && (children instanceof Array ? [...children] : [children]).map((c, i) => (
-                        <div
-                            className={styles.drawer}
-                            key={i}
-                            data-active={currentTabId == i}
-                        >
-                            {c}
-                        </div>
+                    filteredData.map((eventsData, idx) => (
+                        <Event
+                            key={idx}
+                            {...eventsData}
+                        />
                     ))
                 }
             </div>
         </div>
     )
 }
-
-export default EventDrawer
