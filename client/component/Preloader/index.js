@@ -1,6 +1,6 @@
 'use client';
 import styles from '../../styles/Preloader.module.css';
-import '../../styles/Loader.css';
+import '../../styles/Preloader.css';
 import { useEffect, useState } from 'react';
 
 const Preloader = ({ width, height, suspense }) => {
