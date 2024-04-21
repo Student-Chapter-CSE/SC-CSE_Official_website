@@ -16,8 +16,10 @@ const Home = () => {
     const [preloaderShown, setPreloaderShown] = useState(false);
 
     useEffect(() => {
+        setPreloaderShown(window.sessionStorage.getItem('preloaderShown') === 'true');
         const timer = setTimeout(() => {
             setPreloaderShown(true);
+            window.sessionStorage.setItem('preloaderShown', 'true');
         }, 3500);
         return () => clearTimeout(timer);
     }, []);
