@@ -139,7 +139,7 @@
 }
 
 .Hamburger_menu {
-    z-index: 9999999999;
+    z-index: 99999;
     position: fixed;
     top: 0;
     width: 100vw;
