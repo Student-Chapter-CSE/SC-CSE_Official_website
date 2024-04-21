@@ -1,5 +1,5 @@
 'use client';
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 
 import { getUpcomingEvents } from '../data';
@@ -13,31 +13,44 @@ const Hod = lazy(() => import('../component/Hod'));
 const UpcomingEvents = lazy(() => import('../component/Upcoming'));
 
 const Home = () => {
+    const [preloaderShown, setPreloaderShown] = useState(false);
+
+    useEffect(() => {
+        setPreloaderShown(window.sessionStorage.getItem('preloaderShown') === 'true');
+        const timer = setTimeout(() => {
+            setPreloaderShown(true);
+            window.sessionStorage.setItem('preloaderShown', 'true');
+        }, 3500);
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <>
-            <Suspense fallback={<Loading />}>
-                <div>
-                    <Header />
-                </div>
-                <div className={styles.sectionHolder}>
-                    <Counter />
-                </div>
-                <div className={styles.sectionHolder}>
-                    <Hod />
-                </div>
-                <div className={styles.sectionHolder}>
-                    <About />
-                </div>
-                <div className={styles.sectionHolder}>
-                    <UpcomingEvents events={getUpcomingEvents()} />
-                </div>
-                <div>
-                    <Footer />
-                </div>
-            </Suspense>
+            {!preloaderShown && <Loading suspense={false} />}
+            {preloaderShown && (
+                <Suspense fallback={<Loading suspense={true}/>}>
+                    <div>
+                        <Header />
+                    </div>
+                    <div className={styles.sectionHolder}>
+                        <Counter />
+                    </div>
+                    <div className={styles.sectionHolder}>
+                        <Hod />
+                    </div>
+                    <div className={styles.sectionHolder}>
+                        <About />
+                    </div>
+                    <div className={styles.sectionHolder}>
+                        <UpcomingEvents events={getUpcomingEvents()} />
+                    </div>
+                    <div>
+                        <Footer />
+                    </div>
+                </Suspense>
+            )}
         </>
     );
-}
+};
 
-
-export default Home
+export default Home;
